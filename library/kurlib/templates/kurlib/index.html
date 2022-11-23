@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="{% static 'kurlib/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/container.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/title.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/img-out.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/search.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/sliderTest3.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/slider.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/poster.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/events.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/catalog.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/partners.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <img class="logo" src="{% static 'kurlib/images/logo/logo__img.png' %}" alt="">
+                <button class="menu__button">
+                    <p class="menu__button-txt">Меню</p>
+                    <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button.png' %}" alt="">
+                </button>
+                <div class="menu__open none">
+                    <img class="close menu__close" src="{% static 'kurlib/images/menu/close.png' %}" alt="">
+                    <ul class="menu__open-list">
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href=""> Главная</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="http://92.126.252.74:8087/jirbis2/index.php?option=com_irbis&view=irbis&Itemid=115"> Электронный каталог</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="/about"> О библиотеке</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="/reader"> Читателю</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="http://kids.kurlib.ru"> Детская библиотека</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="/services"> Услуги</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="/events"> Мероприятия</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="/localHistory"> Краеведение</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href=""> Коллегам</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="/questionAnswer"> Вопрос-ответ</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href=""> Независимая оценка качества</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="/contacts"> Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__content">
+                <div class="header__left">
+                    <h1 class="main-title header__title">МЕЖПОСЕЛЕНЧЕСКАЯ ЦЕНТРАЛЬНАЯ БИБЛИОТЕКА КУРАГИНСКОГО РАЙОНА </h1>
+                    <div class="img-out header__img-out header__img-out--blue"></div>
+                    <h3 class="subtitle header__subtitle">Муниципальное бюджетное учреждение культуры</h3>
+                    <form class="search">
+                        <input class="search__field" type="text" name="text" placeholder="Введите запрос">
+                        <!-- <input class="search__input" type="submit" name="submit" class="search__button button"> -->
+                    </form>
+                </div>
+                <div class="header__right">
+                    <img class="header__right-img" src="{% static 'kurlib/images/header/header__right-img.png' %}" alt="">
+                </div>
+            </div>
+            <div class="header__decor">
+                <img class="header__arrow" src="{% static 'kurlib/images/header/header__arrow.png' %}" alt="">
+                <img class="header__num" src="{% static 'kurlib/images/header/header__num.png' %}" alt="">
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="poster">
+            <h4 class="title poster__title">Афиша</h4>
+            <div class="slider poster__slider">
+                <div class="container">
+                    <div class="slider__wrapper poster__wrapper">
+                        <img src="{% static 'kurlib/images/partners/partners__arrow-left.png' %}" alt="" class="slider__arrow slider__arrow--left poster__arrow--left">
+                        <div class="slider__line">
+                            <div class="slider__item">
+                                <img src="{% static 'kurlib/images/church/church1.png' %}" alt="" class="slider__item-img poster__item-img">
+                                <p class="slider__item-text poster__item-text">Lorem, ipsum dolor sit amet consectetur</p>
+                            </div>
+                        </div>
+                        <img src="{% static 'kurlib/images/partners/partners__arrow-right.png' %}" alt="" class="slider__arrow slider__arrow--right poster__arrow--right">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="events">
+            <img class="img-out events__bg" src="{% static 'kurlib/images/index/events__bg.png' %}" alt="">
+            <div class="container">
+                <h4 class="title events__title">Мероприятия</h4>
+                <div class="events__content">
+                    <div class="events__item">
+                        <div class="events__item-top">
+                            <p class="events__item-day events__item-day--blue"><span class="events__item-num">27</span> июня</p>
+                            <p class="events__item-year events__item-year--blue">2021</p>
+                        </div>
+                        <div class="events__item-img-wrapper">
+                            <img class="events__item-img" src="{% static 'kurlib/images/events/events__img-1.png' %}" alt="">
+                        </div>
+                        <div class="events__item-text">
+                            <h6 class="events__item-name">Проспект читающих людей</h6>
+                            <p class="events__item-descr">Сегодня люди в основном читают легкую литературу. И не потому, что это интересно, а потому что над такими произведениями не надо задумываться.</p>
+                        </div>
+                    </div>
+                    <div class="events__item">
+                        <div class="events__item-top">
+                            <p class="events__item-day events__item-day--blue"><span class="events__item-num">9</span> июня</p>
+                            <p class="events__item-year">2021</p>
+                        </div>
+                        <div class="events__item-img-wrapper">
+                            <img class="events__item-img" src="{% static 'kurlib/images/events/events__img-2.png' %}" alt="">
+                        </div>
+                        <div class="events__item-text">
+                            <h6 class="events__item-name">«Пушкинский день»</h6>
+                            <p class="events__item-descr">6 июня в Курагинской библиотеке  прошла уличная ассамблея  «Дорос ли я до Пушкина?», посвященная  дню рождения писателя.</p>
+                        </div>
+                    </div>
+                    <div class="events__item">
+                        <div class="events__item-top">
+                            <p class="events__item-day"><span class="events__item-num">6</span> июня</p>
+                            <p class="events__item-year">2021</p>
+                        </div>
+                        <div class="events__item-img-wrapper">
+                            <img class="events__item-img" src="{% static 'kurlib/images/events/events__img-3.png' %}" alt="">
+                        </div>
+                        <div class="events__item-text">
+                            <h6 class="events__item-name">«Уголок России – отчий дом»</h6>
+                            <p class="events__item-descr">Краеведческая шкатулка «Уголок России – отчий дом».</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="button events__button-more" href="">Все мероприятия 
+                    <img class="events__button-img" src="{% static 'kurlib/images/events/events__button-img.png' %}" alt="">
+                </a>
+            </div>
+            
+             
+        </section>
+        <section class="catalog">
+            <img class="img-out catalog__bg" src="{% static 'kurlib/images/catalog/catalog__img-out.png' %}" alt="">
+            <h4 class="title catalog__title">Электронный каталог</h4>
+            <a class="catalog__button" href="http://92.126.252.74:8087/jirbis2/index.php?option=com_irbis&view=irbis&Itemid=115">
+                <img class="catalog__button-img" src="{% static 'kurlib/images/catalog/catalog__button-img.png' %}" alt="">
+            </a>
+            <img class="img-out catalog__img-book catalog__img-book1" src="{% static 'kurlib/images/catalog/catalog__img-book1.png' %}" alt="">
+            <img class="img-out catalog__img-book catalog__img-book2" src="{% static 'kurlib/images/catalog/catalog__img-book2.png' %}" alt="">
+            <img class="img-out catalog__img-book catalog__img-book3" src="{% static 'kurlib/images/catalog/catalog__img-book3.png' %}" alt="">
+            <img class="img-out catalog__img-book catalog__img-book4" src="{% static 'kurlib/images/catalog/catalog__img-book4.png' %}" alt="">
+        </section>
+        <section class="partners">
+            <div class="container">
+                <h4 class="title partners__title">Наши партнёры</h4>
+                <div id="carousel" class="carousel partners__slider">
+                    <img class="arrow prev partners__arrow partners__arrow--left" src="{% static 'kurlib/images/partners/partners__arrow-left.png' %}" alt="">
+                    <div class="gallery">
+                      <ul>
+                        <li>
+                            <div class="partners__slider-item partners__slider-item0">
+                                <img class="partners__slider-img" src="{% static 'kurlib/images/partners/partners__young.png' %}" alt="">
+                                <p class="partners__slider-name">Молодёжная библиотека</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="partners__slider-item partners__slider-item1">
+                                <img class="partners__slider-img" src="{% static 'kurlib/images/partners/partners__science.png' %}" alt="">
+                                <p class="partners__slider-name">Государственная универсальная научная библиотека Красноярского края</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="partners__slider-item partners__slider-item2">
+                                <img class="partners__slider-img" src="{% static 'kurlib/images/partners/partners__child.png' %}" alt="">
+                                <p class="partners__slider-name">Красноярская краевая детская библиотека</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="partners__slider-item partners__slider-item0">
+                                <img class="partners__slider-img" src="{% static 'kurlib/images/partners/partners__young.png' %}" alt="">
+                                <p class="partners__slider-name">Молодёжная библиотека</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="partners__slider-item partners__slider-item1">
+                                <img class="partners__slider-img" src="{% static 'kurlib/images/partners/partners__science.png' %}" alt="">
+                                <p class="partners__slider-name">Государственная универсальная научная библиотека Красноярского края</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="partners__slider-item partners__slider-item2">
+                                <img class="partners__slider-img" src="{% static 'kurlib/images/partners/partners__child.png' %}" alt="">
+                                <p class="partners__slider-name">Красноярская краевая детская библиотека</p>
+                            </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <img class="arrow next partners__arrow partners__arrow--left" src="{% static 'kurlib/images/partners/partners__arrow-right.png' %}" alt="">
+                  </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__one">
+                    <div class="footer__one-item footer__phone">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-phone.png' %}" alt="">
+                        <a class="footer__text" href="">8 (391) 362-48-56</a>
+                    </div>
+                    <div class="footer__one-item footer__email">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-mail.png' %}" alt="">
+                        <a class="footer__text" href="">kur-mcb@yandex.ru</a>
+                    </div>
+                    <div class="footer__one-item footer__address">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-address.png' %}" alt="">
+                        <a class="footer__text" href="">662910, Красноярский край, п. Курагино, ул. Партизанская, 150</a>
+                    </div>
+                    <div class="footer__one-item footer__vk">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
+                        <a class="footer__text" href="">https://vk.com/kurlib</a>
+                    </div>
+                    <h4 class="footer__title">Cайт разработан:</h4>
+                    <div class="footer__one-item footer__vk">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
+                        <a class="footer__text" href="">https://vk.com/id162248876</a>
+                    </div>
+                </div>
+                <div class="footer__two">
+                    <h4 class="footer__title footer__title-schedule">Расписание</h4>
+                    <div class="footer__schedule">
+                        <div class="footer__weekdays">
+                            <h5 class="footer__subtitle">График работы:</h5>
+                            <div class="footer__time">
+                                <img src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="" class="footer__schedule-img">
+                                <p class="footer__schedule-text">09:00-18:00</p>
+                            </div>
+                        </div>
+                        <div class="footer__weekends">
+                            <h5 class="footer__subtitle">Воскресенье:</h5>
+                            <div class="footer__time">
+                                <img src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="" class="footer__schedule-img">
+                                <p class="footer__schedule-text">09:00-16:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="footer__subtitle">Выходные: суббота</h5>
+                    <p class="footer__text">Последняя пятница месяца санитарный день</p>
+                    <h4 class="footer__title">Летнее расписание</h4>
+                    <h5 class="footer__subtitle">График работы:</h5>
+                    <div class="footer__time">
+                        <img class="footer__schedule-img" src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="">
+                        <p class="footer__schedule-text">09:00-18:00</p>
+                    </div>
+                    <h5 class="footer__subtitle">Выходные: суббота, воскресенье</h5>
+                </div>
+                <div class="footer__three">
+                    <h4 class="footer__title footer__title-schedule">Общая информация</h4>
+                    <h5 class="footer__subtitle">Полное наименование:</h5>
+                    <p class="footer__text">Муниципальное бюджетное учреждение культуры «Межпоселенческая центральная библиотека Курагинского района» </p>
+                    <h5 class="footer__subtitle footer__schedule-sub">Сокращенное наименование:</h5>
+                    <p class="footer__text">МБУК МЦБ Курагинского района</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'kurlib/js/menuOpen.js' %}"></script>
+    <script src="{% static 'kurlib/js/carousel.js' %}"></script>
+    <script src="{% static 'kurlib/js/carouselSrcText.js' %}"></script>
+    <script src="{% static 'kurlib/js/carouselSrcTextIndex.js' %}"></script>
+</body>
+</html>

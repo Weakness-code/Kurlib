@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'kurlib/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/container.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/title.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/img-out.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/logo.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/header.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'kurlib/css/generalHeader.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'kurlib/css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
+
+</head>
+<body>
+    <div class="about__Library">
+    <header class="header header--about">
+        
+            <div class="general__header-top">
+                <div class="header--left__name">
+                    <img class="header--left__bg" src="{% static 'kurlib/images/header/header--left__bg.png' %}" alt="">
+                    <h5 class="title title--left header--left__title reader__title--left">Вопрос-ответ</h5>
+                </div>
+                <img class="logo logo--left" src="{% static 'kurlib/images/logo/logo__img.png' %}" alt="">
+                <button class="menu__button">
+                    <p class="menu__button-txt">Меню</p>
+                    <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button.png' %}" alt="">
+                    
+                </button>
+            
+    </header>
+    <main>
+        <section class="about about--questions">
+            
+            <div class="about__list-item about__list-item--for-open">
+                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
+                <div class="about__item-wrapper about__item-wrapper--questions">
+                    <p class="about__item-text">Как записаться в библиотеку?</p>
+                    <!-- <div class="about__item-text-more">
+                        <ul class="about__item-text-list">Пользователи Библиотеки имеют право на: 
+                            <li class="about__item-text-point">информацию о наличии в фонде конкретного документа</li>
+                            <li class="about__item-text-point">полную информацию о составе библиотечных фондов через систему каталогов и другие формы библиотечного обслуживания</li>
+                            <li class="about__item-text-point">консультативную помощь в поиске и выборе источников информации</li>
+                            <li class="about__item-text-point">получать во временное пользование на дом или в читальном зале любой документ из библиотечных фондов</li>
+                            <li class="about__item-text-point">продление срока пользования документами, выданными на дом лично или по телефону</li>
+                            <li class="about__item-text-point">доступ к Интернету, сайтам Красноярского края, работу с полнотекстовой справочной правовой системой КонсультантПлюс;</li>
+                            <li class="about__item-text-point">подключение к бесплатной зоне Wi-Fi</li>
+                            <li class="about__item-text-point">предоставление в пользование компьютера</li>
+                            <li class="about__item-text-point">заказ литературы через МБА (межбиблиотечный абонемент) и электронную доставку документов из фондов краевой научной библиотеки</li>
+                    </ul>
+                </div> -->
+                </div>
+                
+            </div>
+            <div class="about__answer">
+                <p class="answer__text">
+                    При записи в библиотеку необходимо иметь паспорт, а несовершеннолетним в возрасте до 14 лет – документы, удостоверяющие личность их законных представителей.
+                </p>
+            </div>
+            <div class="about__list-item about__list-item--for-open">
+                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
+                <div class="about__item-wrapper about__item-wrapper--questions">
+                    <p class="about__item-text">Проходят ли на базе вашей библиотеки бесплатные компьютерные
+                        курсы для пенсионеров? </p>
+                </div>
+            </div>
+            <div class="about__answer">
+                <p class="answer__text">
+                    В нашей библиотеке нет компьютерных курсов, но вы можете обратиться в центр социального обслуживания граждан пожилого возраста и инвалидов.
+                </p>
+            </div>
+            <div class="about__list-item about__list-item--for-open">
+                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
+                <div class="about__item-wrapper about__item-wrapper--questions">
+                    <p class="about__item-text">Живу не в Курагино, а мне необходимы некоторые книги из вашей
+                        библиотеки, но нет возможности приехать и читать у вас. Как мне быть?</p>
+                </div>
+            </div>
+            <div class="about__answer">
+                <p class="answer__text">
+                    Вы можете заказать интересующую литературу  из Центральной библиотеки, для этого Вам необходимо обратиться  в сельскую библиотеку по месту проживания.
+                </p>
+            </div>
+            <div class="about__list-item about__list-item--for-open">
+                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
+                <div class="about__item-wrapper about__item-wrapper--questions">
+                    <p class="about__item-text">Что делать, если утеряна книга?</p>
+                </div>
+            </div>
+            <div class="about__answer">
+                <p class="answer__text">
+                    Согласно Правилам пользования библиотеки Вы имеете право заменить её книгой равноценной по содержанию и стоимости. Для уточнения информации необходимо обратиться в библиотеку.
+                </p>
+            </div>
+            <div class="about__list-item about__list-item--for-open">
+                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
+                <div class="about__item-wrapper about__item-wrapper--questions">
+                    <p class="about__item-text">Принимаете ли вы в свои фонды старые фотографии: люди, здания, события?</p>
+                </div>
+            </div>
+            <div class="about__answer">
+                <p class="answer__text">
+                    Да, конечно! Мы будем рады принять от вас фотографии.
+                </p>
+            </div>
+            <div class="about__list-item">
+                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
+                <div class="about__item-wrapper about__item-wrapper--questions">
+                    <p class="about__item-text">С какой библиотекой (с какими библиотеками) края вы
+                        сотрудничаете - заказываете книги во временное пользование? Хотелось бы сначала посмотреть наличие необходимых мне изданий на сайте данной библиотеки, прежде чем заказывать. И еще: какова стоимость данной услуги?</p>
+                </div>
+            </div>
+            <div class="about__answer">
+                <p class="answer__text">
+                    Мы сотрудничаем с краевой научной библиотекой. Сайт: <a class="about__answer-link" href="http://www.kraslib.ru">http://www.kraslib.ru</a>. Стоимость складывается следующим образом: вес книги (издания) + стоимость пересылки. Если Вы будете заказывать ксерокопию статьи, то необходимо указать электронный адрес, куда мы отправим выполненный заказ. Эта услуга бесплатная
+                </p>
+            </div>
+            <div class="about__list-item">
+                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
+                <div class="about__item-wrapper about__item-wrapper--questions">
+                    <p class="about__item-text">С какого года у вас имеются подшивки местной газеты?</p>
+                </div>
+            </div>
+            <div class="about__answer">
+                <p class="answer__text">
+                    В фонде нашей библиотеки имеются подшивки: газет «Заветы Ильича» с 1963 года, «Тубинские вести», «Твои аргументы».
+                </p>
+            </div>
+            <div class="about__list-item">
+                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
+                <div class="about__item-wrapper about__item-wrapper--questions">
+                    <p class="about__item-text">По каким критериям вы можете принять в дар книги (я переезжаю, а книги выбросить рука не поднимается)?</p>
+                </div>
+            </div>
+            <div class="about__answer">
+                <p class="answer__text">
+                    Мы рады будем принять от Вас в дар книги. Основное внимание мы обращаем на то, чтобы книги были в хорошем состоянии, спрашиваемые, это может быть, как классика, так современная литература.
+                </p>
+            </div>
+            <div class="about__list-item">
+                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
+                <div class="about__item-wrapper about__item-wrapper--questions">
+                    <p class="about__item-text">Можно как-то определить читал я эту книгу или нет?</p>
+                </div>
+            </div>
+            <div class="about__answer">
+                <p class="answer__text">
+                    Да, по листку возврата на книге.
+                </p>
+            </div>
+            <div class="about__list-item">
+                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
+                <div class="about__item-wrapper about__item-wrapper--questions">
+                    <p class="about__item-text">Как узнать есть ли нужная книга в библиотеке?</p>
+                </div>
+            </div>
+            <div class="about__answer">
+                <p class="answer__text">
+                    Можно обратиться в библиотеку или к электронному каталогу на нашем сайте: <a class="about__answer-link" href="http://kurlib.ru">http://kurlib.ru</a>
+                </p>
+            </div>
+        </section>
+    </main>
+</div>
+    
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__content">
+                <div class="footer__one">
+                    <div class="footer__one-item footer__phone">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-phone.png' %}" alt="">
+                        <a class="footer__text" href="">8 (391) 362-48-56</a>
+                    </div>
+                    <div class="footer__one-item footer__email">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-mail.png' %}" alt="">
+                        <a class="footer__text" href="">kur-mcb@yandex.ru</a>
+                    </div>
+                    <div class="footer__one-item footer__address">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-address.png' %}" alt="">
+                        <a class="footer__text" href="">662910, Красноярский край, п. Курагино, ул. Партизанская, 150</a>
+                    </div>
+                    <div class="footer__one-item footer__vk">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
+                        <a class="footer__text" href="">https://vk.com/kurlib</a>
+                    </div>
+                    <h4 class="footer__title">Cайт разработан:</h4>
+                    <div class="footer__one-item footer__vk">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
+                        <a class="footer__text" href="">https://vk.com/id162248876</a>
+                    </div>
+                </div>
+                <div class="footer__two">
+                    <h4 class="footer__title footer__title-schedule">Расписание</h4>
+                    <div class="footer__schedule">
+                        <div class="footer__weekdays">
+                            <h5 class="footer__subtitle">График работы:</h5>
+                            <div class="footer__time">
+                                <img src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="" class="footer__schedule-img">
+                                <p class="footer__schedule-text">09:00-18:00</p>
+                            </div>
+                        </div>
+                        <div class="footer__weekends">
+                            <h5 class="footer__subtitle">Воскресенье:</h5>
+                            <div class="footer__time">
+                                <img src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="" class="footer__schedule-img">
+                                <p class="footer__schedule-text">09:00-16:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="footer__subtitle">Выходные: суббота</h5>
+                    <p class="footer__text">Последняя пятница месяца санитарный день</p>
+                    <h4 class="footer__title">Летнее расписание</h4>
+                    <h5 class="footer__subtitle">График работы:</h5>
+                    <div class="footer__time">
+                        <img class="footer__schedule-img" src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="">
+                        <p class="footer__schedule-text">09:00-18:00</p>
+                    </div>
+                    <h5 class="footer__subtitle">Выходные: суббота, воскресенье</h5>
+                </div>
+                <div class="footer__three">
+                    <h4 class="footer__title footer__title-schedule">Общая информация</h4>
+                    <h5 class="footer__subtitle">Полное наименование:</h5>
+                    <p class="footer__text">Муниципальное бюджетное учреждение культуры «Межпоселенческая центральная библиотека Курагинского района» </p>
+                    <h5 class="footer__subtitle footer__schedule-sub">Сокращенное наименование:</h5>
+                    <p class="footer__text">МБУК МЦБ Курагинского района</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'kurlib/js/collapse.js' %}"></script>
+</body>
+</html>

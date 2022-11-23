@@ -1,0 +1,71 @@
+body {
+    padding: 10px;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 1280px;  
+  }
+  
+  .carousel img {
+    /* width: 130px;
+    height: 130px; */
+    /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+    display: block;
+  }
+  
+  .arrow {
+    position: absolute;
+    /* top: 60px; */
+    padding: 0;
+    font-size: 24px;
+    line-height: 24px;
+    display: block;
+  }
+  
+  .arrow:focus {
+
+  }
+  
+  .arrow:hover {
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 7px;
+  }
+  
+  .next {
+    right: 7px;
+  }
+  
+  .gallery {
+    /* width: 1095px; */
+    width: 85%;
+    overflow: hidden;
+    /* padding-left: 65px; */
+    height: 330px;
+    margin-left: 62px;
+  }
+  
+  .gallery__ul {
+    height: 130px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: 500ms;
+    font-size: 0;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+  
+  .gallery__li {
+    display: inline-block;
+    width: 18.75rem;
+    margin-right: 4.0625rem;
+    margin-bottom: 6.25rem;
+    
+  }

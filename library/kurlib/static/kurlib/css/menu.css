@@ -1,0 +1,127 @@
+.menu {
+
+}
+.menu__button {
+    cursor: pointer;
+    z-index: 100;
+    position: fixed;
+    right: 10%;
+    width: 9.375rem;
+    height: 3.75rem;
+    margin-top: 20px;
+    border: none;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFF;
+    padding-right: 1.25em;
+    padding-left: 1.25em;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.menu__button-txt {
+    font-size: 1.25rem;
+    color: #3A57BB;
+    margin-right: 0.625em;
+}
+.menu__img {
+    /* хз, мб тоже сделать в относительных */
+    width: 40px;
+    height: 40px;
+}
+.menu__button-txt--pink {
+    color: #BE1D2C;
+}
+.menu__button--duo {
+    font-size: 1.25rem;
+    background: none;
+    right: -6%;
+    width: auto;
+    height: auto;
+    padding-right: 0;
+
+}
+.menu__button--left {
+    background: #4E68C2;
+    
+    border-radius: 100px;
+    padding: 0.5em 1em 0.5em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.menu__button--left-blue {
+    background: #FFFFFF;
+}
+.menu__button--right {
+    background: #262626;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 191px;
+    position: relative;
+    left: -43px;
+    z-index: -1;
+    
+}
+.menu__button-txt--white {
+    color: #FFFFFF;
+}
+.menu__button-txt--blue {
+    color: #3A57BB;
+}
+
+
+.menu__open {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    font-size: 1.25rem;
+    padding: 2.5em 2em;
+    background: rgba(255, 255, 255, 0.95);
+}
+.close {
+    position: absolute;
+    right: 40px;
+    cursor: pointer;
+}
+.menu__close {
+}
+.menu__open-list {
+    text-align: center;
+    margin-top: 60px;
+}
+.menu__open-item {
+}
+.menu__open-link {
+    color: #4E68C2;
+    padding: 2px 18px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+.menu__open-item:not(last-child) {
+    margin-bottom: 1.2em;
+}
+.menu__open-link:hover {
+    color: #FFFFFF;
+    background: #3A57BB;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    cursor: pointer;
+}

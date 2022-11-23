@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'kurlib/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/container.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/title.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/img-out.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/logo.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/services.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
+    <!--<link rel="stylesheet" href="{% static 'kurlib/css/generalHeader.css' %}"> -->
+    <!--<link rel="stylesheet" href="{% static 'kurlib/css/about.css' %}"> -->
+
+</head>
+<body>
+    <div class="about__Library">
+    <header class="header header--about">
+        
+            <div class="general__header-top">
+                <div class="header--left__name">
+                    <img class="header--left__bg" src="{% static 'kurlib/images/header/header--left__bg.png' %}" alt="">
+                    <h5 class="title title--left header--left__title services__title--left">Услуги</h5>
+                </div>
+                <img class="logo logo--left" src="{% static 'kurlib/images/logo/logo__img.png' %}" alt="">
+                <button class="menu__button">
+                    <p class="menu__button-txt">Меню</p>
+                    <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button.png' %}" alt="">
+                    
+                </button>
+
+    </header>
+    <main>
+        
+        <section class="services">
+            <div class="services__item">
+                <h4 class="title services__title">Услуги</h4>
+                <p class="services__txt services__txt-main">Предоставление информации о наличии в фондах конкретных документов;</p>
+                <p class="services__txt services__txt-main">Предоставление информации о составе фондов через систему каталогов и другие формы библиотечной информации: организация книжных выставок, составление библиографических списков и д. р.;</p>
+                <p class="services__txt services__txt-main">Предоставление справочной и консультационной помощи в поиске и выборе источников информации, включая Интернет;</p>
+                <p class="services__txt services__txt-main">Формирование тематических подборок материалов по запросам пользователей;</p>
+                <p class="services__txt services__txt-main">Предоставление во временное пользование документов из фонда, как на дом, так и в библиотеке (в соответствии с Правилами пользования библиотеки);</p>
+                <p class="services__txt services__txt-main">Удовлетворение запросов с помощью других библиотек по имеющимся каналам межбиблиотечного взаимодействия: МБА, электронной доставки документов (ЭДД);</p>
+                <p class="services__txt services__txt-main">Организация и проведение культурно-просветительской и информационной деятельности;</p>
+            </div>
+            <div class="services__item">
+                <h4 class="title services__title">Дополнительные услуги</h4>
+                <p class="services__txt services__txt-add">Поиск и копирование материала;</p>
+                <p class="services__txt services__txt-add">Набор текста специалистом библиотеки;</p>
+                <p class="services__txt services__txt-add">Распечатка документов на принтере с носителя;</p>
+                <p class="services__txt services__txt-add">Сканирование документов;</p>
+                <p class="services__txt services__txt-add">Ксерокопирование;</p>
+                <p class="services__txt services__txt-add">Самостоятельная работа с установленным программным обеспечением (без доступа к сети Интернет);</p>
+                <p class="services__txt services__txt-add">Самостоятельная работа с доступом к сети Интернет;</p>
+                <p class="services__txt services__txt-add">Информационные услуги с использованием Интернет: поиск и обработка информации</p>
+            </div>
+        </section>
+    </main>
+</div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__one">
+                    <div class="footer__one-item footer__phone">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-phone.png' %}" alt="">
+                        <a class="footer__text" href="">8 (391) 362-48-56</a>
+                    </div>
+                    <div class="footer__one-item footer__email">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-mail.png' %}" alt="">
+                        <a class="footer__text" href="">kur-mcb@yandex.ru</a>
+                    </div>
+                    <div class="footer__one-item footer__address">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-address.png' %}" alt="">
+                        <a class="footer__text" href="">662910, Красноярский край, п. Курагино, ул. Партизанская, 150</a>
+                    </div>
+                    <div class="footer__one-item footer__vk">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
+                        <a class="footer__text" href="">https://vk.com/kurlib</a>
+                    </div>
+                    <h4 class="footer__title">Cайт разработан:</h4>
+                    <div class="footer__one-item footer__vk">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
+                        <a class="footer__text" href="">https://vk.com/id162248876</a>
+                    </div>
+                </div>
+                <div class="footer__two">
+                    <h4 class="footer__title footer__title-schedule">Расписание</h4>
+                    <div class="footer__schedule">
+                        <div class="footer__weekdays">
+                            <h5 class="footer__subtitle">График работы:</h5>
+                            <div class="footer__time">
+                                <img src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="" class="footer__schedule-img">
+                                <p class="footer__schedule-text">09:00-18:00</p>
+                            </div>
+                        </div>
+                        <div class="footer__weekends">
+                            <h5 class="footer__subtitle">Воскресенье:</h5>
+                            <div class="footer__time">
+                                <img src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="" class="footer__schedule-img">
+                                <p class="footer__schedule-text">09:00-16:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="footer__subtitle">Выходные: суббота</h5>
+                    <p class="footer__text">Последняя пятница месяца санитарный день</p>
+                    <h4 class="footer__title">Летнее расписание</h4>
+                    <h5 class="footer__subtitle">График работы:</h5>
+                    <div class="footer__time">
+                        <img class="footer__schedule-img" src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="">
+                        <p class="footer__schedule-text">09:00-18:00</p>
+                    </div>
+                    <h5 class="footer__subtitle">Выходные: суббота, воскресенье</h5>
+                </div>
+                <div class="footer__three">
+                    <h4 class="footer__title footer__title-schedule">Общая информация</h4>
+                    <h5 class="footer__subtitle">Полное наименование:</h5>
+                    <p class="footer__text">Муниципальное бюджетное учреждение культуры «Межпоселенческая центральная библиотека Курагинского района» </p>
+                    <h5 class="footer__subtitle footer__schedule-sub">Сокращенное наименование:</h5>
+                    <p class="footer__text">МБУК МЦБ Курагинского района</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

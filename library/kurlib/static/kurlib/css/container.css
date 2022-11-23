@@ -1,0 +1,17 @@
+.container {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.container--s {
+    padding-left: 226px;
+    padding-right: 226px;
+}
+
+.container--slider {
+    padding-left: 4%;
+    padding-right: 0%;
+}
+.container--left-big {
+    padding-left: 140px;
+}

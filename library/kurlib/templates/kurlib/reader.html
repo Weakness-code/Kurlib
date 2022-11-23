@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'kurlib/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/container.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/title.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/img-out.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/logo.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/header.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/about.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/footer.css' %}">
+    <!--<link rel="stylesheet" href="{% static 'kurlib/generalHeader.css' %}"> -->
+
+</head>
+<body>
+    <div class="about__Library">
+    <header class="header header--about">
+        
+            <div class="general__header-top">
+                <div class="header--left__name">
+                    <img class="header--left__bg" src="{% static 'kurlib/images/header/header--left__bg.png' %}" alt="">
+                    <h5 class="title title--left header--left__title reader__title--left">Читателю</h5>
+                </div>
+                <img class="logo logo--left" src="{% static 'kurlib/images/logo/logo__img.png' %}" alt="">
+                <button class="menu__button">
+                    <p class="menu__button-txt">Меню</p>
+                    <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button.png' %}" alt="">
+                    
+                </button>
+
+    </header>
+    <main>
+        <section class="about about--reader">
+            <!-- <div class="about__list-item">
+                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
+                <div class="about__item-wrapper">
+                    <a class="about__item-text" href="#">Правила пользования</a>
+                    <div class="about__item-text-more">
+                        <ul class="about__item-text-list">Пользователи Библиотеки имеют право на: 
+                            <li class="about__item-text-point">информацию о наличии в фонде конкретного документа</li>
+                            <li class="about__item-text-point">полную информацию о составе библиотечных фондов через систему каталогов и другие формы библиотечного обслуживания</li>
+                            <li class="about__item-text-point">консультативную помощь в поиске и выборе источников информации</li>
+                            <li class="about__item-text-point">получать во временное пользование на дом или в читальном зале любой документ из библиотечных фондов</li>
+                            <li class="about__item-text-point">продление срока пользования документами, выданными на дом лично или по телефону</li>
+                            <li class="about__item-text-point">доступ к Интернету, сайтам Красноярского края, работу с полнотекстовой справочной правовой системой КонсультантПлюс;</li>
+                            <li class="about__item-text-point">подключение к бесплатной зоне Wi-Fi</li>
+                            <li class="about__item-text-point">предоставление в пользование компьютера</li>
+                            <li class="about__item-text-point">заказ литературы через МБА (межбиблиотечный абонемент) и электронную доставку документов из фондов краевой научной библиотеки</li>
+                    </ul>
+                </div>
+                </div>
+                
+            </div> -->
+            <div class="about__list-item about__list-item--for-open">
+                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
+                <div class="about__item-wrapper">
+                    <p class="about__item-text">Правила пользования</p>
+                </div>
+            </div>
+            <div class="about__answer about__answer--small">
+                <p class="answer__text">
+                    <ul class="about__item-text-list">Пользователи Библиотеки имеют право на: 
+                        <li class="about__item-text-point">информацию о наличии в фонде конкретного документа</li>
+                        <li class="about__item-text-point">полную информацию о составе библиотечных фондов через систему каталогов и другие формы библиотечного обслуживания</li>
+                        <li class="about__item-text-point">консультативную помощь в поиске и выборе источников информации</li>
+                        <li class="about__item-text-point">получать во временное пользование на дом или в читальном зале любой документ из библиотечных фондов</li>
+                        <li class="about__item-text-point">продление срока пользования документами, выданными на дом лично или по телефону</li>
+                        <li class="about__item-text-point">доступ к Интернету, сайтам Красноярского края, работу с полнотекстовой справочной правовой системой КонсультантПлюс;</li>
+                        <li class="about__item-text-point">подключение к бесплатной зоне Wi-Fi</li>
+                        <li class="about__item-text-point">предоставление в пользование компьютера</li>
+                        <li class="about__item-text-point">заказ литературы через МБА (межбиблиотечный абонемент) и электронную доставку документов из фондов краевой научной библиотеки</li>
+                </ul>
+                </p>
+            </div>
+            <div class="about__list-item" onclick="location.href='https://ru.stackoverflow.com';">
+                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img.png' %}" alt="">
+                <div class="about__item-wrapper">
+                    <p class="about__item-text">Книжные новинки</p>
+                </div>
+                
+            </div>
+            <div class="about__list-item" onclick="location.href='https://ru.stackoverflow.com';">
+                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img.png' %}" alt="">
+                <div class="about__item-wrapper">
+                    <a class="about__item-text" href="#">Фонд Прохорова</a>
+                </div>
+                
+            </div>
+            <div class="about__list-item" onclick="location.href='https://ru.stackoverflow.com';">
+                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img.png' %}" alt="">
+                <div class="about__item-wrapper">
+                    <a class="about__item-text" href="#">Книжное Красноярье</a>
+                </div>
+                
+            </div>
+            <div class="about__list-item" onclick="location.href='https://ru.stackoverflow.com';">
+                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img.png' %}" alt="">
+                <div class="about__item-wrapper">
+                    <a class="about__item-text" href="#">Виртуальные выставки</a>
+                </div>
+                
+            </div>
+            <div class="about__list-item" onclick="location.href='https://ru.stackoverflow.com';">
+                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img.png' %}" alt="">
+                <div class="about__item-wrapper">
+                    <a class="about__item-text" href="#">Конкурсы</a>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+</div>
+    <!-- <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__one">
+                    <div class="footer__one-item footer__phone">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-phone.png' %}" alt="">
+                        <a class="footer__text" href="">8 (391) 362-48-56</a>
+                    </div>
+                    <div class="footer__one-item footer__email">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-mail.png' %}" alt="">
+                        <a class="footer__text" href="">kur-mcb@yandex.ru</a>
+                    </div>
+                    <div class="footer__one-item footer__address">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-address.png' %}" alt="">
+                        <a class="footer__text" href="">662910, Красноярский край, п. Курагино, ул. Партизанская, 150</a>
+                    </div>
+                    <div class="footer__one-item footer__vk">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
+                        <a class="footer__text" href="">https://vk.com/kurlib</a>
+                    </div>
+                    <h4 class="footer__title">Cайт разработан:</h4>
+                    <div class="footer__one-item footer__vk">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
+                        <a class="footer__text" href="">https://vk.com/id162248876</a>
+                    </div>
+                </div>
+                <div class="footer__two">
+                    <h4 class="footer__title footer__title-schedule">Расписание</h4>
+                    <div class="footer__schedule">
+                        <div class="footer__weekdays">
+                            <h5 class="footer__subtitle">График работы:</h5>
+                            <div class="footer__time">
+                                <img src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="" class="footer__schedule-img">
+                                <p class="footer__schedule-text">09:00-18:00</p>
+                            </div>
+                        </div>
+                        <div class="footer__weekends">
+                            <h5 class="footer__subtitle">Воскресенье:</h5>
+                            <div class="footer__time">
+                                <img src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="" class="footer__schedule-img">
+                                <p class="footer__schedule-text">09:00-16:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="footer__subtitle">Выходные: суббота</h5>
+                    <p class="footer__text">Последняя пятница месяца санитарный день</p>
+                    <h4 class="footer__title">Летнее расписание</h4>
+                    <h5 class="footer__subtitle">График работы:</h5>
+                    <div class="footer__time">
+                        <img class="footer__schedule-img" src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="">
+                        <p class="footer__schedule-text">09:00-18:00</p>
+                    </div>
+                    <h5 class="footer__subtitle">Выходные: суббота, воскресенье</h5>
+                </div>
+                <div class="footer__three">
+                    <h4 class="footer__title footer__title-schedule">Общая информация</h4>
+                    <h5 class="footer__subtitle">Полное наименование:</h5>
+                    <p class="footer__text">Муниципальное бюджетное учреждение культуры «Межпоселенческая центральная библиотека Курагинского района» </p>
+                    <h5 class="footer__subtitle footer__schedule-sub">Сокращенное наименование:</h5>
+                    <p class="footer__text">МБУК МЦБ Курагинского района</p>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+    <script src="{% static 'kurlib/js/collapse.js' %}"></script>
+</body>
+</html>

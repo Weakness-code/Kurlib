@@ -1,0 +1,21 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+.button--associate {
+    background: #BE1D2C;
+    font-size: 1.25rem;
+    width: fit-content;
+    /* width: 12.5em; */
+    padding: 1em 2em 1em 2em;
+}
+.button--associate__link {
+    
+    color: #FFFFFF;
+    
+}
+.button--associate__img {
+    margin-left: 0.75em;
+}

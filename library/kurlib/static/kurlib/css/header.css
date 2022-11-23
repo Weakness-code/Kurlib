@@ -1,0 +1,130 @@
+.header {
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(117.99deg, #3A57BB 8.51%, rgba(58, 87, 187, 0.68) 124.5%);
+}
+.header__top {
+    z-index: 100;
+    width: 85%;
+    
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.header__links {
+    font-size: 1.125rem;
+    line-height: 1.25;
+    margin-left: 3.72em;
+    display: flex;
+    align-items: center;
+    gap: 1.66em;;
+}
+.header__link-with-img {
+    display: flex;
+    align-items: center;
+}
+.header__link-img {
+    margin-right: 0.27em;
+    width: 20px;
+    height: 20px;
+
+}
+.header__link {
+    color: #BE1D2C;
+    border-bottom: 1px solid #BE1D2C;
+}
+/* .header__link:not(:last-child) {
+    margin-right: 1.66em;
+} */
+.general__header-top {
+    z-index: 100;
+    width: 85%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__content {
+    display: flex;
+    margin-top: 5rem;
+}
+.header__left {
+}
+.header__title {
+    margin-bottom: 1.2em;
+    margin-top: 6em;
+}
+.subtitle {
+}
+.header__subtitle {
+    margin-bottom: 0.86em;
+}
+.search {
+}
+.search__field {
+}
+.header__right {
+}
+.header__right-img {
+    width: 583px;
+    position: relative;
+    top: -10%;
+}
+.header__decor {
+    display: flex;
+    justify-content: space-between;
+}
+.header__arrow {
+    
+}
+.header__num {
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* right: 0; */
+    height: 4.375rem;
+    padding-top: 7.68rem;
+}
+
+.header--about {
+    background: none;
+}
+.header--text {
+    background: #4E68C2;
+}
+.header--left__name {
+    position: absolute;
+    top: 0;
+    /* z-index: -1; */
+}
+.header--left__bg {
+   
+}
+/* хз что с ним происходит, как это растянуть */
+.header--left2__bg {
+
+   min-height: 100vh;
+}
+
+.header__img-out {
+    width: 650px;
+    height: 119px;
+    box-shadow: 3px 0 41px 0 rgba(255, 255, 255, 0.1);
+    left: 19%;
+    z-index: 0;
+}
+.header__img-out--blue {
+    background: linear-gradient(274.12deg, #3A57BB -8.38%, rgba(58, 87, 187, 0) 82.57%);
+}
+.header__img-out--pink {
+    background: linear-gradient(274.12deg, #BE1D2C -8.38%, rgba(190, 29, 44, 0) 82.57%);
+    
+}
+.header-img-out--big {
+    height: 197px;
+    top: 360px;
+}
+.branch__header {
+    background: linear-gradient(117.99deg, #FFFFFF 8.51%, rgba(58, 87, 187, 0.68) 124.5%);
+}

@@ -1,0 +1,13 @@
+body {
+    /* background: url(/images/events__page/events__page-bg.png) no-repeat center center fixed; */
+}
+.events-page__list {
+    padding-left: 15em;
+    margin-top: -10em;
+    padding-bottom: 5em;
+
+}
+.events__title--left {
+    left: -117%;
+    top: 46%;
+}
