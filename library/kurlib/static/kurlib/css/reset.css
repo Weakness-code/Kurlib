@@ -9,7 +9,7 @@
 } */
 @font-face {
 	font-family: "Montserrat";
-	src: url("/fonts/Montserrat/static/Montserrat-Regular.ttf");
+	src: url("/static/kurlib/fonts/Montserrat/static/Montserrat-Regular.ttf");
 
 	
 	font-weight: normal;
@@ -18,7 +18,7 @@
 	
 @font-face {
 	font-family: "Montserrat";
-	src: url("/fonts/Montserrat/static/Montserrat-Bold.ttf");
+	src: url("/static/kurlib/fonts/Montserrat/static/Montserrat-Bold.ttf");
 
 	
 	font-weight: bold;
@@ -27,7 +27,7 @@
 	
 @font-face {
 	font-family: "Prata";
-	src: url("/fonts/Prata/Prata-Regular.ttf");
+	src: url("/static/kurlib/fonts/Prata/Prata-Regular.ttf");
 	  
 	
 	font-weight: normal;

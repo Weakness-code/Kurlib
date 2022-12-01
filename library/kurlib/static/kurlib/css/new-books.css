@@ -1,0 +1,95 @@
+.header--text {
+    background: none;
+}
+body {
+    background: linear-gradient(109.79deg, #3A57BB 17.75%, #4E68C2 203%);
+}
+
+.new-books {
+    margin-bottom: 5em;
+}
+.new-books__title {
+    margin-bottom: 2.1875em;
+    color: #FFFFFF;
+}
+.new-books__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 4.375em;
+}
+.new-books__item {
+    height: 343px;
+    width: 295px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.new-books__item-bg {
+    width: 250px;
+    height: 240px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    background: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+.new-books__item-img {
+    width: 176px;
+    z-index: 1;
+}
+.new-books__info {
+    width: 18.4375em;
+    z-index: 2;
+    color: #FFFFFF;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 29px;
+    box-shadow: -3px -3px 10px 0 #4E68C2, 3px 4px 10px 0 #4E68C2, 1px 1px 0 rgba(255, 255, 255, 0.15) inset, -1px -1px 0 rgba(255, 255, 255, 0.15) inset;
+}
+.new-books__name {
+    font-size: 0.875rem;
+    padding: 1.214em;
+    background: #4E68C2;
+
+}
+.new-books__author {
+    font-size: 0.75rem;
+    padding: 1.416em;
+    /* background: rgba(78, 104, 194, 0.5); */
+    background: rgb(94, 131, 185);
+    /* background: rgb(33, 114, 146); */
+}
+
+
+.new-books__button {
+    background: #FFFFFF;
+    width: fit-content;
+    
+    box-shadow: 4px 4px 10px 0 rgba(78, 104, 194, 0.25) inset, -4px -4px 10px 0 rgba(78, 104, 194, 0.25) inset;
+    margin: auto;
+}
+.new-books__button-link {
+    font-size: 1.125rem;
+    padding: 1.16em 2.5em;
+}
+.new-books__img-out1 {
+    top: 0;
+    z-index: -1;
+}
+.new-books__img-out2 {
+    top: 41%;
+    z-index: -1;
+}

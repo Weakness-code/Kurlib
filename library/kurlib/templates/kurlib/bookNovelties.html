@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'kurlib/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/container.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/title.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/img-out.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/button.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/logo.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/header.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'kurlib/css/generalHeader.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'kurlib/css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/text.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/history.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/new-books.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
+
+</head>
+<body>
+    
+    <header class="header header--about header--text">
+            <div class="general__header-top">
+                <div class="header--left__name">
+                    <img class="header--left__bg" src="{% static 'kurlib/images/header/header--left__bg.png' %}" alt="" style="opacity: 0;">
+                    <h5 class="title title--left header--left__title">Читателю</h5>
+                </div>
+                <img class="logo logo--left" src="{% static 'kurlib/images/logo/logo__img.png' %}" alt="">
+                <button class="menu__button menu__button--duo">
+                    <div class="menu__button--left menu__button--left-blue">
+                        <p class="menu__button-txt menu__button-txt--blue">меню</p>
+                        <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button.png' %}" alt="">
+                    </div>
+                    <div class="menu__button--right">
+                        <a class="menu__button-txt menu__button-txt--white" href="/reader">назад</a>
+                    </div>
+                </button>
+            
+    </header>
+    <main>
+        <section class="new-books">
+            <img class="img-out text__img-out text__img-out1 new-books__img-out1" src="{% static 'kurlib/images/newBooks/newBooks__img-out.png' %}" alt="">
+            <img class="img-out text__img-out text__img-out2 new-books__img-out2" src="{% static 'kurlib/images/history/history__img-out2.png' %}" alt="">
+            <div class="container container--s">
+                <h4 class="title new-books__title">Книжные новинки</h4>
+                <div class="new-books__wrapper">
+                    <!-- <div class="new-books__item">
+                        <div class="new-books__item-bg"></div>
+                        <img class="new-books__item-img" src="{% static 'kurlib/images/newBooks/newBooks2.png' %}" alt="">
+                        <div class="new-books__info">
+                            <h5 class="new-books__name">Невероятная и грустная история о простодушной Эрендире и ее жестокосердной бабушке</h5>
+                            <h6 class="new-books__author">Габриэль Гарсия Маркес</h6>
+                        </div>
+                    </div>
+                    <div class="new-books__item">
+                        <div class="new-books__item-bg"></div>
+                        <img class="new-books__item-img" src="{% static 'kurlib/images/newBooks/newBooks2.png' %}" alt="">
+                        <div class="new-books__info">
+                            <h5 class="new-books__name">Невероятная и грустная история о простодушной Эрендире и ее жестокосердной бабушке</h5>
+                            <h6 class="new-books__author">Габриэль Гарсия Маркес</h6>
+                        </div>
+                    </div>
+                    <div class="new-books__item">
+                        <div class="new-books__item-bg"></div>
+                        <img class="new-books__item-img" src="{% static 'kurlib/images/newBooks/newBooks2.png' %}" alt="">
+                        <div class="new-books__info">
+                            <h5 class="new-books__name">Невероятная и грустная история о простодушной Эрендире и ее жестокосердной бабушке</h5>
+                            <h6 class="new-books__author">Габриэль Гарсия Маркес</h6>
+                        </div>
+                    </div>
+                    <div class="new-books__item">
+                        <div class="new-books__item-bg"></div>
+                        <img class="new-books__item-img" src="{% static 'kurlib/images/newBooks/newBooks2.png' %}" alt="">
+                        <div class="new-books__info">
+                            <h5 class="new-books__name">Невероятная и грустная история о простодушной Эрендире и ее жестокосердной бабушке</h5>
+                            <h6 class="new-books__author">Габриэль Гарсия Маркес</h6>
+                        </div>
+                    </div>
+                    <div class="new-books__item">
+                        <div class="new-books__item-bg"></div>
+                        <img class="new-books__item-img" src="{% static 'kurlib/images/newBooks/newBooks2.png' %}" alt="">
+                        <div class="new-books__info">
+                            <h5 class="new-books__name">Невероятная и грустная история о простодушной Эрендире и ее жестокосердной бабушке</h5>
+                            <h6 class="new-books__author">Габриэль Гарсия Маркес</h6>
+                        </div>
+                    </div>
+                    <div class="new-books__item">
+                        <div class="new-books__item-bg"></div>
+                        <img class="new-books__item-img" src="{% static 'kurlib/images/newBooks/newBooks2.png' %}" alt="">
+                        <div class="new-books__info">
+                            <h5 class="new-books__name">Невероятная и грустная история о простодушной Эрендире и ее жестокосердной бабушке</h5>
+                            <h6 class="new-books__author">Габриэль Гарсия Маркес</h6>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="button new-books__button">
+                    <p class="new-books__button-link">Больше новинок</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__one">
+                    <div class="footer__one-item footer__phone">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-phone.png' %}" alt="">
+                        <a class="footer__text" href="">8 (391) 362-48-56</a>
+                    </div>
+                    <div class="footer__one-item footer__email">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-mail.png' %}" alt="">
+                        <a class="footer__text" href="">kur-mcb@yandex.ru</a>
+                    </div>
+                    <div class="footer__one-item footer__address">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-address.png' %}" alt="">
+                        <a class="footer__text" href="">662910, Красноярский край, п. Курагино, ул. Партизанская, 150</a>
+                    </div>
+                    <div class="footer__one-item footer__vk">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
+                        <a class="footer__text" href="">https://vk.com/kurlib</a>
+                    </div>
+                    <h4 class="footer__title">Cайт разработан:</h4>
+                    <div class="footer__one-item footer__vk">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
+                        <a class="footer__text" href="">https://vk.com/id162248876</a>
+                    </div>
+                </div>
+                <div class="footer__two">
+                    <h4 class="footer__title footer__title-schedule">Расписание</h4>
+                    <div class="footer__schedule">
+                        <div class="footer__weekdays">
+                            <h5 class="footer__subtitle">График работы:</h5>
+                            <div class="footer__time">
+                                <img src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="" class="footer__schedule-img">
+                                <p class="footer__schedule-text">09:00-18:00</p>
+                            </div>
+                        </div>
+                        <div class="footer__weekends">
+                            <h5 class="footer__subtitle">Воскресенье:</h5>
+                            <div class="footer__time">
+                                <img src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="" class="footer__schedule-img">
+                                <p class="footer__schedule-text">09:00-16:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="footer__subtitle">Выходные: суббота</h5>
+                    <p class="footer__text">Последняя пятница месяца санитарный день</p>
+                    <h4 class="footer__title">Летнее расписание</h4>
+                    <h5 class="footer__subtitle">График работы:</h5>
+                    <div class="footer__time">
+                        <img class="footer__schedule-img" src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="">
+                        <p class="footer__schedule-text">09:00-18:00</p>
+                    </div>
+                    <h5 class="footer__subtitle">Выходные: суббота, воскресенье</h5>
+                </div>
+                <div class="footer__three">
+                    <h4 class="footer__title footer__title-schedule">Общая информация</h4>
+                    <h5 class="footer__subtitle">Полное наименование:</h5>
+                    <p class="footer__text">Муниципальное бюджетное учреждение культуры «Межпоселенческая центральная библиотека Курагинского района» </p>
+                    <h5 class="footer__subtitle footer__schedule-sub">Сокращенное наименование:</h5>
+                    <p class="footer__text">МБУК МЦБ Курагинского района</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'kurlib/js/ajaxV2.js' %}"></script>
+    <!-- <script src="{% static 'kurlib/js/testAJAX.js' %}"></script>
+    <script src="{% static 'kurlib/js/function drawCards.js' %}"></script>
+    <script src="{% static 'kurlib/js/mainDraw.js' %}"></script> -->
+    <!-- ` -->
+</body>
+</html>

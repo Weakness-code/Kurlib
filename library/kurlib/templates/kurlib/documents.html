@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'kurlib/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/container.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/title.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/img-out.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/logo.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/services.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'kurlib/css/generalHeader.css' %}"> -->
+    <!-- <link rel="stylesheet" href="{% static 'kurlib/css/about.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
+
+</head>
+<body>
+    
+    
+    <header class="header header--about">
+        
+            <div class="general__header-top">
+                <div class="header--left__name">
+                    <img class="header--left__bg" src="{% static 'kurlib/images/header/header--left__bg.png' %}" alt="">
+                    <h5 class="title title--left header--left__title services__title--left">О библиотеке</h5>
+                </div>
+                <img class="logo logo--left" src="{% static 'kurlib/images/logo/logo__img.png' %}" alt="">
+                <button class="menu__button menu__button--duo">
+                    <div class="menu__button--left">
+                        <p class="menu__button-txt menu__button-txt--white">меню</p>
+                        <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button--white.png' %}" alt="">
+                    </div>
+                    <div class="menu__button--right">
+                        <a class="menu__button-txt menu__button-txt--white" href="/about">назад</a>
+                    </div>
+                </button>
+            
+    </header>
+    <main>
+        
+        <section class="services">
+            
+            <div class="services__item">
+                <h4 class="title services__title">Документы</h5>
+                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">План дополнительных профессиональных программ, реализуемых с использованием дистанционных образовательных технологий КГАУК ГУНБ КК на 2021 год</a></p>
+                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Муниципальное задание на 2021 год и на плановый период 2022 и 2023 годов</a></p>
+                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Постановление №1031-п «О внесении изменений в постановление администрации района от 29.11.2011 №935-п «Об утверждении Устава МБУК МЦБ Курагинского района»</a></p>
+                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Постановление об утверждении Устава МБУК МЦБ Курагинского района</a></p>
+                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Свидетельство о внесении записи в ЕГРЮЛ</a></p>
+                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Свидетельство о постановки на учет</a></p>
+                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Распоряжение о переводе</a></p>
+                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Отчет об исполнении муниципального задания за 1 квартал 2020 года</a></p>
+                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Муниципальное задание</a></p>
+                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Отчет об исполнении муниципального задания за 2 квартал 2020 года</a></p>
+                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Временные правила пользования библиотекой</a></p>
+                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Отчет о выполнении МЗ за 3 кв. 2020 г.</a></p>
+                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Коллективный договор Муниципального Бюджетного Учреждения культуры «Межпоселенческая центральная библиотека Курагинского района» на 2017-2020 гг.</a></p>
+                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Положение об Ирбинской поселенческой библиотеке-филиале</a></p>
+                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Положение о порядке и условиях предоставления платных услуг оказываемых Муниципальным бюджетным учреждением культуры «Межпоселенческая центральная библиотека Курагинского района»</a></p>
+                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Положение о Центральной детской библиотеке</a></p>
+                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Прейскурант предельной стоимости дополнительных платных услуг, предоставляемых Муниципальным бюджетным учреждением культуры «Межпоселенческая центральная библиотека Курагинского района»</a></p>
+                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Устав Муниципального бюджетного учреждения культуры «Межпоселенческая центральная библиотека Курагинского района»</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__one">
+                    <div class="footer__one-item footer__phone">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-phone.png' %}" alt="">
+                        <a class="footer__text" href="">8 (391) 362-48-56</a>
+                    </div>
+                    <div class="footer__one-item footer__email">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-mail.png' %}" alt="">
+                        <a class="footer__text" href="">kur-mcb@yandex.ru</a>
+                    </div>
+                    <div class="footer__one-item footer__address">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-address.png' %}" alt="">
+                        <a class="footer__text" href="">662910, Красноярский край, п. Курагино, ул. Партизанская, 150</a>
+                    </div>
+                    <div class="footer__one-item footer__vk">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
+                        <a class="footer__text" href="">https://vk.com/kurlib</a>
+                    </div>
+                    <h4 class="footer__title">Cайт разработан:</h4>
+                    <div class="footer__one-item footer__vk">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
+                        <a class="footer__text" href="">https://vk.com/id162248876</a>
+                    </div>
+                </div>
+                <div class="footer__two">
+                    <h4 class="footer__title footer__title-schedule">Расписание</h4>
+                    <div class="footer__schedule">
+                        <div class="footer__weekdays">
+                            <h5 class="footer__subtitle">График работы:</h5>
+                            <div class="footer__time">
+                                <img src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="" class="footer__schedule-img">
+                                <p class="footer__schedule-text">09:00-18:00</p>
+                            </div>
+                        </div>
+                        <div class="footer__weekends">
+                            <h5 class="footer__subtitle">Воскресенье:</h5>
+                            <div class="footer__time">
+                                <img src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="" class="footer__schedule-img">
+                                <p class="footer__schedule-text">09:00-16:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="footer__subtitle">Выходные: суббота</h5>
+                    <p class="footer__text">Последняя пятница месяца санитарный день</p>
+                    <h4 class="footer__title">Летнее расписание</h4>
+                    <h5 class="footer__subtitle">График работы:</h5>
+                    <div class="footer__time">
+                        <img class="footer__schedule-img" src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="">
+                        <p class="footer__schedule-text">09:00-18:00</p>
+                    </div>
+                    <h5 class="footer__subtitle">Выходные: суббота, воскресенье</h5>
+                </div>
+                <div class="footer__three">
+                    <h4 class="footer__title footer__title-schedule">Общая информация</h4>
+                    <h5 class="footer__subtitle">Полное наименование:</h5>
+                    <p class="footer__text">Муниципальное бюджетное учреждение культуры «Межпоселенческая центральная библиотека Курагинского района» </p>
+                    <h5 class="footer__subtitle footer__schedule-sub">Сокращенное наименование:</h5>
+                    <p class="footer__text">МБУК МЦБ Курагинского района</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

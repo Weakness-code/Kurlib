@@ -31,3 +31,35 @@ def questions_answers(request):
 
 def contacts(request):
     return render(request, 'kurlib/contacts.html')
+
+
+def library_history(request):
+    return render(request, 'kurlib/aboutLibraryHistory.html')
+
+
+def documents(request):
+    return render(request, 'kurlib/documents.html')
+
+
+def reports(request):
+    return render(request, 'kurlib/reports.html')
+
+
+def branches(request):
+    return render(request, 'kurlib/branchesAbout.html')
+
+
+def kuraginskiy(request):
+    return render(request, 'kurlib/citesKuraginskiy.html')
+
+
+def book_novelties(request):
+    return render(request, 'kurlib/bookNovelties.html')
+
+
+def fund_prohorov(request):
+    return render(request, 'kurlib/fund_Prohorov.html')
+
+
+def gnnk(request):
+    return render(request, 'kurlib/partnersNKK.html')

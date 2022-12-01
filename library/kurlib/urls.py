@@ -10,4 +10,12 @@ urlpatterns = [
     path('localHistory', views.local_history),
     path('questionAnswer', views.questions_answers),
     path('contacts', views.contacts),
+    path('library_history', views.library_history),
+    path('documents', views.documents),
+    path('reports', views.reports),
+    path('branches', views.branches),
+    path('kuraginsky', views.kuraginskiy,),
+    path('new-books', views.book_novelties),
+    path('prohorov', views.fund_prohorov),
+    path('gnkk', views.gnnk),
 ]

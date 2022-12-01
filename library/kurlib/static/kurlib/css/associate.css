@@ -1,0 +1,36 @@
+body {
+    
+}
+.associate__header {
+    padding-bottom: 7.5625em;
+    background: linear-gradient(117.99deg, #FFFFFF 8.51%, #BE1D2C 124.5%);
+}
+
+.associate__left {
+}
+
+.associate__title {
+    color: #BE1D2C;
+}
+
+.associate__subtitle {
+    text-align: right;
+    font-size: 1rem;
+    color: #BE1D2C;
+    padding-right: 10.8125em;
+    margin-bottom: 5.6875em;
+    width: 31.5625em;
+}
+.associate__subtitle-NKK {
+    margin-bottom: 8.1875em;
+}
+.associate__right {
+}
+
+.associate__right-img {
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+}

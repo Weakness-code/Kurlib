@@ -1,0 +1,74 @@
+
+.text {
+    background: #4E68C2;
+    position: relative;
+    margin-top: -5.9375em;
+    padding-bottom: 11.25em;
+}
+.text--sloped::after {
+    display: block; 
+    content: ''; 
+    width: 100%; 
+    height: 50px; 
+    background: linear-gradient(to top left, white 50%, rgba(255,0,0,0) 52%);
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+}
+
+.container--text {
+    width: 54%;
+    margin-left: 25%;
+}
+.text__main-sub:not(first-child) {
+    margin-top: 2.4em;
+    text-transform: uppercase;
+}
+.text__main {
+    font-size: 1.25rem;
+    line-height: 1.05;
+    color: #FFFFFF;
+    font-size: normal;
+    /* font-size: 400; */
+}
+.text__main:not(last-child) {
+    margin-bottom: 1.3em;
+}
+.text__main-li {
+    padding-right: 2.25em;
+}
+.text__main-li--left {
+    padding-left: 2.25em;
+}
+.text__main--margin-bt {
+    padding-bottom: 1.3em;
+}
+.text__main--justify {
+    text-align: justify;
+}
+.competitions__header--left__title {
+    left: -67%;
+}
+
+
+
+.text__img-out {
+    max-width: 100%;
+}
+.text__img-out1 {
+    right: 0;
+    top: 10%;
+    
+}
+.text__img-out2 {
+    left: -4%;
+    top: 61%;
+}
+.text__img-out3 {
+    top: 49%;
+    left: -4%;
+}
+.text__img-out4 {
+    top: 27%;
+    left: -2%;
+}

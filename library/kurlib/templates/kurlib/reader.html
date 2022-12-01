@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{% static 'kurlib/reset.css' %}">
-    <link rel="stylesheet" href="{% static 'kurlib/container.css' %}">
-    <link rel="stylesheet" href="{% static 'kurlib/title.css' %}">
-    <link rel="stylesheet" href="{% static 'kurlib/img-out.css' %}">
-    <link rel="stylesheet" href="{% static 'kurlib/logo.css' %}">
-    <link rel="stylesheet" href="{% static 'kurlib/menu.css' %}">
-    <link rel="stylesheet" href="{% static 'kurlib/header.css' %}">
-    <link rel="stylesheet" href="{% static 'kurlib/about.css' %}">
-    <link rel="stylesheet" href="{% static 'kurlib/footer.css' %}">
-    <!--<link rel="stylesheet" href="{% static 'kurlib/generalHeader.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'kurlib/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/container.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/title.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/img-out.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/logo.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
+    <!--<link rel="stylesheet" href="{% static 'kurlib/css/generalHeader.css' %}"> -->
 
 </head>
 <body>
@@ -31,7 +31,7 @@
                 <button class="menu__button">
                     <p class="menu__button-txt">Меню</p>
                     <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button.png' %}" alt="">
-                    
+
                 </button>
 
     </header>
@@ -78,24 +78,24 @@
                 </ul>
                 </p>
             </div>
-            <div class="about__list-item" onclick="location.href='https://ru.stackoverflow.com';">
+            <div class="about__list-item" onclick="location.href='/new-books';">
                 <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img.png' %}" alt="">
                 <div class="about__item-wrapper">
                     <p class="about__item-text">Книжные новинки</p>
                 </div>
                 
             </div>
-            <div class="about__list-item" onclick="location.href='https://ru.stackoverflow.com';">
+            <div class="about__list-item" onclick="location.href='/prohorov';">
                 <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img.png' %}" alt="">
                 <div class="about__item-wrapper">
-                    <a class="about__item-text" href="#">Фонд Прохорова</a>
+                    <a class="about__item-text">Фонд Прохорова</a>
                 </div>
                 
             </div>
-            <div class="about__list-item" onclick="location.href='https://ru.stackoverflow.com';">
+            <div class="about__list-item" onclick="location.href='/gnkk';">
                 <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img.png' %}" alt="">
                 <div class="about__item-wrapper">
-                    <a class="about__item-text" href="#">Книжное Красноярье</a>
+                    <a class="about__item-text">Книжное Красноярье</a>
                 </div>
                 
             </div>
