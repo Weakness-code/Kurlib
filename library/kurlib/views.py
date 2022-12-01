@@ -1,12 +1,4 @@
 from django.shortcuts import render
-from django.views.generic import DetailView
-from .models import Branches
-
-
-class BranchDetailView(DetailView):
-    model = Branches
-    template_name = 'kurlib/branch_template.html'
-    context_object_name = "branch"
 
 
 def index(request):
@@ -54,8 +46,7 @@ def reports(request):
 
 
 def branches(request):
-    branches_objects = Branches.objects.all()
-    return render(request, 'kurlib/branchesAbout.html', {'branches': branches_objects})
+    return render(request, 'kurlib/branchesAbout.html')
 
 
 def kuraginskiy(request):
