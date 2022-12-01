@@ -94,25 +94,10 @@
         <section class="services">
             
             <div class="services__item">
-                <h4 class="title services__title">Документы</h5>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">План дополнительных профессиональных программ, реализуемых с использованием дистанционных образовательных технологий КГАУК ГУНБ КК на 2021 год</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Муниципальное задание на 2021 год и на плановый период 2022 и 2023 годов</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Постановление №1031-п «О внесении изменений в постановление администрации района от 29.11.2011 №935-п «Об утверждении Устава МБУК МЦБ Курагинского района»</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Постановление об утверждении Устава МБУК МЦБ Курагинского района</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Свидетельство о внесении записи в ЕГРЮЛ</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Свидетельство о постановки на учет</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Распоряжение о переводе</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Отчет об исполнении муниципального задания за 1 квартал 2020 года</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Муниципальное задание</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Отчет об исполнении муниципального задания за 2 квартал 2020 года</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Временные правила пользования библиотекой</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Отчет о выполнении МЗ за 3 кв. 2020 г.</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Коллективный договор Муниципального Бюджетного Учреждения культуры «Межпоселенческая центральная библиотека Курагинского района» на 2017-2020 гг.</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Положение об Ирбинской поселенческой библиотеке-филиале</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Положение о порядке и условиях предоставления платных услуг оказываемых Муниципальным бюджетным учреждением культуры «Межпоселенческая центральная библиотека Курагинского района»</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Положение о Центральной детской библиотеке</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Прейскурант предельной стоимости дополнительных платных услуг, предоставляемых Муниципальным бюджетным учреждением культуры «Межпоселенческая центральная библиотека Курагинского района»</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Устав Муниципального бюджетного учреждения культуры «Межпоселенческая центральная библиотека Курагинского района»</a></p>
+                <h5 class="title services__title">Документы</h5>
+                {% for doc in documents %}
+                    <p class="services__txt services__txt-main"><a class="services__doc-link" download href="{{doc.file}}">{{doc.title}}</a></p>
+                {% endfor %}
             </div>
         </section>
     </main>

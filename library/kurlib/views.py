@@ -5,10 +5,6 @@ def index(request):
     return render(request, 'kurlib/index.html')
 
 
-def about_library(request):
-    return render(request, 'kurlib/aboutLibrary.html')
-
-
 def reader(request):
     return render(request, 'kurlib/reader.html')
 
@@ -31,26 +27,6 @@ def questions_answers(request):
 
 def contacts(request):
     return render(request, 'kurlib/contacts.html')
-
-
-def library_history(request):
-    return render(request, 'kurlib/aboutLibraryHistory.html')
-
-
-def documents(request):
-    return render(request, 'kurlib/documents.html')
-
-
-def reports(request):
-    return render(request, 'kurlib/reports.html')
-
-
-def branches(request):
-    return render(request, 'kurlib/branchesAbout.html')
-
-
-def kuraginskiy(request):
-    return render(request, 'kurlib/citesKuraginskiy.html')
 
 
 def book_novelties(request):
