@@ -11,3 +11,6 @@ class Branches(models.Model):
     def __str__(self):
         return self.title
 
+    class Meta:
+        verbose_name = "Филиал"
+        verbose_name_plural = 'Филиалы'
