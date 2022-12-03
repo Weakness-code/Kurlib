@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
-    <link rel="stylesheet" href="/blocks/reset.css">
-    <link rel="stylesheet" href="/blocks/container.css">
-    <link rel="stylesheet" href="/blocks/title.css">
-    <link rel="stylesheet" href="/blocks/img-out.css">
-    <link rel="stylesheet" href="/blocks/menu.css">
-    
-    <link rel="stylesheet" href="/blocks/header.css">
-    <link rel="stylesheet" href="/blocks/info-cards.css">
-    
-    <link rel="stylesheet" href="/blocks/footer.css">
+    <link rel="stylesheet" href="{% static 'kurlib/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/container.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/title.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/img-out.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/menu.css' %}">
+
+    <link rel="stylesheet" href="{% static 'kurlib/css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/info-cards.css' %}">
+
+    <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
 
     
 </head>
@@ -22,11 +23,11 @@
     <header class="header branch__header">
         <div class="container">
             <div class="header__top">
-                <img class="logo" src="/images/logo/logo__img.png" alt="">
+                <img class="logo" src="{% static 'kurlib/images/logo/logo__img.png' %}" alt="">
                 <button class="menu__button menu__button--duo">
                     <div class="menu__button--left">
                         <p class="menu__button-txt menu__button-txt--white">меню</p>
-                        <img class="menu__img" src="/images/menu/menu__button--white.png" alt="">
+                        <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button--white.png' %}" alt="">
                     </div>
                     <div class="menu__button--right">
                         <a class="menu__button-txt menu__button-txt--white" href="#">назад</a>
@@ -35,17 +36,17 @@
             </div>
             <div class="header__content">
                 <div class="header__left">
-                    <h1 class="main-title main-title--blue header__title">Алексеевская поселенческая библиотека</h1>
+                    <h1 class="main-title main-title--blue header__title">{{ branch.title }}</h1>
                     <h3 class="subtitle subtitle--blue header__subtitle">Библиотека-филиал</h3>
                     <div class="img-out header__img-out header__img-out--blue header-img-out--big"></div>
                 </div>
                 <div class="header__right">
-                    <img class="header__right-img" src="/images/header/header__right-img.png" alt="">
+                    <img class="header__right-img" src="{% static 'kurlib/images/header/header__right-img.png' %}" alt="">
                 </div>
             </div>
             <div class="header__decor">
-                <img class="header__arrow" src="/images/header/header__arrow.png" alt="">
-                <!-- <img class="header__num" src="/images/header/header__num.png" alt=""> -->
+                <img class="header__arrow" src="{% static 'kurlib/images/header/header__arrow.png' %}" alt="">
+                <!-- <img class="header__num" src="{% static 'kurlib/images/header/header__num.png' %}" alt=""> -->
             </div>
         </div>
     </header>
@@ -55,23 +56,23 @@
             <div class="container">
                 <div class="info-cards__wrapper">
                     <div class="info-cards__item">
-                        <img class="info-cards__img" src="/images/info-cards/info-cards__img1.png" alt="">
+                        <img class="info-cards__img" src="{% static 'kurlib/images/info-cards/info-cards__img1.png' %}" alt="">
                         <p class="info-cards__name info-cards__name-time">Рабочее время</p>
-                        <p class="info-cards__txt info-cards__txt-time">9:00 до 17:00</p>
+                        <p class="info-cards__txt info-cards__txt-time">{{ branch.working_hours }}</p>
                         <p class="info-cards__name info-cards__name-time">Обед</p>
-                        <p class="info-cards__txt"> 13:00 до 14:00</p>
+                        <p class="info-cards__txt">{{ branch.lunch_break }}</p>
                     </div>
                     <div class="info-cards__pseudo-item"></div>
                     <div class="info-cards__item">
-                        <img class="info-cards__img" src="/images/info-cards/info-cards__img2.png" alt="">
+                        <img class="info-cards__img" src="{% static 'kurlib/images/info-cards/info-cards__img2.png' %}" alt="">
                         <p class="info-cards__name">Заведущая</p>
-                        <p class="info-cards__txt">Алексеенко Татьяна Сергеевна</p>
+                        <p class="info-cards__txt">{{ branch.manager }}</p>
                     </div>
                     <div class="info-cards__pseudo-item"></div>
                     <div class="info-cards__item">
-                        <img class="info-cards__img" src="/images/info-cards/info-cards__img3.png" alt="">
+                        <img class="info-cards__img" src="{% static 'kurlib/images/info-cards/info-cards__img3.png' %}" alt="">
                         <p class="info-cards__name">Выходные дни</p>
-                        <p class="info-cards__txt">Суббота,<br>Понедельник</p>
+                        <p class="info-cards__txt">{{ branch.weekend }}</p>
                     </div>
                 </div>
             </div>
@@ -84,24 +85,24 @@
             <div class="footer__content">
                 <div class="footer__one">
                     <div class="footer__one-item footer__phone">
-                        <img class="footer__img" src="/images/footer/footer__img-phone.png" alt="">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-phone.png' %}" alt="">
                         <a class="footer__text" href="">8 (391) 362-48-56</a>
                     </div>
                     <div class="footer__one-item footer__email">
-                        <img class="footer__img" src="/images/footer/footer__img-mail.png" alt="">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-mail.png' %}" alt="">
                         <a class="footer__text" href="">kur-mcb@yandex.ru</a>
                     </div>
                     <div class="footer__one-item footer__address">
-                        <img class="footer__img" src="/images/footer/footer__img-address.png" alt="">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-address.png' %}" alt="">
                         <a class="footer__text" href="">662910, Красноярский край, п. Курагино, ул. Партизанская, 150</a>
                     </div>
                     <div class="footer__one-item footer__vk">
-                        <img class="footer__img" src="/images/footer/footer__img-vk.png" alt="">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
                         <a class="footer__text" href="">https://vk.com/kurlib</a>
                     </div>
                     <h4 class="footer__title">Cайт разработан:</h4>
                     <div class="footer__one-item footer__vk">
-                        <img class="footer__img" src="/images/footer/footer__img-vk.png" alt="">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
                         <a class="footer__text" href="">https://vk.com/id162248876</a>
                     </div>
                 </div>
@@ -111,14 +112,14 @@
                         <div class="footer__weekdays">
                             <h5 class="footer__subtitle">График работы:</h5>
                             <div class="footer__time">
-                                <img src="/images/footer/footer__img-time.png" alt="" class="footer__schedule-img">
+                                <img src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="" class="footer__schedule-img">
                                 <p class="footer__schedule-text">09:00-18:00</p>
                             </div>
                         </div>
                         <div class="footer__weekends">
                             <h5 class="footer__subtitle">Воскресенье:</h5>
                             <div class="footer__time">
-                                <img src="/images/footer/footer__img-time.png" alt="" class="footer__schedule-img">
+                                <img src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="" class="footer__schedule-img">
                                 <p class="footer__schedule-text">09:00-16:00</p>
                             </div>
                         </div>
@@ -128,7 +129,7 @@
                     <h4 class="footer__title">Летнее расписание</h4>
                     <h5 class="footer__subtitle">График работы:</h5>
                     <div class="footer__time">
-                        <img class="footer__schedule-img" src="/images/footer/footer__img-time.png" alt="">
+                        <img class="footer__schedule-img" src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="">
                         <p class="footer__schedule-text">09:00-18:00</p>
                     </div>
                     <h5 class="footer__subtitle">Выходные: суббота, воскресенье</h5>

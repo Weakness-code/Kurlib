@@ -18,4 +18,5 @@ urlpatterns = [
     path('new-books', views.book_novelties),
     path('prohorov', views.fund_prohorov),
     path('gnkk', views.gnnk),
+    path('<int:pk>', views.BranchDetailView.as_view(), name='branch_detail'),
 ]

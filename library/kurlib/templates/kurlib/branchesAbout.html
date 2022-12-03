@@ -71,93 +71,11 @@
             <div class="container">
                 <h5 class="subtitle subtitle--blue branches__subtitle">Филиалы</h5>
                 <div class="branches__list">
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Алексеевская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Артёмовская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Байдовская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Белоярская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Берёзовская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Брагинская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Бугуртакская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Детловская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Журавлевская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Имисская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Ирбинская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Кордовская  поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Кочергинская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Кошурниковская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Краснокаменская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Курагинская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Курганчиковская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Курская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Марининская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Можарская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Муринская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Новопокровская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Пойловская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Поначевская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Рощинская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Тюхтятская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Чибижекская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Шалоболинская поселенческая библиотека</h6>
-                    </div>
-                    <div class="branches__item">
-                        <h6 class="branches__item-name">Черемшанская поселенческая библиотека</h6>
-                    </div>
+                    {% for branch in branches %}
+                        <div class="branches__item" onclick="location.href='{% url 'branch_detail' branch.id %}';">
+                            <h6 class="branches__item-name">{{ branch.title }}</h6>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
             
