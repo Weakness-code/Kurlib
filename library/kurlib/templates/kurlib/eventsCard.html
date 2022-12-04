@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="ru">
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/blocks/reset.css">
-    <link rel="stylesheet" href="/blocks/container.css">
-    <link rel="stylesheet" href="/blocks/title.css">
-    <link rel="stylesheet" href="/blocks/img-out.css">
-    <link rel="stylesheet" href="/blocks/logo.css">
-    <link rel="stylesheet" href="/blocks/menu.css">
-    <link rel="stylesheet" href="/blocks/header.css">
+    <link rel="stylesheet" href="{% static 'kurlib/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/container.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/title.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/img-out.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/logo.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/header.css' %}">
     <!-- <link rel="stylesheet" href="/blocks/services.css">
     <link rel="stylesheet" href="/blocks/events__page.css"> -->
-    <link rel="stylesheet" href="/blocks/eventsCard.css">
-    <link rel="stylesheet" href="/blocks/arrow.css">
+    <link rel="stylesheet" href="{% static 'kurlib/css/eventsCard.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/arrow.css' %}">
     <!-- <link rel="stylesheet" href="/blocks/generalHeader.css"> -->
     <!-- <link rel="stylesheet" href="/blocks/about.css"> -->
-    <link rel="stylesheet" href="/blocks/footer.css">
+    <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/media.css' %}">
 
 </head>
 <body>
-    <header class="header header--about">
-        
+    <header class="header header--about header--with-mob-top">
+        <div class="header--mob">
+            <img class="header--mob-top" src="{% static 'kurlib/images/header/header--mob-top.png' %}" alt="">
+            <p class="header--mob-text">Мероприятия</p>
+        </div>
+
             <div class="general__header-top">
                 <div class="header--left__name">
-                    <img class="header--left__bg" src="/images/header/header--left__bg.png" alt="">
+                    <img class="header--left__bg" src="{% static 'kurlib/images/header/header--left__bg.png' %}" alt="">
                     <h5 class="title title--left header--left__title  events__title--left">Мероприятия</h5>
                 </div>
-                <img class="logo logo--left" src="/images/logo/logo__img.png" alt="">
+                <img class="logo logo--left" src="{% static 'kurlib/images/logo/logo__img.png' %}" alt="">
                 <!-- <button class="menu__button">
                     <p class="menu__button-txt">Меню</p>
                     <img class="menu__img" src="/images/menu/menu__button.png" alt="">
                 </button> -->
-            
+            </div>
     </header>
     <main>
         <section class="eventCard">
             <div class="eventCard__right">
-                <img class="eventCard__img" src="/images/eventsCard/eventCard__img.png" alt="">
+                <img class="eventCard__img" src="{% static 'kurlib/images/eventsCard/eventCard__img.png' %}" alt="">
                 <div class="eventCard__data">
                     <p class="eventCard__data-day"><span class="eventCard__data-num">27</span> июня</p>
                     <p class="eventCard__data-year">2021</p>
@@ -59,7 +65,7 @@
                 <p class="eventCard__text">
                     Все опрошенные  доброжелательно отнеслись к вопросам и с удовольствием вспоминали свои любимые книги. В число самых читаемых писателей попали А. Пушкин,  Л. Толстой, Ф. Достоевский, Т. Пратчетт  и фантастическая серия «Сталкер», включающая в себя и разных авторов, и разные произведения. Также читатели получили  рекомендацию библиотекаря на интересную литературу  популярных авторов  на  сегодняшний день.
                 </p>
-                
+
             </div>
         </section>
     <!-- <section class="back">
@@ -71,10 +77,10 @@
     </section> -->
     </main>
     <footer class="footer2">
-        <div class="container container--left-big">
+        <div class="container container--left-big container--media-events">
             <div class="footer2-card__links">
                 <div class="footer2-card__link-with-img">
-                    <img class="footer2-card__link-img" src="/images/arrows/arrow__back.png" alt="">
+                    <img class="footer2-card__link-img" src="{% static 'kurlib/images/arrows/arrow__back.png' %}" alt="">
                     <a class="footer2-card__link footer2-card__link--blue" href="">Назад</a>
                 </div>
                 <a class="footer2-card__link footer2-card__link--blue" href="">На главную</a>

@@ -1,45 +1,97 @@
 <!DOCTYPE html>
 <html lang="ru">
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/blocks/reset.css">
-    <link rel="stylesheet" href="/blocks/container.css">
-    <link rel="stylesheet" href="/blocks/title.css">
-    <link rel="stylesheet" href="/blocks/img-out.css">
-    <link rel="stylesheet" href="/blocks/logo.css">
-    <link rel="stylesheet" href="/blocks/menu.css">
-    <link rel="stylesheet" href="/blocks/header.css">
-    <link rel="stylesheet" href="/blocks/slider.css">
-    <!-- <link rel="stylesheet" href="/blocks/generalHeader.css"> -->
-    <!-- <link rel="stylesheet" href="/blocks/about.css"> -->
-    <link rel="stylesheet" href="/blocks/text.css">
-    <link rel="stylesheet" href="/blocks/history.css">
-    <link rel="stylesheet" href="/blocks/slider.css">
-    <link rel="stylesheet" href="/blocks/footer.css">
+    <link rel="stylesheet" href="{% static 'kurlib/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/container.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/title.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/img-out.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/logo.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/slider.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/text.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/history.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/slider.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/media.css' %}">
 
 </head>
 <body>
-    <header class="header header--about header--text">
+    <header class="header header--about header--text header--with-mob-top">
+        <div class="header--mob">
+            <img class="header--mob-top" src="{% static 'kurlib/images/header/header--mob-top.png' %}" alt="">
+            <p class="header--mob-text">Краеведение</p>
+        </div>
             <div class="general__header-top">
                 <div class="header--left__name">
-                    <img class="header--left__bg" src="/images/header/header--left__bg.png" alt="" style="opacity: 0;">
+                    <img class="header--left__bg" src="{% static 'kurlib/images/header/header--left__bg.png' %}" alt="" style="opacity: 0;">
                     <h5 class="title title--left header--left__title">Краеведение</h5>
                 </div>
-                <img class="logo logo--left" src="/images/logo/logo__img.png" alt="">
-                <button class="menu__button">
+                <img class="logo logo--left" src="{% static 'kurlib/images/logo/logo__img.png' %}" alt="">
+                <div class="menu__button menu__button--big">
                     <p class="menu__button-txt">Меню</p>
-                    <img class="menu__img" src="/images/menu/menu__button.png" alt="">
-                </button>
-            
+                    <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button.png' %}" alt="">
+                </div>
+                <div class="menu__button menu__button--small">
+                    <p class="menu__button-txt menu__button-txt--small">Меню</p>
+                    <img class="menu__img menu__img--small" src="{% static 'kurlib/images/menu/menu__button.png' %}" alt="">
+                </div>
+                <div class="menu__open none">
+                    <img class="close menu__close" src="{% static 'kurlib/images/menu/close.png' %}" alt="">
+                    <ul class="menu__open-list">
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Главная</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Электронный каталог</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">О библиотеке</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Читателю</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Детская библиотека</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Услуги</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Мероприятия</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Краеведение</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Коллегам</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Вопрос-ответ</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Независимая оценка качества</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Контакты</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Для администратора</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
     </header>
     <main>
         <section class="text history text--sloped">
             <div class="container--text">
                 <h4 class="title title--text history__title">Гора Бугуртак. Легенда о крылатом драконе</h4>
-                
+
                 <p class="text__main">Краснокаменск – поселок молодой, исторически-культурных объектов у нас нет. И, тем не менее, у нас есть то, что способно привлечь туристов.</p>
 
                 <p class="text__main">В 2007 был построен комплекс «Белая корона». Он расположен на окраине поселка и находится в 200 км от Абакана и в 300 км от Красноярска.</p>
@@ -78,43 +130,43 @@
             </div>
         </section>
         <section class="slider">
-            <div class="container">
+            <div class="container container--xs">
                 <div class="slider__wrapper">
-                    <img src="/images/partners/partners__arrow-left.png" alt="" class="slider__arrow slider__arrow--left">
+                    <img src="{% static 'kurlib/images/partners/partners__arrow-left.png' %}" alt="" class="slider__arrow slider__arrow--left">
                     <div class="slider__line">
                         <div class="slider__item">
-                            <img src="/images/whiteCrown/whiteCrown1.png" alt="" class="slider__item-img">
+                            <img src="{% static 'kurlib/images/whiteCrown/whiteCrown1.png' %}" alt="" class="slider__item-img">
                         </div>
                     </div>
-                    <img src="/images/partners/partners__arrow-right.png" alt="" class="slider__arrow slider__arrow--right">
+                    <img src="{% static 'kurlib/images/partners/partners__arrow-right.png' %}" alt="" class="slider__arrow slider__arrow--right">
                 </div>
         </section>
     </main>
 
 
     <footer class="footer">
-        <div class="container">
+        <div class="container container--xs">
             <div class="footer__content">
                 <div class="footer__one">
                     <div class="footer__one-item footer__phone">
-                        <img class="footer__img" src="/images/footer/footer__img-phone.png" alt="">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-phone.png' %}" alt="">
                         <a class="footer__text" href="">8 (391) 362-48-56</a>
                     </div>
                     <div class="footer__one-item footer__email">
-                        <img class="footer__img" src="/images/footer/footer__img-mail.png" alt="">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-mail.png' %}" alt="">
                         <a class="footer__text" href="">kur-mcb@yandex.ru</a>
                     </div>
                     <div class="footer__one-item footer__address">
-                        <img class="footer__img" src="/images/footer/footer__img-address.png" alt="">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-address.png' %}" alt="">
                         <a class="footer__text" href="">662910, Красноярский край, п. Курагино, ул. Партизанская, 150</a>
                     </div>
                     <div class="footer__one-item footer__vk">
-                        <img class="footer__img" src="/images/footer/footer__img-vk.png" alt="">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
                         <a class="footer__text" href="">https://vk.com/kurlib</a>
                     </div>
                     <h4 class="footer__title">Cайт разработан:</h4>
                     <div class="footer__one-item footer__vk">
-                        <img class="footer__img" src="/images/footer/footer__img-vk.png" alt="">
+                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
                         <a class="footer__text" href="">https://vk.com/id162248876</a>
                     </div>
                 </div>
@@ -124,14 +176,14 @@
                         <div class="footer__weekdays">
                             <h5 class="footer__subtitle">График работы:</h5>
                             <div class="footer__time">
-                                <img src="/images/footer/footer__img-time.png" alt="" class="footer__schedule-img">
+                                <img src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="" class="footer__schedule-img">
                                 <p class="footer__schedule-text">09:00-18:00</p>
                             </div>
                         </div>
                         <div class="footer__weekends">
                             <h5 class="footer__subtitle">Воскресенье:</h5>
                             <div class="footer__time">
-                                <img src="/images/footer/footer__img-time.png" alt="" class="footer__schedule-img">
+                                <img src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="" class="footer__schedule-img">
                                 <p class="footer__schedule-text">09:00-16:00</p>
                             </div>
                         </div>
@@ -141,7 +193,7 @@
                     <h4 class="footer__title">Летнее расписание</h4>
                     <h5 class="footer__subtitle">График работы:</h5>
                     <div class="footer__time">
-                        <img class="footer__schedule-img" src="/images/footer/footer__img-time.png" alt="">
+                        <img class="footer__schedule-img" src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="">
                         <p class="footer__schedule-text">09:00-18:00</p>
                     </div>
                     <h5 class="footer__subtitle">Выходные: суббота, воскресенье</h5>
@@ -156,7 +208,9 @@
             </div>
         </div>
     </footer>
-    <script src="/script/carouselSrc.js"></script>
-    <script src="/script/sliderTest.js"></script>
+    <script src="{% static 'kurlib/js/menuOpen.js' %}"></script>
+    <script src="{% static 'kurlib/js/menuOpenMedia.js' %}"></script>
+    <script src="{% static 'kurlib/js/carouselSrc.js' %}"></script>
+    <script src="{% static 'kurlib/js/sliderTest.js' %}"></script>
 </body>
 </html>

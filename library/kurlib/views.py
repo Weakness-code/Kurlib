@@ -24,3 +24,9 @@ def questions_answers(request):
 
 def contacts(request):
     return render(request, 'kurlib/contacts.html')
+
+def events_card(request):
+    return render(request, 'kurlib/eventsCard.html')
+
+def white_crown(request):
+    return render(request, 'kurlib/whiteCrown.html')
