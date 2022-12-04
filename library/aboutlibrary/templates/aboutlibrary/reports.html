@@ -92,12 +92,10 @@
         
         <section class="services">
             <div class="services__item">
-                <h4 class="title services__title">Отчеты</h5>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Анализ деятельности библиотеки 2019</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Муниципальное задание на 2021 год и на плановый период 2022 и 2023 годов</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Отчет об исполнении муниципального задания за 1 квартал 2020 года</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Отчет об исполнении муниципального задания за 2 квартал 2020 года</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" download href="">Отчет о выполнении МЗ за 3 кв. 2020 г.</a></p>
+                <h5 class="title services__title">Отчеты</h5>
+                {% for rep in reports %}
+                    <p class="services__txt services__txt-main"><a class="services__doc-link" download href="{{rep.file}}">{{rep.title}}</a></p>
+                {% endfor %}
             </div>
         </section>
     </main>
