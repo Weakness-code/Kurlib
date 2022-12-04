@@ -11,6 +11,9 @@
     /* width: 12.5em; */
     padding: 1em 2em 1em 2em;
 }
+.button--associate:hover {
+    cursor: pointer;
+}
 .button--associate__link {
     
     color: #FFFFFF;

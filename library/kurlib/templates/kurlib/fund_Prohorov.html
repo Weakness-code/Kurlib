@@ -16,8 +16,7 @@
     <link rel="stylesheet" href="{% static 'kurlib/css/header.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/associate.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
-
-    
+    <link rel="stylesheet" href="{% static 'kurlib/css/media.css' %}">
 </head>
 <body>
     <header class="header associate__header">
@@ -31,16 +30,65 @@
                     </div>
                     <a class="header__link" href="">На главную</a>
                 </div>
-                <button class="menu__button">
+                <div class="menu__button menu__button--big">
                     <p class="menu__button-txt menu__button-txt--pink">Меню</p>
                     <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button--pink.png' %}" alt="">
-                </button>
+                </div>
+                <div class="menu__button menu__button--small">
+                    <p class="menu__button-txt menu__button-txt--pink menu__button-txt--small">Меню</p>
+                    <img class="menu__img menu__img--small" src="{% static 'kurlib/images/menu/menu__button--pink.png' %}" alt="">
+                </div>
+                <div class="menu__open none">
+                    <img class="close menu__close" src="{% static 'kurlib/images/menu/close.png' %}" alt="">
+                    <ul class="menu__open-list">
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Главная</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Электронный каталог</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">О библиотеке</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Читателю</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Детская библиотека</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Услуги</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Мероприятия</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Краеведение</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Коллегам</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Вопрос-ответ</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Независимая оценка качества</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Контакты</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Для администратора</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
             <div class="header__content associate__content">
                 <div class="header__left associate__left">
-                    <h1 class="main-title header__title associate__title">ФОНД МИХАИЛА ПРОХОРОВА</h1>
+                    <h1 class="main-title header__title header__left-title associate__title">ФОНД МИХАИЛА ПРОХОРОВА</h1>
                     <div class="img-out header__img-out header__img-out--pink header-img-out--big"></div>
-                    <h3 class="subtitle header__subtitle associate__subtitle">Благотворительный фонд культурных инициатив реализует Программу комплектования библиотек Красноярского края, направленную на пополнение фондов лучшими образцами научно-популярной и художественной литературы, изданной ведущими российскими издательствами</h3>
+                    <h3 class="subtitle header__subtitle associate__subtitle header__left-subtitle">Благотворительный фонд культурных инициатив реализует Программу комплектования библиотек Красноярского края, направленную на пополнение фондов лучшими образцами научно-популярной и художественной литературы, изданной ведущими российскими издательствами</h3>
                     <div class="button button--associate">
                         <a class="button--associate__link" href="https://www.prokhorovfund.ru/?ysclid=lb5d4k13qr452351242">Сайт фонда</a>
                         <img class="button--associate__img" src="{% static 'kurlib/images/button/button__arrow.png' %}" alt="">
@@ -120,5 +168,7 @@
             </div>
         </div>
     </footer>
+    <script src="{% static 'kurlib/js/menuOpen.js' %}"></script>
+    <script src="{% static 'kurlib/js/menuOpenMedia.js' %}"></script>
 </body>
 </html>

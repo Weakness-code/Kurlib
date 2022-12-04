@@ -13,10 +13,9 @@
     <link rel="stylesheet" href="{% static 'kurlib/css/logo.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/menu.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/header.css' %}">
-    <!-- <link rel="stylesheet" href="{% static 'kurlib/css/generalHeader.css' %}"> -->
     <link rel="stylesheet" href="{% static 'kurlib/css/about.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
-
+    <link rel="stylesheet" href="{% static 'kurlib/css/media.css' %}">
 </head>
 <body>
     <div class="about__Library">
@@ -28,35 +27,67 @@
                     <h5 class="title title--left header--left__title reader__title--left">Вопрос-ответ</h5>
                 </div>
                 <img class="logo logo--left" src="{% static 'kurlib/images/logo/logo__img.png' %}" alt="">
-                <button class="menu__button">
-                    <p class="menu__button-txt">Меню</p>
-                    <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button.png' %}" alt="">
-                    
-                </button>
-            
+                <div class="menu__button menu__button--left menu__button--big">
+                    <p class="menu__button-txt menu__button-txt--white">Меню</p>
+                    <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button--white.png' %}" alt="">
+                </div>
+                <div class="menu__button menu__button--left menu__button--small">
+                    <p class="menu__button-txt menu__button-txt--white menu__button-txt--small">Меню</p>
+                    <img class="menu__img menu__img--small" src="{% static 'kurlib/images/menu/menu__button--white.png' %}" alt="">
+                </div>
+                <div class="menu__open none">
+                    <img class="close menu__close" src="{% static 'kurlib/images/menu/close.png' %}" alt="">
+                    <ul class="menu__open-list">
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Главная</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Электронный каталог</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">О библиотеке</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Читателю</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Детская библиотека</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Услуги</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Мероприятия</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Краеведение</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Коллегам</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Вопрос-ответ</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Независимая оценка качества</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Контакты</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Для администратора</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
     </header>
     <main>
         <section class="about about--questions">
-            
             <div class="about__list-item about__list-item--for-open">
                 <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
                 <div class="about__item-wrapper about__item-wrapper--questions">
                     <p class="about__item-text">Как записаться в библиотеку?</p>
-                    <!-- <div class="about__item-text-more">
-                        <ul class="about__item-text-list">Пользователи Библиотеки имеют право на: 
-                            <li class="about__item-text-point">информацию о наличии в фонде конкретного документа</li>
-                            <li class="about__item-text-point">полную информацию о составе библиотечных фондов через систему каталогов и другие формы библиотечного обслуживания</li>
-                            <li class="about__item-text-point">консультативную помощь в поиске и выборе источников информации</li>
-                            <li class="about__item-text-point">получать во временное пользование на дом или в читальном зале любой документ из библиотечных фондов</li>
-                            <li class="about__item-text-point">продление срока пользования документами, выданными на дом лично или по телефону</li>
-                            <li class="about__item-text-point">доступ к Интернету, сайтам Красноярского края, работу с полнотекстовой справочной правовой системой КонсультантПлюс;</li>
-                            <li class="about__item-text-point">подключение к бесплатной зоне Wi-Fi</li>
-                            <li class="about__item-text-point">предоставление в пользование компьютера</li>
-                            <li class="about__item-text-point">заказ литературы через МБА (межбиблиотечный абонемент) и электронную доставку документов из фондов краевой научной библиотеки</li>
-                    </ul>
-                </div> -->
                 </div>
-                
             </div>
             <div class="about__answer">
                 <p class="answer__text">
@@ -109,7 +140,7 @@
                     Да, конечно! Мы будем рады принять от вас фотографии.
                 </p>
             </div>
-            <div class="about__list-item">
+            <div class="about__list-item about__list-item--for-open">
                 <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
                 <div class="about__item-wrapper about__item-wrapper--questions">
                     <p class="about__item-text">С какой библиотекой (с какими библиотеками) края вы
@@ -121,7 +152,7 @@
                     Мы сотрудничаем с краевой научной библиотекой. Сайт: <a class="about__answer-link" href="http://www.kraslib.ru">http://www.kraslib.ru</a>. Стоимость складывается следующим образом: вес книги (издания) + стоимость пересылки. Если Вы будете заказывать ксерокопию статьи, то необходимо указать электронный адрес, куда мы отправим выполненный заказ. Эта услуга бесплатная
                 </p>
             </div>
-            <div class="about__list-item">
+            <div class="about__list-item about__list-item--for-open">
                 <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
                 <div class="about__item-wrapper about__item-wrapper--questions">
                     <p class="about__item-text">С какого года у вас имеются подшивки местной газеты?</p>
@@ -132,7 +163,7 @@
                     В фонде нашей библиотеки имеются подшивки: газет «Заветы Ильича» с 1963 года, «Тубинские вести», «Твои аргументы».
                 </p>
             </div>
-            <div class="about__list-item">
+            <div class="about__list-item about__list-item--for-open">
                 <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
                 <div class="about__item-wrapper about__item-wrapper--questions">
                     <p class="about__item-text">По каким критериям вы можете принять в дар книги (я переезжаю, а книги выбросить рука не поднимается)?</p>
@@ -143,7 +174,7 @@
                     Мы рады будем принять от Вас в дар книги. Основное внимание мы обращаем на то, чтобы книги были в хорошем состоянии, спрашиваемые, это может быть, как классика, так современная литература.
                 </p>
             </div>
-            <div class="about__list-item">
+            <div class="about__list-item about__list-item--for-open">
                 <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
                 <div class="about__item-wrapper about__item-wrapper--questions">
                     <p class="about__item-text">Можно как-то определить читал я эту книгу или нет?</p>
@@ -154,7 +185,7 @@
                     Да, по листку возврата на книге.
                 </p>
             </div>
-            <div class="about__list-item">
+            <div class="about__list-item about__list-item--for-open">
                 <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
                 <div class="about__item-wrapper about__item-wrapper--questions">
                     <p class="about__item-text">Как узнать есть ли нужная книга в библиотеке?</p>
@@ -234,5 +265,7 @@
         </div>
     </footer>
     <script src="{% static 'kurlib/js/collapse.js' %}"></script>
+    <script src="{% static 'kurlib/js/menuOpen.js' %}"></script>
+    <script src="{% static 'kurlib/js/menuOpenMedia.js' %}"></script>
 </body>
 </html>
