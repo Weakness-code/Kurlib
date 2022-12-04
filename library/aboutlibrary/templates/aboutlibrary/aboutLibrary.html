@@ -15,34 +15,80 @@
     <link rel="stylesheet" href="{% static 'kurlib/css/header.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/about.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
-    <!--<link rel="stylesheet" href="{% static 'kurlib/css/generalHeader.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'kurlib/css/media.css' %}">
+
 
 </head>
 <body>
-    
-    <!-- <div class="about__Library"> -->
-    <header class="header header--about">
-        
+<header class="header header--about">
             <div class="general__header-top">
                 <div class="header--left__name">
                     <img class="header--left__bg" src="{% static 'kurlib/images/header/header--left__bg.png' %}" alt="">
                     <h5 class="title title--left header--left__title">О библиотеке</h5>
                 </div>
                 <img class="logo logo--left" src="{% static 'kurlib/images/logo/logo__img.png' %}" alt="">
-                <button class="menu__button menu__button--left">
+                <div class="menu__button menu__button--left menu__button--big">
                     <p class="menu__button-txt menu__button-txt--white">Меню</p>
                     <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button--white.png' %}" alt="">
-                    
-                </button>
-            
+                </div>
+                <div class="menu__button menu__button--left menu__button--small">
+                    <p class="menu__button-txt menu__button-txt--white menu__button-txt--small">Меню</p>
+                    <img class="menu__img menu__img--small" src="{% static 'kurlib/images/menu/menu__button--white.png' %}" alt="">
+                </div>
+                <div class="menu__open none">
+                    <img class="close menu__close" src="{% static 'kurlib/images/menu/close.png' %}" alt="">
+                    <ul class="menu__open-list">
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Главная</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Электронный каталог</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">О библиотеке</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Читателю</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Детская библиотека</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Услуги</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Мероприятия</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Краеведение</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Коллегам</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Вопрос-ответ</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Независимая оценка качества</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Контакты</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Для администратора</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
     </header>
+
     <main>
         <section class="about">
             <div class="about__list-item" onclick="location.href='/about/library_history';">
                 <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img.png' %}" alt="">
                 <div class="about__item-wrapper">
                     <p class="about__item-text">История библиотеки</p>
-                </div>  
+                </div>
             </div>
             <div class="about__list-item" onclick="location.href='/about/documents';">
                 <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img.png' %}" alt="">
@@ -70,7 +116,9 @@
             </div>
         </section>
     </main>
-<!-- </div> -->
-    
+    <script src="{% static 'kurlib/js/menuOpen.js' %}"></script>
+    <script src="{% static 'kurlib/js/menuOpenMedia.js' %}"></script>
+
+
 </body>
 </html>
