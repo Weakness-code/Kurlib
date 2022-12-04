@@ -14,14 +14,14 @@
     <link rel="stylesheet" href="{% static 'kurlib/css/button.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/menu.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/header.css' %}">
-    <link rel="stylesheet" href="/{% static 'kurlib/css/about.css' %}">
-    <link rel="stylesheet" href="/{% static 'kurlib/css/contact.css' %}">
-    <link rel="stylesheet" href="/{% static 'kurlib/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/media.css' %}">
     <!-- <link rel="stylesheet" href="{% static 'kurlib/css/generalHeader.css' %}"> -->
 
 </head>
 <body>
-    
     <header class="header header--about">
             <div class="general__header-top">
                 <div class="header--left__name">
@@ -29,12 +29,56 @@
                     <h5 class="title title--left header--left__title reader__title--left">Читателю</h5>
                 </div>
                 <img class="logo logo--left" src="{% static 'kurlib/images/logo/logo__img.png' %}" alt="">
-                <button class="menu__button">
+                <div class="menu__button menu__button--main">
                     <p class="menu__button-txt">Меню</p>
                     <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button.png' %}" alt="">
-                    
-                </button>
-            
+
+                </div>
+                <div class="menu__open none">
+                    <img class="close menu__close" src="{% static 'kurlib/images/menu/close.png' %}" alt="">
+                    <ul class="menu__open-list">
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Главная</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Электронный каталог</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">О библиотеке</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Читателю</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Детская библиотека</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Услуги</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Мероприятия</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Краеведение</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Коллегам</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Вопрос-ответ</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Независимая оценка качества</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Контакты</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Для администратора</a>
+                        </li>
+                    </ul>
+                </div>
+
     </header>
     <main>
         <div class="container">
@@ -121,7 +165,7 @@
             </section>
             <section class="contact">
                 <div class="contact__left">
-                    <h4 class="title contact__title">Связь с нами</h4>
+                    <h4 class="title contact__title">Связь </br>с нами</h4>
                     <h5 class="subtitle contact__subtitle">Если у вас есть вопросы или пожелания, вы можете связаться с нами. Письмо будет отправлено на нашу почту.</h5>
                 </div>
                 <div class="contact__right">
@@ -137,70 +181,7 @@
         </div>
     </main>
     
-    <!-- <footer class="footer">
-        <div class="container footer__container">
-            <div class="footer__content">
-                <div class="footer__one">
-                    <div class="footer__one-item footer__phone">
-                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-phone.png' %}" alt="">
-                        <a class="footer__text" href="">8 (391) 362-48-56</a>
-                    </div>
-                    <div class="footer__one-item footer__email">
-                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-mail.png' %}" alt="">
-                        <a class="footer__text" href="">kur-mcb@yandex.ru</a>
-                    </div>
-                    <div class="footer__one-item footer__address">
-                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-address.png' %}" alt="">
-                        <a class="footer__text" href="">662910, Красноярский край, п. Курагино, ул. Партизанская, 150</a>
-                    </div>
-                    <div class="footer__one-item footer__vk">
-                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
-                        <a class="footer__text" href="">https://vk.com/kurlib</a>
-                    </div>
-                    <h4 class="footer__title">Cайт разработан:</h4>
-                    <div class="footer__one-item footer__vk">
-                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
-                        <a class="footer__text" href="">https://vk.com/id162248876</a>
-                    </div>
-                </div>
-                <div class="footer__two">
-                    <h4 class="footer__title footer__title-schedule">Расписание</h4>
-                    <div class="footer__schedule">
-                        <div class="footer__weekdays">
-                            <h5 class="footer__subtitle">График работы:</h5>
-                            <div class="footer__time">
-                                <img src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="" class="footer__schedule-img">
-                                <p class="footer__schedule-text">09:00-18:00</p>
-                            </div>
-                        </div>
-                        <div class="footer__weekends">
-                            <h5 class="footer__subtitle">Воскресенье:</h5>
-                            <div class="footer__time">
-                                <img src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="" class="footer__schedule-img">
-                                <p class="footer__schedule-text">09:00-16:00</p>
-                            </div>
-                        </div>
-                    </div>
-                    <h5 class="footer__subtitle">Выходные: суббота</h5>
-                    <p class="footer__text">Последняя пятница месяца санитарный день</p>
-                    <h4 class="footer__title">Летнее расписание</h4>
-                    <h5 class="footer__subtitle">График работы:</h5>
-                    <div class="footer__time">
-                        <img class="footer__schedule-img" src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="">
-                        <p class="footer__schedule-text">09:00-18:00</p>
-                    </div>
-                    <h5 class="footer__subtitle">Выходные: суббота, воскресенье</h5>
-                </div>
-                <div class="footer__three">
-                    <h4 class="footer__title footer__title-schedule">Общая информация</h4>
-                    <h5 class="footer__subtitle">Полное наименование:</h5>
-                    <p class="footer__text">Муниципальное бюджетное учреждение культуры «Межпоселенческая центральная библиотека Курагинского района» </p>
-                    <h5 class="footer__subtitle footer__schedule-sub">Сокращенное наименование:</h5>
-                    <p class="footer__text">МБУК МЦБ Курагинского района</p>
-                </div>
-            </div>
-        </div>
-    </footer> -->
+
     <footer class="footer footer--small">
         <div class="footer--small__social">
             <a class="footer--small__social-link" href="">
@@ -221,5 +202,7 @@
             </div>
         </div>
     </footer>
+    <script src="{% static 'kurlib/js/menuOpen.js' %}"></script>
+    <script src="{% static 'kurlib/js/menuOpenMedia.js' %}"></script>
 </body>
 </html>

@@ -1,11 +1,17 @@
 .container {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 6.25em;
+    padding-right: 6.25em;
 }
 
 .container--s {
-    padding-left: 226px;
-    padding-right: 226px;
+    padding-left: 15%;
+    padding-right: 15%;
+    /* padding-left: 226px;
+    padding-right: 226px; */
+}
+.container--xs {
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .container--slider {
@@ -15,3 +21,6 @@
 .container--left-big {
     padding-left: 140px;
 }
+/* .container--text-slider {
+
+} */

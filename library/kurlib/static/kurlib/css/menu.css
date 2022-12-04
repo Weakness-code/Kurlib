@@ -83,6 +83,7 @@
 .menu__open {
     display: none;
     position: fixed;
+    height: 100vh;
     right: 0;
     top: 0;
     z-index: 100;
@@ -99,7 +100,7 @@
 }
 .menu__open-list {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 15px;
 }
 .menu__open-item {
 }
@@ -113,7 +114,7 @@
     -o-transition: 0.2s;
 }
 .menu__open-item:not(last-child) {
-    margin-bottom: 1.2em;
+    margin-bottom: 1em;
 }
 .menu__open-link:hover {
     color: #FFFFFF;
@@ -124,4 +125,7 @@
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
     cursor: pointer;
+}
+.menu__button--small {
+    display: none;
 }
