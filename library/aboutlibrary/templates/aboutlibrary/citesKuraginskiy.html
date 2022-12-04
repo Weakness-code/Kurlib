@@ -44,19 +44,10 @@
         
         <section class="services">
             <div class="services__item">
-                <h4 class="title services__title">Cайты Курагинского района</h5>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" href="http://kuragino.ru/">Курагинский информационно развлекательный потрал</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" href="http://admkurag.ru/">Муниципальное образование «Поселок Курагино»</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" href="http://www.kuragino-krsn.ru/">Администрация и Совет депутатов Курагинского района</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" href="http://patriot-kuragino.ru/">Молодежный центр «Патриот»</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" href="http://www.nikava.ru/">Район, в котором мы живем</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" href="http://muzkuragino.ru/">Курагинская детская школа искусств</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" href="http://school-one.ru/">Курагинская средняя общеобразовательная школа № 1</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" href="http://s3kuragino.narod.ru/">Курагинская средняя общеобразовательная школа № 3</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" href="http://www.uo-kuragino.ru/">Управление образования Курагинского района</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" href="http://crb-kuragino.narod.ru/">Курагинская центральная районная больница</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" href="http://szn40.ru/">Управление социальной защиты населения Курагинского района</a></p>
-                <p class="services__txt services__txt-main"><a class="services__doc-link" href="http://evgeni-svetozar12.blogspot.com/">Блог писателя Е. Орлова</a></p>
+                <h5 class="title services__title">Cайты Курагинского района</h5>
+                {% for cite in cites %}
+                    <p class="services__txt services__txt-main"><a class="services__doc-link" href="{{cites.address}}">{{cites.title}}</a></p>
+                {% endfor %}
             </div>
         </section>
     </main>

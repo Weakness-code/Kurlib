@@ -3,7 +3,7 @@ from django.db import models
 
 class Documents(models.Model):
     title = models.CharField("Название документа", max_length=250)
-    file = models.FileField()
+    file = models.FileField("Документ.pdf")
 
     def __str__(self):
         return self.title
@@ -16,7 +16,7 @@ class Documents(models.Model):
 class Reports(models.Model):
 
     title = models.CharField("Название отчета", max_length=250)
-    file = models.FileField()
+    file = models.FileField("Отчет.pdf")
 
     def __str__(self):
         return self.title
@@ -24,3 +24,16 @@ class Reports(models.Model):
     class Meta:
         verbose_name = "Отчет"
         verbose_name_plural = 'Отчеты'
+
+
+class Cites(models.Model):
+
+    title = models.CharField("Название сайта", max_length=250)
+    address = models.URLField("Ссылка на сайт")
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = "Сайт Курагинсого района"
+        verbose_name_plural = 'Сайты Курагинсого района'

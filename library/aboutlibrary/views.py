@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Documents, Reports
+from .models import Documents, Reports, Cites
 
 def about_library(request):
     return render(request, 'aboutlibrary/aboutLibrary.html')
@@ -20,4 +20,5 @@ def reports(request):
 
 
 def kuraginskiy(request):
-    return render(request, 'aboutlibrary/citesKuraginskiy.html')
+    cites = Cites.objects.all()
+    return render(request, 'aboutlibrary/citesKuraginskiy.html', {'cites': cites})
