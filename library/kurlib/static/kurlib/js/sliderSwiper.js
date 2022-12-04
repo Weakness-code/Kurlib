@@ -51,3 +51,15 @@ new Swiper('.virtual__slider', {
         },
     },
 });
+
+new Swiper('.slider__text-page', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+
+    slidesPerView: 1,
+    spaceBetween: 10,
+    autoheight: true,
+
+});

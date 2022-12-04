@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{% static 'kurlib/css/text.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/history.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/slider.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/media.css' %}">
 
@@ -131,14 +132,21 @@
         </section>
         <section class="slider">
             <div class="container container--xs">
-                <div class="slider__wrapper">
-                    <img src="{% static 'kurlib/images/partners/partners__arrow-left.png' %}" alt="" class="slider__arrow slider__arrow--left">
-                    <div class="slider__line">
-                        <div class="slider__item">
-                            <img src="{% static 'kurlib/images/whiteCrown/whiteCrown1.png' %}" alt="" class="slider__item-img">
+                <div class="slider__wrapper slider__text-page swiper">
+
+                    <div class="swiper-wrapper">
+                        <div class="slider__img-container swiper-slide">
+                            <img src="{% static 'kurlib/images/whiteCrown/whiteCrown1.png' %}" alt="" class="slider__item-img swiper-slide">
+                        </div>
+                        <div class="slider__img-container swiper-slide">
+                            <img src="{% static 'kurlib/images/bolotnov/bolotnov1.png' %}" alt="" class="slider__item-img swiper-slide">
+                        </div>
+                        <div class="slider__img-container swiper-slide">
+                            <img src="{% static 'kurlib/images/whiteCrown/whiteCrown1.png' %}" alt="" class="slider__item-img swiper-slide">
                         </div>
                     </div>
-                    <img src="{% static 'kurlib/images/partners/partners__arrow-right.png' %}" alt="" class="slider__arrow slider__arrow--right">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
         </section>
     </main>
@@ -208,9 +216,12 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="{% static 'kurlib/js/sliderSwiper.js' %}"></script>
     <script src="{% static 'kurlib/js/menuOpen.js' %}"></script>
     <script src="{% static 'kurlib/js/menuOpenMedia.js' %}"></script>
-    <script src="{% static 'kurlib/js/carouselSrc.js' %}"></script>
-    <script src="{% static 'kurlib/js/sliderTest.js' %}"></script>
+
+<!--    <script src="{% static 'kurlib/js/carouselSrc.js' %}"></script>-->
+<!--    <script src="{% static 'kurlib/js/sliderTest.js' %}"></script>-->
 </body>
 </html>
