@@ -1,0 +1,57 @@
+/* html,
+body, .virtual-card {
+  height: 100%;
+} */
+body {
+    /* background: url(/images/virtualExhibitionCard/virtualExhibitionCard__bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background: url(/images/virtualExhibitionCard/virtualExhibitionCard__bg.jpg) no-repeat center center fixed;
+        background-size: cover;
+}
+.bg__img {
+    /* min-height: 100vh;
+    position: absolute;
+    top: 0; */
+
+}
+.virtual-card__bg {
+
+}
+.virtual-card {
+    margin-top: 11rem;
+    position: relative;
+    min-height: 100%;
+    
+}
+.virtual-card__wrapper {
+    padding-left: 9.375rem;
+    padding-right: 6.25rem;
+    display: flex;
+    gap: 6.25rem;
+}
+.virtual-card__left {
+
+}
+.virtual-card__img {
+
+}
+.virtual-card__right {
+
+    font-size: 1.1875rem;
+    /* font-weight: medium; */
+    
+    line-height: 125.5%;
+    
+}
+.virtual-card__title {
+    font-weight: bolder;
+    margin-bottom: 1.84em;
+}
+.virtual-card__text {
+}
+.virtual-card__text:not(:last-child) {
+    margin-bottom: 1.5em;
+}
+
+

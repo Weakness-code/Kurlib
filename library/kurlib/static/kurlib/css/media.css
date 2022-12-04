@@ -3,6 +3,9 @@
     .header__img-out {
         width: 65%;
     }
+    .header__img-out--pink {
+        width: 49%;
+    }
 }
 @media screen and (max-width: 1439px) {
     .events__bg {

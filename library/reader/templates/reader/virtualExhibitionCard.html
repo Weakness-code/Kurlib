@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'kurlib/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/container.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/title.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/img-out.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/logo.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/virtualExhibitionCard.css' %}">
+    
+</head>
+<body>
+    <!-- <img class="bg__img" src="{% static 'kurlib/images/virtualExhibitionCard/virtualExhibitionCard__bg.jpg" alt=""> -->
+    <main class="main">
+        
+        <section class="virtual-card">
+            
+            <div class="container">
+                <div class="virtual-card__wrapper">
+                    <div class="virtual-card__left">
+                        <img class="virtual-card__img" src="{% static 'kurlib/images/virtualExhibitionCard/virtual-card__img.png' %}" alt="">
+                    </div>
+                    <div class="virtual-card__right">
+                        <h4 class="virtual-card__title">Терапия искусством: Учебное пособие по арт-терапии: Под научной редакцией В.Н. Никитина, Н. Бояджиевой, Л.Д. Лебедевой, И.В. Вачкова. – София: Университетско издательство «Св. Климент Охридски», 2012. – 567 с., ил.
+                        </h4>
+                        <p class="virtual-card__text">
+                        «В книге представлены современные научные исследования теории и практики терапии искусством (арт-терапии). Осуществлен системный анализ методологии арт-терапии по основным направлениям арт-терапевтической деятельности. Описаны модели и техники арт-терапевтической работы, применяемые в странах Восточной Европы. Издание рекомендовано для студентов, аспирантов, докторантов, научных сотрудников психологической, педагогической и социальной специализации, а также для всех читателей, интересующихся вопросами терапии искусством».
+                        </p>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+    </main>
+    <footer class="footer2">
+        <div class="container">
+            <div class="footer2-card__links">
+                <div class="footer2-card__link-with-img">
+                    <img class="footer2-card__link-img" src="{% static 'kurlib/images/arrows/arrow__back.png' %}" alt="">
+                    <a class="footer2-card__link" href="">Назад</a>
+                </div>
+                <a class="footer2-card__link footer2-card__link--blue" href="">На главную</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -20,26 +20,78 @@
     <link rel="stylesheet" href="{% static 'kurlib/css/branchesAbout.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/slider.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
-
+    <link rel="stylesheet" href="{% static 'kurlib/css/media.css' %}">
 </head>
 <body>
-    <header class="header header--about header--text">
+     <header class="header header--about header--text header--with-mob-top">
+        <div class="header--mob">
+            <img class="header--mob-top" src="{% static 'kurlib/images/header/header--mob-top.png' %}" alt="">
+            <p class="header--mob-text">О библиотеке</p>
+        </div>
             <div class="general__header-top">
                 <div class="header--left__name">
                     <img class="header--left__bg" src="{% static 'kurlib/images/header/header--left__bg.png' %}" alt="" style="opacity: 0;">
                     <h5 class="title title--left header--left__title">О библиотеке</h5>
                 </div>
                 <img class="logo logo--left" src="{% static 'kurlib/images/logo/logo__img.png' %}" alt="">
-                <button class="menu__button menu__button--duo">
+                <div class="menu__button menu__button--duo menu__button--big">
                     <div class="menu__button--left menu__button--left-blue">
                         <p class="menu__button-txt menu__button-txt--blue">меню</p>
                         <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button.png' %}" alt="">
                     </div>
                     <div class="menu__button--right">
-                        <a class="menu__button-txt menu__button-txt--white" href="/about">назад</a>
+                        <a class="menu__button-txt menu__button-txt--white" href="#">назад</a>
                     </div>
-                </button>
-            
+                </div>
+                <div class="menu__button menu__button--small">
+                    <p class="menu__button-txt menu__button-txt--small">Меню</p>
+                    <img class="menu__img menu__img--small" src="{% static 'kurlib/images/menu/menu__button.png' %}" alt="">
+                </div>
+                <div class="menu__open none">
+                    <img class="close menu__close" src="{% static 'kurlib/images/menu/close.png' %}" alt="">
+                    <ul class="menu__open-list">
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Главная</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Электронный каталог</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">О библиотеке</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Читателю</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Детская библиотека</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Услуги</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Мероприятия</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Краеведение</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Коллегам</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Вопрос-ответ</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Независимая оценка качества</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Контакты</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Для администратора</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
     </header>
     <main>
         <section class="text history">
@@ -146,5 +198,7 @@
             </div>
         </div>
     </footer>
+    <script src="{% static 'kurlib/js/menuOpen.js' %}"></script>
+    <script src="{% static 'kurlib/js/menuOpenDuo.js' %}"></script>
 </body>
 </html>

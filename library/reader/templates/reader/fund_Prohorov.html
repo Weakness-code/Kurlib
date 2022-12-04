@@ -5,43 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Library</title>
     <link rel="stylesheet" href="{% static 'kurlib/css/reset.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/container.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/title.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/button.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/img-out.css' %}">
-    <link rel="stylesheet" href="{% static 'kurlib/css/logo.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/search.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/header.css' %}">
-    <link rel="stylesheet" href="{% static 'kurlib/css/services.css' %}">
-    <!-- <link rel="stylesheet" href="{% static 'kurlib/css/generalHeader.css' %}"> -->
-    <!-- <link rel="stylesheet" href="{% static 'kurlib/css/about.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'kurlib/css/associate.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/media.css' %}">
-
 </head>
 <body>
-    <div class="about__Library">
-    <header class="header header--about">
-        
-            <div class="general__header-top">
-                <div class="header--left__name">
-                    <img class="header--left__bg" src="{% static 'kurlib/images/header/header--left__bg.png' %}" alt="">
-                    <h5 class="title title--left header--left__title services__title--left">Сайты</h5>
-                </div>
-                <img class="logo logo--left" src="{% static 'kurlib/images/logo/logo__img.png' %}" alt="">
-                <div class="menu__button menu__button--duo menu__button--big">
-                    <div class="menu__button--left">
-                        <p class="menu__button-txt menu__button-txt--white">меню</p>
-                        <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button--white.png' %}" alt="">
+    <header class="header associate__header">
+        <div class="container">
+            <div class="header__top">
+                <img class="logo" src="{% static 'kurlib/images/logo/logo__img.png' %}" alt="">
+                <div class="header__links">
+                    <div class="header__link-with-img">
+                        <img class="header__link-img" src="{% static 'kurlib/images/header/header__link-img.png' %}" alt="">
+                        <a class="header__link" href="">Назад</a>
                     </div>
-                    <div class="menu__button--right">
-                        <a class="menu__button-txt menu__button-txt--white" href="#">назад</a>
-                    </div>
+                    <a class="header__link" href="">На главную</a>
                 </div>
-                <div class="menu__button menu__button--left menu__button--small">
-                    <p class="menu__button-txt menu__button-txt--white menu__button-txt--small">Меню</p>
-                    <img class="menu__img menu__img--small" src="{% static 'kurlib/images/menu/menu__button--white.png' %}" alt="">
+                <div class="menu__button menu__button--big">
+                    <p class="menu__button-txt menu__button-txt--pink">Меню</p>
+                    <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button--pink.png' %}" alt="">
+                </div>
+                <div class="menu__button menu__button--small">
+                    <p class="menu__button-txt menu__button-txt--pink menu__button-txt--small">Меню</p>
+                    <img class="menu__img menu__img--small" src="{% static 'kurlib/images/menu/menu__button--pink.png' %}" alt="">
                 </div>
                 <div class="menu__open none">
                     <img class="close menu__close" src="{% static 'kurlib/images/menu/close.png' %}" alt="">
@@ -87,20 +82,26 @@
                         </li>
                     </ul>
                 </div>
-            <div>
-    </header>
-    <main>
-        
-        <section class="services">
-            <div class="services__item">
-                <h5 class="title services__title">Cайты Курагинского района</h5>
-                {% for cite in cites %}
-                    <p class="services__txt services__txt-main"><a class="services__doc-link" href="{{cites.address}}">{{cites.title}}</a></p>
-                {% endfor %}
             </div>
-        </section>
+            <div class="header__content associate__content">
+                <div class="header__left associate__left">
+                    <h1 class="main-title header__title header__left-title associate__title">ФОНД МИХАИЛА ПРОХОРОВА</h1>
+                    <div class="img-out header__img-out header__img-out--pink header-img-out--big"></div>
+                    <h3 class="subtitle header__subtitle associate__subtitle header__left-subtitle">Благотворительный фонд культурных инициатив реализует Программу комплектования библиотек Красноярского края, направленную на пополнение фондов лучшими образцами научно-популярной и художественной литературы, изданной ведущими российскими издательствами</h3>
+                    <div class="button button--associate">
+                        <a class="button--associate__link" href="https://www.prokhorovfund.ru/?ysclid=lb5d4k13qr452351242">Сайт фонда</a>
+                        <img class="button--associate__img" src="{% static 'kurlib/images/button/button__arrow.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="header__right associate__right">
+                    <img class="header__right-img associate__right-img" src="{% static 'kurlib/images/partners/fond.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+
     </main>
-</div>
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
@@ -165,7 +166,7 @@
             </div>
         </div>
     </footer>
-<script src="{% static 'kurlib/js/menuOpen.js' %}"></script>
-<script src="{% static 'kurlib/js/menuOpenDuo.js' %}"></script>
+    <script src="{% static 'kurlib/js/menuOpen.js' %}"></script>
+    <script src="{% static 'kurlib/js/menuOpenMedia.js' %}"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@ from django.db import models
 
 class Documents(models.Model):
     title = models.CharField("Название документа", max_length=250)
-    file = models.FileField("Документ.pdf")
+    file = models.FileField("Документ.pdf", upload_to='documents/')
 
     def __str__(self):
         return self.title
@@ -16,7 +16,7 @@ class Documents(models.Model):
 class Reports(models.Model):
 
     title = models.CharField("Название отчета", max_length=250)
-    file = models.FileField("Отчет.pdf")
+    file = models.FileField("Отчет.pdf", upload_to='reports/')
 
     def __str__(self):
         return self.title
