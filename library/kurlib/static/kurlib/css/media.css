@@ -41,7 +41,7 @@
     }
     .catalog {
         margin-top: -10%;
-        background: url("{% static 'kurlib//images/partners/partners__child.png' %}");
+        background: url('/static/kurlib/images/catalog/catalog__bg.png');
     }
 
 }

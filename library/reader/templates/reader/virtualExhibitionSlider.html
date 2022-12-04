@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 {% load static %}
 <head>
     <meta charset="UTF-8">
@@ -11,185 +11,72 @@
     <link rel="stylesheet" href="{% static 'kurlib/css/title.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/img-out.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/logo.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="{% static 'kurlib/css/slider.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/sliderTest3.css' %}">
-  <link rel="stylesheet" href="{% static 'kurlib/css/partners.css' %}">
-  <link rel="stylesheet" href="{% static 'kurlib/css/poster.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/partners.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/poster.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/virtualExhibitionSlider.css' %}">
-    
+
+    <link rel="stylesheet" href="{% static 'kurlib/css/media.css' %}">
+
+
 </head>
 <body>
-    
-    <main class="main">
-        
-        <!-- <section class="slider slider--virtual">
-            <h4 class="title title--prata">Виртуальные выставки</h4>
-            <div class="container container--slider">
-                
-                <div class="slider__wrapper">
-                    <img class="slider__arrow slider__arrow--left" src="{% static 'kurlib/images/partners/partners__arrow-left.png' %}" alt="">
-                    <div class="slider__line slider__line--virtual">
-                        <div class="slider__item">
-                            <img class="slider__item-img slider__img--virtualExh" src="{% static 'kurlib/images/flag/slider__flag-img.png' %}" alt="">
-                        </div>
-                        <div class="slider__item">
-                            <img class="slider__item-img slider__img--virtualExh" src="{% static 'kurlib/images/flag/slider__flag-img.png' %}" alt="">
-                        </div>
-                    </div>
-                    <img class="slider__arrow slider__arrow--right" src="{% static 'kurlib/images/partners/partners__arrow-right.png' %}" alt="">
-                </div>
-        </section> -->
 
+    <main class="main">
         <section class="slider slider--virtual">
             <h4 class="title title--prata">Виртуальные выставки</h4>
-            <div class="container container--slider">
-            
-            
-                <div id="carousel" class="carousel virtual__slider">
-                <img class="arrow prev slider__arrow slider__arrow--right virtual__arrow" src="{% static 'kurlib/images/partners/partners__arrow-left.png' %}" alt="">
-                <div class="gallery virtual__gallery">
-                <ul class="gallery__ul">
-                    <li class="gallery__li virtual__li">
-                        <div class="slider__item" onclick="location.href = '/reader/virtualcard';">
-                            <img class="slider__item-img slider__img--virtualExh" src="{% static 'kurlib/images/flag/slider__flag-img.png' %}" alt="">
-                        </div>
-                    </li>
-                    <li class="gallery__li virtual__li">
-                        <div class="slider__item" onclick="location.href = '/reader/virtualcard';">
-                            <img class="slider__item-img slider__img--virtualExh" src="{% static 'kurlib/images/flag/slider__flag-img.png' %}" alt="">
-                        </div>
-                    </li>
-                    <li class="gallery__li virtual__li">
-                        <div class="slider__item" onclick="location.href = '/reader/virtualcard';">
-                            <img class="slider__item-img slider__img--virtualExh" src="{% static 'kurlib/images/flag/slider__flag-img.png' %}" alt="">
-                        </div>
-                    </li>
-                    <li class="gallery__li virtual__li">
-                        <div class="slider__item" onclick="location.href = '/reader/virtualcard';">
-                            <img class="slider__item-img slider__img--virtualExh" src="{% static 'kurlib/images/flag/slider__flag-img.png' %}" alt="">
-                        </div>
-                    </li>
-                    <li class="gallery__li virtual__li">
-                        <div class="slider__item" onclick="location.href = '/reader/virtualcard';">
-                            <img class="slider__item-img slider__img--virtualExh" src="{% static 'kurlib/images/flag/slider__flag-img.png' %}" alt="">
-                        </div>
-                    </li>
-                    <li class="gallery__li virtual__li">
+
+            <div class="virtual__slider swiper">
+                <!-- Additional required wrapper -->
+                <div class="virtual__slider-wrap swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="virtual__slider-slide swiper-slide">
                         <div class="slider__item">
                             <img class="slider__item-img slider__img--virtualExh" src="{% static 'kurlib/images/flag/slider__flag-img.png' %}" alt="">
                         </div>
-                    </li>
-                    <li class="gallery__li virtual__li">
+                  </div>
+                  <div class="virtual__slider-slide swiper-slide">
                         <div class="slider__item">
                             <img class="slider__item-img slider__img--virtualExh" src="{% static 'kurlib/images/flag/slider__flag-img.png' %}" alt="">
                         </div>
-                    </li>
-                    <li class="gallery__li virtual__li">
+                  </div>
+                  <div class="virtual__slider-slide swiper-slide">
                         <div class="slider__item">
                             <img class="slider__item-img slider__img--virtualExh" src="{% static 'kurlib/images/flag/slider__flag-img.png' %}" alt="">
                         </div>
-                    </li>
-                    <li class="gallery__li virtual__li">
+                  </div>
+                    <div class="virtual__slider-slide swiper-slide">
                         <div class="slider__item">
-                            <img class="slider__item-img slider__img--virtualExh" src="{% static 'kurlib/images/flag/slider__flag-img.png' %}" alt="">
+                            <img class="slider__item-img slider__img--virtualExh" src="{% static 'kurlib/images/bolotnov/bolotnov1.png' %}" alt="">
                         </div>
-                    </li>
-                    <li class="gallery__li virtual__li">
-                        <div class="slider__item">
-                            <img class="slider__item-img slider__img--virtualExh" src="{% static 'kurlib/images/flag/slider__flag-img.png' %}" alt="">
-                        </div>
-                    </li>
-                    <li class="gallery__li virtual__li">
-                        <div class="slider__item">
-                            <img class="slider__item-img slider__img--virtualExh" src="{% static 'kurlib/images/flag/slider__flag-img.png' %}" alt="">
-                        </div>
-                    </li>
-                    <li class="gallery__li virtual__li">
-                        <div class="slider__item">
-                            <img class="slider__item-img slider__img--virtualExh" src="{% static 'kurlib/images/flag/slider__flag-img.png' %}" alt="">
-                        </div>
-                    </li>
-                </ul>
+                  </div>
                 </div>
-                <img class="arrow next slider__arrow slider__arrow--right gallery__next" src="{% static 'kurlib/images/partners/partners__arrow-right.png' %}" alt="">
-                </div>
-            </div>
+                <!-- If we need pagination -->
+                <div class="virtual__slider-pag swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev virtual__slider__swiper-button-prev"></div>
+                <div class="swiper-button-next virtual__slider__swiper-button-next"></div>
+              </div>
     </main>
     <footer class="footer2">
         <div class="container">
             <div class="footer2-card__links">
                 <div class="footer2-card__link-with-img">
                     <img class="footer2-card__link-img" src="{% static 'kurlib/images/arrows/arrow__back.png' %}" alt="">
-                    <a class="footer2-card__link" href=".">Назад</a>
-                </div>
-                <div class="footer2__slider">
-                    <div class="footer2__slider-item footer2__slider-item--active"></div>
-                    <div class="footer2__slider-item"></div>
-                    <div class="footer2__slider-item"></div>
-                    <div class="footer2__slider-item"></div>
-                    <div class="footer2__slider-item"></div>
-                    <div class="footer2__slider-item"></div>
+                    <a class="footer2-card__link" href="">Назад</a>
                 </div>
                 <a class="footer2-card__link" href="">На главную</a>
             </div>
         </div>
     </footer>
-    
 
 
-    <script>
-    function carouselMove(widthImage, countImage, currPosition, carouselElem) {
-        let width = widthImage; 
-        let count = countImage; 
-        let carousel = document.querySelector(carouselElem);
-        let list = carousel.querySelector('ul');
-        let listElems = carousel.querySelectorAll('li');
-    
-        let position = currPosition;
-        let step = 0; // положение ленты прокрутки
-    
-        carousel.querySelector('.prev').onclick = function() {
-          // сдвиг влево
-          position += width * count;
-          // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
-          position = Math.min(position, 0)
-          list.style.marginLeft = position + 'px';
-        };
-    
-        carousel.querySelector('.next').onclick = function() {
-          // сдвиг вправо
-          position -= width * count;
-          // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
-          position = Math.max(position, -width * (listElems.length - count));
-          list.style.marginLeft = position + 'px';
-          step++;
-          if (step>12) {
-            step=0;
-          }
-          choseMarker(step);
-        };
-    }
-    function choseMarker (step) {
-        let markers = document.querySelectorAll(".footer2__slider-item");
-        let arrayOfMarkers = [];
-        for (let i = 0; i < markers.length; i++) {
-            arrayOfMarkers.push(markers[i]);
-        }
-        for (let k = 0; k < arrayOfMarkers.length; k++) {
-            if (arrayOfMarkers[k].classList.contains('footer2__slider-item--active')) {
-                arrayOfMarkers[k].classList.remove('footer2__slider-item--active');
-            }
-            
-        }
-        arrayOfMarkers[step].classList.add('footer2__slider-item--active');
-        // arrayOfMarkers[step].classList.add('footer2__slider-item--active')
-    }
-    
-        // а еще лучше бы найти куда кликнули и оттуда уже плясать
-        // но и так уже неплохо, к тому же стоят другие параметры
-        carouselMove(566, 2, 0, '.carousel');
-        choseMarker();
-        </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="{% static 'kurlib/js/sliderSwiper.js' %}"></script>
+
 </body>
 </html>

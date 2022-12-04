@@ -2,7 +2,7 @@ body {
     /* background: url(/images/virtualExhibitionCard/virtualExhibitionCard__bg.jpg);
     background-size: cover;
     background-repeat: no-repeat; */
-    background: url(/images/virtualExhibitionSlider/virtualExhibitionSlider__bg.jpg) no-repeat center center fixed;
+    background: url('/static/kurlib/images/virtualExhibitionSlider/virtualExhibitionSlider__bg.jpg') no-repeat center center fixed;
         background-size: cover;
 }
 .title--prata {
@@ -11,7 +11,8 @@ body {
 
 
 .virtual__slider {
-    width: 1326px;
+    /* width: 1326px; */
+    padding-left: 15%;
 }
 .virtual__arrow {
 
@@ -25,4 +26,11 @@ body {
 } */
 .virtual__li {
     margin-right: 16.625rem
+}
+
+.swiper-pagination-bullet {
+    background: white;
+}
+.virtual__slider-wrap {
+    margin-bottom: 100px;
 }

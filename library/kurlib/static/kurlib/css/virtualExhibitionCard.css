@@ -6,7 +6,7 @@ body {
     /* background: url(/images/virtualExhibitionCard/virtualExhibitionCard__bg.jpg);
     background-size: cover;
     background-repeat: no-repeat; */
-    background: url(/images/virtualExhibitionCard/virtualExhibitionCard__bg.jpg) no-repeat center center fixed;
+    background: url('/static/kurlib/images/virtualExhibitionCard/virtualExhibitionCard__bg.jpg') no-repeat center center fixed;
         background-size: cover;
 }
 .bg__img {
