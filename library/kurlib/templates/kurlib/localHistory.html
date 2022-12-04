@@ -15,574 +15,560 @@
     <link rel="stylesheet" href="{% static 'kurlib/css/header.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/about.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/media.css' %}">
     <!-- <link rel="stylesheet" href="{% static 'kurlib/css/generalHeader.css' %}"> -->
 
 </head>
 <body>
-    <div class="about__Library">
-    <header class="header header--about">
-        
+        <header class="header header--about header--with-mob-top">
+            <div class="header--mob">
+                <img class="header--mob-top" src="{% static 'kurlib/images/header/header--mob-top.png' %}" alt="">
+                <p class="header--mob-text">Краеведение</p>
+            </div>
+
             <div class="general__header-top">
                 <div class="header--left__name">
                     <img class="header--left__bg" src="{% static 'kurlib/images/header/header--left__bg.png' %}" alt="">
                     <h5 class="title title--left header--left__title localHistory__title--left">Краеведение</h5>
                 </div>
                 <img class="logo logo--left" src="{% static 'kurlib/images/logo/logo__img.png' %}" alt="">
-                <button class="menu__button">
+                <div class="menu__button menu__button--big">
                     <p class="menu__button-txt">Меню</p>
                     <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button.png' %}" alt="">
-                    
-                </button>
-            
+                </div>
+                <div class="menu__button menu__button--small">
+                    <p class="menu__button-txt menu__button-txt--small">Меню</p>
+                    <img class="menu__img menu__img--small" src="{% static 'kurlib/images/menu/menu__button.png' %}" alt="">
+                </div>
+                <div class="menu__open none">
+                    <img class="close menu__close" src="{% static 'kurlib/images/menu/close.png' %}" alt="">
+                    <ul class="menu__open-list">
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Главная</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Электронный каталог</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">О библиотеке</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Читателю</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Детская библиотека</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Услуги</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Мероприятия</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Краеведение</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Коллегам</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Вопрос-ответ</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Независимая оценка качества</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Контакты</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Для администратора</a>
+                        </li>
+                    </ul>
+                </div>
+
     </header>
     <main>
         <section class="about about--reader">
-            <!-- <div class="about__list-item">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
-                <div class="about__item-wrapper">
-                    <a class="about__item-text" href="#">Правила пользования</a>
-                    <div class="about__item-text-more">
-                        <ul class="about__item-text-list">Пользователи Библиотеки имеют право на: 
-                            <li class="about__item-text-point">информацию о наличии в фонде конкретного документа</li>
-                            <li class="about__item-text-point">полную информацию о составе библиотечных фондов через систему каталогов и другие формы библиотечного обслуживания</li>
-                            <li class="about__item-text-point">консультативную помощь в поиске и выборе источников информации</li>
-                            <li class="about__item-text-point">получать во временное пользование на дом или в читальном зале любой документ из библиотечных фондов</li>
-                            <li class="about__item-text-point">продление срока пользования документами, выданными на дом лично или по телефону</li>
-                            <li class="about__item-text-point">доступ к Интернету, сайтам Красноярского края, работу с полнотекстовой справочной правовой системой КонсультантПлюс;</li>
-                            <li class="about__item-text-point">подключение к бесплатной зоне Wi-Fi</li>
-                            <li class="about__item-text-point">предоставление в пользование компьютера</li>
-                            <li class="about__item-text-point">заказ литературы через МБА (межбиблиотечный абонемент) и электронную доставку документов из фондов краевой научной библиотеки</li>
-                        </ul>
-                    </div>
-                </div>
-                
-            </div> -->
-            <div class="about__list-item">
+            <div class="about__list-item about__list-item--for-open">
                 <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
                 <div class="about__item-wrapper">
                     <p class="about__item-text">Курагинский район</p>
                 </div>
             </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Герб и флаг</a>
+            <div class="about__answer-wrap">
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Герб и флаг</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">История Курагинского района</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">История Курагинского района</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Календарь знаменательных и памятных дат</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Календарь знаменательных и памятных дат</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Памятники истории, культуры. Достопримечательности</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Памятники истории, культуры. Достопримечательности</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Край истоки</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Край истоки</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Первая коммуна «Красный луч»</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Первая коммуна «Красный луч»</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Саянская геологоразведческая партия</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Саянская геологоразведческая партия</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Трасса мужества</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Трасса мужества</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Шалоболинский Свято-Троицкий храм</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Шалоболинский Свято-Троицкий храм</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Белая Корона (Краснокаменск)</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Белая Корона (Краснокаменск)</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Гора Бугуртак. Легенда о крылатом драконе</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Гора Бугуртак. Легенда о крылатом драконе</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Джебская пещера</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Джебская пещера</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Могила А.М. Кошурникова, заимка Нижне-Казырская</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Могила А.М. Кошурникова, заимка Нижне-Казырская</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Можарский водопад</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Можарский водопад</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">По берегу Тубы</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">По берегу Тубы</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Река Туба</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Река Туба</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Туристский паспорт Курагинского района</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Туристский паспорт Курагинского района</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Шалоболинская писаница - уникальный памятник</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Шалоболинская писаница - уникальный памятник</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Шалоболинская писаница</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Шалоболинская писаница</a>
+                    </div>
                 </div>
+
             </div>
 
-
-            <div class="about__list-item">
+            <div class="about__list-item about__list-item--for-open">
                 <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
                 <div class="about__item-wrapper">
                     <p class="about__item-text">Курагино</p>
                 </div>
             </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="1">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Старые дома Курагино</a>
+            <div class="about__answer-wrap">
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="1">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Старые дома Курагино</a>
+                    </div>
+                </div>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="1">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Курагино, которое мы не видели</a>
+                    </div>
+                </div>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="1">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Курагинский спасский приход</a>
+                    </div>
+                </div>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="1">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Политические ссыльные в Курагино</a>
+                    </div>
+                </div>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="1">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Старинное село Курагино</a>
+                    </div>
+                </div>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="1">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Экскурсия по селу Курагино</a>
+                    </div>
                 </div>
             </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="1">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Курагино, которое мы не видели</a>
-                </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="1">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Курагинский спасский приход</a>
-                </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="1">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Политические ссыльные в Курагино</a>
-                </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="1">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Старинное село Курагино</a>
-                </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="1">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Экскурсия по селу Курагино</a>
-                </div>
-            </div>
-            
 
 
-            <div class="about__list-item">
+
+            <div class="about__list-item about__list-item--for-open">
                 <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
                 <div class="about__item-wrapper">
                     <p class="about__item-text">Села и поселки</p>
                 </div>
             </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="2">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Брагино. История и современность</a>
+            <div class="about__answer-wrap">
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="2">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Брагино. История и современность</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="2">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Имисское</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="2">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Имисское</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="2">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Кордово</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="2">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Кордово</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="2">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Письма об Артемовске</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="2">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Письма об Артемовске</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="2">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Пойлово</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="2">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Пойлово</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="2">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Просвещение в Имиссе</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="2">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Просвещение в Имиссе</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="2">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Шалоболино</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="2">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Шалоболино</a>
+                    </div>
                 </div>
             </div>
 
 
-            <div class="about__list-item">
+            <div class="about__list-item about__list-item--for-open">
                 <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
                 <div class="about__item-wrapper">
                     <p class="about__item-text">Мемориальные доски</p>
                 </div>
             </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="3">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Герои войны</a>
+            <div class="about__answer-wrap">
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="3">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Герои войны</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="3">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Герои труда</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="3">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Герои труда</a>
+                    </div>
                 </div>
             </div>
 
 
-            <div class="about__list-item">
+            <div class="about__list-item about__list-item--for-open">
                 <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
                 <div class="about__item-wrapper">
                     <p class="about__item-text">Курагинцы в годы ВОВ</p>
                 </div>
             </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="4">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Мельников Николай Артамонович</a>
+            <div class="about__answer-wrap">
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="4">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Мельников Николай Артамонович</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="4">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Окуловы Яков Харлампиевич и Елизавета Минеевна</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="4">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Окуловы Яков Харлампиевич и Елизавета Минеевна</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="4">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Тормозаков Павел Степанович</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="4">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Тормозаков Павел Степанович</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="4">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Тулинов Алексей Николаевич</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="4">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Тулинов Алексей Николаевич</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="4">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Участники Великой Отечественной войны</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="4">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Участники Великой Отечественной войны</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="4">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Участники войны</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="4">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Участники войны</a>
+                    </div>
                 </div>
             </div>
 
 
-            <div class="about__list-item">
+            <div class="about__list-item about__list-item--for-open">
                 <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
                 <div class="about__item-wrapper">
                     <p class="about__item-text">Литературная карта</p>
                 </div>
             </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="5">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Болотов Валерий Павлович</a>
+            <div class="about__answer-wrap">
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="5">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Болотов Валерий Павлович</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="5">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Мисюрова Надежда</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="5">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Мисюрова Надежда</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="5">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Лесова Любовь</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="5">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Лесова Любовь</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="5">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Ехомова Ольга Ларионовна</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="5">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Ехомова Ольга Ларионовна</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="5">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Орлов Евгений Иванович</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="5">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Орлов Евгений Иванович</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="5">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Топилин Владимир Степанович</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="5">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Топилин Владимир Степанович</a>
+                    </div>
                 </div>
             </div>
 
 
-            <div class="about__list-item">
+            <div class="about__list-item about__list-item--for-open">
                 <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
                 <div class="about__item-wrapper">
                     <p class="about__item-text">Культура. Искусство. Библиотечное дело</p>
                 </div>
             </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="6">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Люди</a>
+            <div class="about__answer-wrap">
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="6">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Люди</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="6">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">События</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="6">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">События</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="6">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Даты</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="6">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Даты</a>
+                    </div>
                 </div>
             </div>
 
 
-            <div class="about__list-item">
+            <div class="about__list-item about__list-item--for-open">
                 <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
                 <div class="about__item-wrapper">
                     <p class="about__item-text">Имя в истории района</p>
                 </div>
             </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Артемьев Георгий Карпович</a>
+            <div class="about__answer-wrap">
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Артемьев Георгий Карпович</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Баландин Андрей Викторович</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Баландин Андрей Викторович</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Девятов Ф.Ф. : участие в сельскохозяйственных выставках</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Девятов Ф.Ф. : участие в сельскохозяйственных выставках</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Девятов Ф.Ф. : Мировое Признание</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Девятов Ф.Ф. : Мировое Признание</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Дмитриев Евгений Дмитриевич</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Дмитриев Евгений Дмитриевич</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Их имена носят улицы поселка</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Их имена носят улицы поселка</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Матушка Екатерина (Бальва)</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Матушка Екатерина (Бальва)</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Пашенных Николай Павлович</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Пашенных Николай Павлович</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Пашкова Зоя Ивановна</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Пашкова Зоя Ивановна</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Посохов Владимир Титович</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Посохов Владимир Титович</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Прохоров Иван Григорьевич</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Прохоров Иван Григорьевич</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Рогозинский Василий</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Рогозинский Василий</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Семья Щербининых</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Семья Щербининых</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Федонин Вячеслав Геннадьевич</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Федонин Вячеслав Геннадьевич</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Шароватов Александр Георгиевич</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Шароватов Александр Георгиевич</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Штиберт Любовь Алексеевна</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Штиберт Любовь Алексеевна</a>
+                    </div>
                 </div>
-            </div>
-            <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--lvl2">
-                    <a class="about__item-text about__item-text--lvl2" href="#">Ястреб Фёдор Александрович</a>
+                <div class="about__list-item about__item-text-more--second-lvl" data-number="7">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--lvl2">
+                        <a class="about__item-text about__item-text--lvl2" href="#">Ястреб Фёдор Александрович</a>
+                    </div>
                 </div>
             </div>
             
         </section>
     </main>
-</div>
-    <!-- <footer class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <div class="footer__one">
-                    <div class="footer__one-item footer__phone">
-                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-phone.png' %}" alt="">
-                        <a class="footer__text" href="">8 (391) 362-48-56</a>
-                    </div>
-                    <div class="footer__one-item footer__email">
-                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-mail.png' %}" alt="">
-                        <a class="footer__text" href="">kur-mcb@yandex.ru</a>
-                    </div>
-                    <div class="footer__one-item footer__address">
-                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-address.png' %}" alt="">
-                        <a class="footer__text" href="">662910, Красноярский край, п. Курагино, ул. Партизанская, 150</a>
-                    </div>
-                    <div class="footer__one-item footer__vk">
-                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
-                        <a class="footer__text" href="">https://vk.com/kurlib</a>
-                    </div>
-                    <h4 class="footer__title">Cайт разработан:</h4>
-                    <div class="footer__one-item footer__vk">
-                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
-                        <a class="footer__text" href="">https://vk.com/id162248876</a>
-                    </div>
-                </div>
-                <div class="footer__two">
-                    <h4 class="footer__title footer__title-schedule">Расписание</h4>
-                    <div class="footer__schedule">
-                        <div class="footer__weekdays">
-                            <h5 class="footer__subtitle">График работы:</h5>
-                            <div class="footer__time">
-                                <img src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="" class="footer__schedule-img">
-                                <p class="footer__schedule-text">09:00-18:00</p>
-                            </div>
-                        </div>
-                        <div class="footer__weekends">
-                            <h5 class="footer__subtitle">Воскресенье:</h5>
-                            <div class="footer__time">
-                                <img src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="" class="footer__schedule-img">
-                                <p class="footer__schedule-text">09:00-16:00</p>
-                            </div>
-                        </div>
-                    </div>
-                    <h5 class="footer__subtitle">Выходные: суббота</h5>
-                    <p class="footer__text">Последняя пятница месяца санитарный день</p>
-                    <h4 class="footer__title">Летнее расписание</h4>
-                    <h5 class="footer__subtitle">График работы:</h5>
-                    <div class="footer__time">
-                        <img class="footer__schedule-img" src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="">
-                        <p class="footer__schedule-text">09:00-18:00</p>
-                    </div>
-                    <h5 class="footer__subtitle">Выходные: суббота, воскресенье</h5>
-                </div>
-                <div class="footer__three">
-                    <h4 class="footer__title footer__title-schedule">Общая информация</h4>
-                    <h5 class="footer__subtitle">Полное наименование:</h5>
-                    <p class="footer__text">Муниципальное бюджетное учреждение культуры «Межпоселенческая центральная библиотека Курагинского района» </p>
-                    <h5 class="footer__subtitle footer__schedule-sub">Сокращенное наименование:</h5>
-                    <p class="footer__text">МБУК МЦБ Курагинского района</p>
-                </div>
-            </div>
-        </div>
-    </footer> -->
+
+    <script src="{% static 'kurlib/js/collapse.js' %}"></script>
+    <script src="{% static 'kurlib/js/menuOpen.js' %}"></script>
+    <script src="{% static 'kurlib/js/menuOpenMedia.js' %}"></script>
 </body>
 </html>

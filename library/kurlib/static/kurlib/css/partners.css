@@ -6,11 +6,12 @@
 .partners__title {
     margin-bottom: 1.28em;
 }
-.title {
-}
 .partners__slider-wrapper {
 }
 .partners__slider {
+}
+.partners-slider {
+    margin-bottom: 100px;
 }
 .partners__slider-line {
     display: grid;

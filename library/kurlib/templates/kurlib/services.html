@@ -15,32 +15,88 @@
     <link rel="stylesheet" href="{% static 'kurlib/css/header.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/services.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/media.css' %}">
     <!--<link rel="stylesheet" href="{% static 'kurlib/css/generalHeader.css' %}"> -->
     <!--<link rel="stylesheet" href="{% static 'kurlib/css/about.css' %}"> -->
 
 </head>
 <body>
     <div class="about__Library">
-    <header class="header header--about">
-        
-            <div class="general__header-top">
-                <div class="header--left__name">
-                    <img class="header--left__bg" src="{% static 'kurlib/images/header/header--left__bg.png' %}" alt="">
-                    <h5 class="title title--left header--left__title services__title--left">Услуги</h5>
-                </div>
-                <img class="logo logo--left" src="{% static 'kurlib/images/logo/logo__img.png' %}" alt="">
-                <button class="menu__button">
-                    <p class="menu__button-txt">Меню</p>
-                    <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button.png' %}" alt="">
-                    
-                </button>
+        <header class="header header--about header--with-mob-top">
+            <div class="header--mob">
+                <img class="header--mob-top" src="{% static 'kurlib/images/header/header--mob-top.png' %}" alt="">
+                <p class="header--mob-text">Услуги</p>
+            </div>
+                <div class="general__header-top">
+                    <div class="header--left__name">
+                        <img class="header--left__bg" src="{% static 'kurlib/images/header/header--left__bg.png' %}" alt="">
+                        <h5 class="title title--left header--left__title services__title--left">Услуги</h5>
+                    </div>
+                    <img class="logo logo--left" src="{% static 'kurlib/images/logo/logo__img.png' %}" alt="">
+                    <div class="menu__button menu__button--duo menu__button--big">
+                        <div class="menu__button--left">
+                            <p class="menu__button-txt menu__button-txt--white">меню</p>
+                            <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button--white.png' %}" alt="">
+                        </div>
+                        <div class="menu__button--right">
+                            <a class="menu__button-txt menu__button-txt--white" href="#">назад</a>
+                        </div>
+                    </div>
+                    <div class="menu__button menu__button--left menu__button--small">
+                        <p class="menu__button-txt menu__button-txt--white menu__button-txt--small">Меню</p>
+                        <img class="menu__img menu__img--small" src="{% static 'kurlib/images/menu/menu__button--white.png' %}" alt="">
+                    </div>
+                    <div class="menu__open none">
+                        <img class="close menu__close" src="{% static 'kurlib/images/menu/close.png' %}" alt="">
+                        <ul class="menu__open-list">
+                            <li class="menu__open-item">
+                                <a class="menu__open-link" href="">Главная</a>
+                            </li>
+                            <li class="menu__open-item">
+                                <a class="menu__open-link" href="">Электронный каталог</a>
+                            </li>
+                            <li class="menu__open-item">
+                                <a class="menu__open-link" href="">О библиотеке</a>
+                            </li>
+                            <li class="menu__open-item">
+                                <a class="menu__open-link" href="">Читателю</a>
+                            </li>
+                            <li class="menu__open-item">
+                                <a class="menu__open-link" href="">Детская библиотека</a>
+                            </li>
+                            <li class="menu__open-item">
+                                <a class="menu__open-link" href="">Услуги</a>
+                            </li>
+                            <li class="menu__open-item">
+                                <a class="menu__open-link" href="">Мероприятия</a>
+                            </li>
+                            <li class="menu__open-item">
+                                <a class="menu__open-link" href="">Краеведение</a>
+                            </li>
+                            <li class="menu__open-item">
+                                <a class="menu__open-link" href="">Коллегам</a>
+                            </li>
+                            <li class="menu__open-item">
+                                <a class="menu__open-link" href="">Вопрос-ответ</a>
+                            </li>
+                            <li class="menu__open-item">
+                                <a class="menu__open-link" href="">Независимая оценка качества</a>
+                            </li>
+                            <li class="menu__open-item">
+                                <a class="menu__open-link" href="">Контакты</a>
+                            </li>
+                            <li class="menu__open-item">
+                                <a class="menu__open-link" href="">Для администратора</a>
+                            </li>
+                        </ul>
+                    </div>
 
-    </header>
+        </header>
     <main>
-        
+
         <section class="services">
             <div class="services__item">
-                <h4 class="title services__title">Услуги</h4>
+                <h4 class="title services__title">Услуги</h5>
                 <p class="services__txt services__txt-main">Предоставление информации о наличии в фондах конкретных документов;</p>
                 <p class="services__txt services__txt-main">Предоставление информации о составе фондов через систему каталогов и другие формы библиотечной информации: организация книжных выставок, составление библиографических списков и д. р.;</p>
                 <p class="services__txt services__txt-main">Предоставление справочной и консультационной помощи в поиске и выборе источников информации, включая Интернет;</p>
@@ -50,15 +106,15 @@
                 <p class="services__txt services__txt-main">Организация и проведение культурно-просветительской и информационной деятельности;</p>
             </div>
             <div class="services__item">
-                <h4 class="title services__title">Дополнительные услуги</h4>
-                <p class="services__txt services__txt-add">Поиск и копирование материала;</p>
-                <p class="services__txt services__txt-add">Набор текста специалистом библиотеки;</p>
-                <p class="services__txt services__txt-add">Распечатка документов на принтере с носителя;</p>
-                <p class="services__txt services__txt-add">Сканирование документов;</p>
-                <p class="services__txt services__txt-add">Ксерокопирование;</p>
-                <p class="services__txt services__txt-add">Самостоятельная работа с установленным программным обеспечением (без доступа к сети Интернет);</p>
-                <p class="services__txt services__txt-add">Самостоятельная работа с доступом к сети Интернет;</p>
-                <p class="services__txt services__txt-add">Информационные услуги с использованием Интернет: поиск и обработка информации</p>
+                <h4 class="title services__title">Дополнительные услуги</h5>
+                <p class="services__txt services__txt-main">Поиск и копирование материала;</p>
+                <p class="services__txt services__txt-main">Набор текста специалистом библиотеки;</p>
+                <p class="services__txt services__txt-main">Распечатка документов на принтере с носителя;</p>
+                <p class="services__txt services__txt-main">Сканирование документов;</p>
+                <p class="services__txt services__txt-main">Ксерокопирование;</p>
+                <p class="services__txt services__txt-main">Самостоятельная работа с установленным программным обеспечением (без доступа к сети Интернет);</p>
+                <p class="services__txt services__txt-main">Самостоятельная работа с доступом к сети Интернет;</p>
+                <p class="services__txt services__txt-main">Информационные услуги с использованием Интернет: поиск и обработка информации</p>
             </div>
         </section>
     </main>
@@ -127,5 +183,7 @@
             </div>
         </div>
     </footer>
+    <script src="{% static 'kurlib/js/menuOpen.js' %}"></script>
+    <script src="{% static 'kurlib/js/menuOpenDuo.js' %}"></script>
 </body>
 </html>

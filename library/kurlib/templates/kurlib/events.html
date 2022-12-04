@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{% static 'kurlib/css/services.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/events__page.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/media.css' %}">
     <!-- <link rel="stylesheet" href="{% static 'kurlib/css/generalHeader.css' %}"> -->
     <!-- <link rel="stylesheet" href="{% static 'kurlib/css/about.css' %}"> -->
 
@@ -30,36 +31,80 @@
                     <h5 class="title title--left header--left__title header--left__title2 events__title--left">Мероприятия</h5>
                 </div>
                 <img class="logo logo--left" src="{% static 'kurlib/images/logo/logo__img.png' %}" alt="">
-                <button class="menu__button menu__button--left">
+                <div class="menu__button menu__button--left">
                     <p class="menu__button-txt menu__button-txt--white">Меню</p>
                     <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button--white.png' %}" alt="">
-                    
-                </button>
+                </div>
+                <div class="menu__open none">
+                    <img class="close menu__close" src="{% static 'kurlib/images/menu/close.png' %}" alt="">
+                    <ul class="menu__open-list">
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Главная</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Электронный каталог</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">О библиотеке</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Читателю</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Детская библиотека</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Услуги</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Мероприятия</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Краеведение</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Коллегам</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Вопрос-ответ</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Независимая оценка качества</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Контакты</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Для администратора</a>
+                        </li>
+                    </ul>
+                </div>
      
     </header>
     <main>
         
         <section class="services events-page__list">
             <div class="services__item">
-                <p class="services__txt services__txt-main">Книжная сибириада</p>
-                <p class="services__txt services__txt-main">Краеведческий диктант-2022</p>
-                <p class="services__txt services__txt-main">Память об Афганской войне</p>
-                <p class="services__txt services__txt-main">Проспект читающих людей</p>
-                <p class="services__txt services__txt-main">Краеведческий диктант-2022</p>
-                <p class="services__txt services__txt-main">Память об Афганской войне</p>
-                <p class="services__txt services__txt-main">Книжная сибириада</p>
-                <p class="services__txt services__txt-main">Краеведческий диктант-2022</p>
-                <p class="services__txt services__txt-main">Память об Афганской войне</p>
-                <p class="services__txt services__txt-main">Книжная сибириада</p>
-                <p class="services__txt services__txt-main">Память об Афганской войне</p>
-                <p class="services__txt services__txt-main">Книжная сибириада</p>
-                <p class="services__txt services__txt-main">Краеведческий диктант-2022</p>
-                <p class="services__txt services__txt-main">Память об Афганской войне</p>
-                <p class="services__txt services__txt-main">Книжная сибириада</p>
+                <p class="services__txt services__txt-main services__events">Книжная сибириада</p>
+                <p class="services__txt services__txt-main services__events">Краеведческий диктант-2022</p>
+                <p class="services__txt services__txt-main services__events">Память об Афганской войне</p>
+                <p class="services__txt services__txt-main services__events">Проспект читающих людей</p>
+                <p class="services__txt services__txt-main services__events">Краеведческий диктант-2022</p>
+                <p class="services__txt services__txt-main services__events">Память об Афганской войне</p>
+                <p class="services__txt services__txt-main services__events">Книжная сибириада</p>
+                <p class="services__txt services__txt-main services__events">Краеведческий диктант-2022</p>
+                <p class="services__txt services__txt-main services__events">Память об Афганской войне</p>
+                <p class="services__txt services__txt-main services__events">Книжная сибириада</p>
+                <p class="services__txt services__txt-main services__events">Память об Афганской войне</p>
+                <p class="services__txt services__txt-main services__events">Книжная сибириада</p>
+                <p class="services__txt services__txt-main services__events">Краеведческий диктант-2022</p>
+                <p class="services__txt services__txt-main services__events">Память об Афганской войне</p>
+                <p class="services__txt services__txt-main services__events">Книжная сибириада</p>
             </div>
         </section>
     </main>
 
-    
+    <script src="{% static 'kurlib/js/menuOpen.js' %}"></script>
+    <script src="{% static 'kurlib/js/menuOpenDuo.js' %}"></script>
 </body>
 </html>

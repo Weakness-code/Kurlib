@@ -1,0 +1,502 @@
+/* ТУТ НОВОЕ! */
+@media screen and (min-width: 1763px) {
+    .header__img-out {
+        width: 65%;
+    }
+}
+@media screen and (max-width: 1439px) {
+    .events__bg {
+        display: none;
+    }
+    /* ТУТ НОВОЕ! */
+    .events__content {
+        gap: 10em;
+    }
+    .events {
+        background: #3A57BB;
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+    .events__button-more {
+        margin: 0 auto;
+        margin-top: 5em;
+    }
+    .events__title {
+        color: #FFFF;
+    }
+    .events__item-day--blue {
+        color: #FFFF;
+    }
+    .events__item-year--blue {
+        color: #FFFF;
+    }
+    .events__item-top {
+        font-size: 1.5rem;
+    }
+    .catalog__bg  {
+        display: none;
+    }
+    .catalog {
+        margin-top: -10%;
+        background: url("{% static 'kurlib//images/partners/partners__child.png' %}");
+    }
+
+}
+@media screen and (max-width: 1330px) {
+    .virtual-card__wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .all-information__wrapper {
+        flex-direction: column;
+    }
+    .all-information__links-left {
+        margin-right: 0;
+    }
+    .all-information__point {
+        margin-bottom: 3em;
+    }
+}
+@media screen and (max-width: 1230px) {
+    .header__img-out {
+        display: none;
+    }
+    .header__content {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .header__left-title {
+        margin-top: 2em;
+    }
+    .header__left-subtitle {
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 3.6875em;
+    }
+    .button--associate {
+        margin: 0 auto;
+    }
+    .header__right-img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+    .info-cards__wrapper {
+        padding: 8% 0;
+    }
+    .search__field {
+        width: 39%;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+    .main-title {
+        margin-top: 3rem;
+    }
+    .catalog__title {
+        text-align: center;
+        padding-top: 4.266em;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+    .catalog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .catalog__button {
+        position: initial;
+        margin-top: 5rem;
+    }
+    .catalog__img-book1 {
+        right: 56.6%;
+    }
+    .catalog__img-book3 {
+        top: 32.228%;
+        right: 24%;
+    }
+    .virtual__slider__swiper-button-prev {
+        color: white;
+    }
+    .virtual__slider__swiper-button-next {
+        color: white;
+    }
+}
+@media screen and (max-width: 1130px) {
+    .header--left__name {
+        display: none;
+    }
+    .about__item-text {
+        font-weight: normal;
+        font-size: 1rem;
+    }
+    .answer__text {
+        font-weight: normal;
+        font-size: 1rem;
+    }
+    .about__answer {
+        border: 1px solid #3A57BB;
+    }
+    .services__title {
+        padding-left: 1rem;
+    }
+    .services__txt{
+        padding-left: 1rem;
+        /* padding-left: 10%; */
+    }
+    .services__events {
+        padding-left: 3rem;
+    }
+    .events-page__txt {
+        padding-left: 3rem;
+    }
+    .competitions {
+        margin-left: 7%;
+        width: 87%;
+    }
+    .eventCard {
+        margin-left: 15%;
+    }
+    .events-page__list {
+        padding-left: 0;
+        margin-top: 0;
+    }
+
+}
+@media screen and (max-width: 1060px) {
+    .info-cards {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    .info-cards__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-cards__pseudo-item {
+        margin-bottom: 5em;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .virtual-card__wrapper {
+        flex-direction: column;
+    }
+    .virtual-card__left {
+        display: flex;
+        justify-content: center;
+    }
+    .virtual-card__img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+}
+@media screen and (max-width: 1024px) {
+    .text {
+        margin-top: 0;
+    }
+    .eventCard {
+        margin-left: 5%;
+        margin-right: 5%;
+        flex-direction: column;
+    }
+    .eventCard__left {
+        margin-left: 0;
+        padding-right: 0;
+        margin-top: 2em;
+    }
+    .eventCard__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 20vh;
+    }
+    .container--media-events {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .contact {
+        flex-direction: column;
+    }
+    .contact__left {
+        width: auto;
+        margin-bottom: 3em;
+        margin-right: 0;
+    }
+    .contact__right {
+        width: 80%;
+    }
+}
+/* ТУТ НОВОЕ! Убрала */
+/* @media screen and (max-width: 919px) {
+    .slider__item-img {
+        padding-left: 15%;
+    }
+} */
+@media screen and (max-width: 981px) {
+    .partners__slider-item {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .footer__content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+                "footer3 footer3"
+                "footer1 footer2";
+        justify-items: flex-start;
+        gap: 3.4em;
+    }
+    .events__item-img-wrapper {
+        height: auto;
+    }
+    .events__item {
+        width: 100%;
+    }
+    .catalog__img-book1 {
+        right: 60.6%;
+        top: 40.204%;
+    }
+    .catalog__img-book {
+        width: 20%;
+    }
+    .catalog__img-book4 {
+        width: 30%;
+        top: 57.766%;
+    }
+
+
+}
+@media screen and (max-width: 790px) {
+    .logo--small {
+        width: 80px;
+    }
+    .header__links {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    .about__item-wrapper {
+        border-radius: 40px;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -o-border-radius: 40px;
+    }
+    .about__answer {
+        left: calc(30% + (163 - 30) * ((100vw - 340px) / (1440 - 340)));
+    }
+    .footer--small {
+        flex-direction: column-reverse;
+    }
+    .footer--small__social {
+        margin-top: 10%;
+    }
+    .footer--small__social-img {
+        width: 6%;
+    }
+    .catalog__img-book1 {
+        right: 70.16%;
+
+    }
+    .catalog__img-book2 {
+        top: 70.169%;
+        right: 32.76%;
+    }
+    .catalog__img-book2 {
+        top: 70.169%;
+        right: 32.76%;
+    }
+    .catalog__img-book3 {
+        top: 36.228%;
+        right: 18%;
+    }
+
+}
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 14px;
+    }
+
+}
+@media screen and (max-width: 655px) {
+    .competitions__item {
+        flex-direction: column;
+    }
+    .virtual-card__wrapper {
+        gap: 3.25rem;
+    }
+    .container--media {
+        padding-left: 4.25em;
+        padding-right: 4.25em;
+    }
+    .eventCard {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+
+
+}
+@media screen and (max-width: 630px) {
+    .header--left__title {
+        display: none;
+    }
+    .menu__button--big {
+        display: none;
+    }
+    .menu__button--small {
+        display: flex;
+    }
+    .info-cards__pseudo-item {
+        width: calc(15px + (25 - 15) * ((100vw - 340px) / (630 - 340)));
+        height: calc(15px + (25 - 15) * ((100vw - 340px) / (630 - 340)));
+    }
+    .all-information__organisation-txt {
+        margin-left: 0;
+    }
+    .contact__title {
+        font-size: 4.625rem;
+    }
+}
+@media screen and (max-width: 580px) {
+    .footer__content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+                "footer1"
+                "footer2"
+                "footer3";
+        gap: 2.4em;
+    }
+    .container--text {
+        width: 77%;
+        margin-left: 9%;
+    }
+    .contact__form-input {
+        border: 1px solid #3A57BB;
+        font-size: 1rem;
+        padding: 7%;
+    }
+    .contact__form-comment {
+        border-radius: 22px;
+        -webkit-border-radius: 22px;
+        -moz-border-radius: 22px;
+        -ms-border-radius: 22px;
+        -o-border-radius: 22px;
+    }
+    .main-title {
+        font-size: 1.8rem;
+    }
+    .events__title {
+        margin-bottom: 1.7em;
+    }
+
+}
+@media screen and (max-width: 550px) {
+    .search__field {
+        width: 48%;
+    }
+    .catalog__title {
+        font-size: 1.8125em;
+    }
+    .catalog__button-img {
+        width: 221px;
+    }
+    .catalog__button {
+        margin-top: 12rem;
+    }
+    .catalog__img-book {
+        width: 25%;
+    }
+    .title--prata {
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 410px) {
+    html {
+        font-size: 12px;
+    }
+    .catalog__img-book {
+        width: 30%;
+    }
+    .catalog__img-book1 {
+        left: -1%;
+        top: 36.204%;
+    }
+    .catalog__img-book2 {
+        right: 53.76%;
+    }
+    .catalog__img-book3 {
+        right: 15.228%;
+
+    }
+    .catalog__img-book4 {
+        width: 177px;
+
+    }
+
+}
+@media screen and (max-width: 450px) {
+    .menu__button--small {
+        width: auto;
+    }
+    .menu__button-txt--small {
+        margin-right: 0.3em;
+    }
+    .menu__img--small {
+        height: 30px;
+        width: 30px;
+    }
+    .logo--small {
+        width: 60px;
+    }
+    .all-information {
+        margin-left: -18%;
+    }
+    .contact {
+        margin-left: -18%;
+    }
+    .footer--small__social-img {
+        width: 10%;
+    }
+    .eventCard__right {
+        width: 100%;
+    }
+    .events__item {
+        display: flex;
+        flex-direction: column;
+    }
+    .events__item-img {
+        max-width: 100%;
+    }
+    .events__item-top {
+        font-size: 1.25rem;
+    }
+    .events__button-more {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .header--mob {
+        display: block;
+    }
+    .header--with-mob-top {
+        margin-bottom: 7.142em;
+    }
+    .text {
+        z-index: -1;
+        margin-top: -7em;
+        padding-top: 5em;
+    }
+
+}
+@media screen and (max-width: 380px) {
+
+    .title--prata {
+        font-size: 1.5rem;
+    }
+}

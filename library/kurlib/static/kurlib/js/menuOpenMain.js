@@ -1,0 +1,1 @@
+bindMenu(".menu__button", ".menu__open", ".menu__close");
