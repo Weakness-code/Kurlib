@@ -60,6 +60,22 @@
         margin-bottom: 3em;
     }
 }
+@media screen and (max-width: 1300px) {
+    .virtual-card__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .virtual-card__left {
+        display: flex;
+        justify-content: center;
+    }
+    .virtual-card__img {
+        max-width: 100%;
+        object-fit: cover;
+        max-height: 500px;
+    }
+}
+
 @media screen and (max-width: 1230px) {
     .header__img-out {
         display: none;

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{% static 'kurlib/css/info-cards.css' %}">
 
     <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
-
+    <link rel="stylesheet" href="{% static 'kurlib/css/media.css' %}">
     
 </head>
 <body>
@@ -24,30 +24,78 @@
         <div class="container">
             <div class="header__top">
                 <img class="logo" src="{% static 'kurlib/images/logo/logo__img.png' %}" alt="">
-                <button class="menu__button menu__button--duo">
-                    <div class="menu__button--left">
-                        <p class="menu__button-txt menu__button-txt--white">меню</p>
-                        <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button--white.png' %}" alt="">
+                <div class="menu__button menu__button--duo menu__button--big">
+                    <div class="menu__button--left menu__button--left-blue">
+                        <p class="menu__button-txt menu__button-txt--blue">меню</p>
+                        <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button.png' %}" alt="">
                     </div>
                     <div class="menu__button--right">
                         <a class="menu__button-txt menu__button-txt--white" href="#">назад</a>
                     </div>
-                </button>
-            </div>
-            <div class="header__content">
-                <div class="header__left">
-                    <h1 class="main-title main-title--blue header__title">{{ branch.title }}</h1>
-                    <h3 class="subtitle subtitle--blue header__subtitle">Библиотека-филиал</h3>
-                    <div class="img-out header__img-out header__img-out--blue header-img-out--big"></div>
                 </div>
-                <div class="header__right">
-                    <img class="header__right-img" src="{% static 'kurlib/images/header/header__right-img.png' %}" alt="">
+                <div class="menu__button menu__button--small">
+                    <p class="menu__button-txt menu__button-txt--small">Меню</p>
+                    <img class="menu__img menu__img--small" src="{% static 'kurlib/images/menu/menu__button.png' %}" alt="">
                 </div>
-            </div>
-            <div class="header__decor">
-                <img class="header__arrow" src="{% static 'kurlib/images/header/header__arrow.png' %}" alt="">
-                <!-- <img class="header__num" src="{% static 'kurlib/images/header/header__num.png' %}" alt=""> -->
-            </div>
+                <div class="menu__open none">
+                    <img class="close menu__close" src="{% static 'kurlib/images/menu/close.png' %}" alt="">
+                    <ul class="menu__open-list">
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Главная</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="http://92.126.252.74:8087/jirbis2/index.php?option=com_irbis&view=irbis&Itemid=115">Электронный каталог</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="/about">О библиотеке</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="/reader">Читателю</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="http://kids.kurlib.ru/">Детская библиотека</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="/services">Услуги</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="/events">Мероприятия</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="/localhistory">Краеведение</a>
+                        </li>
+<!--                        <li class="menu__open-item">-->
+<!--                            <a class="menu__open-link" href="">Коллегам</a>-->
+<!--                        </li>-->
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="/questions">Вопрос-ответ</a>
+                        </li>
+<!--                        <li class="menu__open-item">-->
+<!--                            <a class="menu__open-link" href="">Независимая оценка качества</a>-->
+<!--                        </li>-->
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="contacts">Контакты</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="">Для администратора</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                <div class="header__content">
+                    <div class="header__left">
+                        <h1 class="main-title main-title--blue header__title">{{ branch.title }}</h1>
+                        <h3 class="subtitle subtitle--blue header__subtitle">Библиотека-филиал</h3>
+                        <div class="img-out header__img-out header__img-out--blue header-img-out--big"></div>
+                    </div>
+                    <div class="header__right">
+                        <img class="header__right-img" src="{% static 'kurlib/images/header/header__right-img.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="header__decor">
+                    <img class="header__arrow" src="{% static 'kurlib/images/header/header__arrow.png' %}" alt="">
+                    <!-- <img class="header__num" src="{% static 'kurlib/images/header/header__num.png' %}" alt=""> -->
+                </div>
         </div>
     </header>
     <main class="main">
@@ -144,5 +192,7 @@
             </div>
         </div>
     </footer>
+    <script src="{% static 'kurlib/js/menuOpen.js' %}"></script>
+    <script src="{% static 'kurlib/js/menuOpenDuo.js' %}"></script>
 </body>
 </html>

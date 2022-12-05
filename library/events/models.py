@@ -19,13 +19,8 @@ class Event(models.Model):
     title = models.CharField('Наименование мероприятия', max_length=250)
     main_info = models.TextField("Информация по мероприятию")
     date = models.DateField('Дата проведения')
-    month = ""
     images = {f'image_{i}': models.ImageField(f'Изображение_1', upload_to="events/", default=None) for i in range(10)}
 
-    def save(self, *args, **kwargs):
-        self.month = month_determination(self.date.month)
-
-        super(Event, self).save(*args, **kwargs)
     def __str__(self):
         return self.title
 

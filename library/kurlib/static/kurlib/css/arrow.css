@@ -1,0 +1,14 @@
+.back {
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.back__with-img {
+}
+.back__link-img {
+}
+.back__link {
+}
+.backlink {
+}
