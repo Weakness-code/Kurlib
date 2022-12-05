@@ -1,25 +1,17 @@
 from django.shortcuts import render
-
+from .models import QuestionAnswer
 
 def index(request):
     return render(request, 'kurlib/index.html')
-
 
 
 def services(request):
     return render(request, 'kurlib/services.html')
 
 
-def events(request):
-    return render(request, 'kurlib/events.html')
-
-
-def local_history(request):
-    return render(request, 'kurlib/localHistory.html')
-
-
 def questions_answers(request):
-    return render(request, 'kurlib/questions.html')
+    qa = QuestionAnswer.objects.all()
+    return render(request, 'kurlib/questions.html', {"qa": qa})
 
 
 def contacts(request):

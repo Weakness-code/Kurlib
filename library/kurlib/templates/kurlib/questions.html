@@ -39,43 +39,39 @@
                     <img class="close menu__close" src="{% static 'kurlib/images/menu/close.png' %}" alt="">
                     <ul class="menu__open-list">
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Главная</a>
+                            <a class="menu__open-link" href="{% url 'index' %}">Главная</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Электронный каталог</a>
+                            <a class="menu__open-link"
+                               href="http://92.126.252.74:8087/jirbis2/index.php?option=com_irbis&view=irbis&Itemid=115"
+                               target="_blank">Электронный каталог</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">О библиотеке</a>
+                            <a class="menu__open-link" href="/about/">О библиотеке</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Читателю</a>
+                            <a class="menu__open-link" href="/reader/">Читателю</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Детская библиотека</a>
+                            <a class="menu__open-link" href="http://kids.kurlib.ru/" target="_blank">Детская библиотека</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Услуги</a>
+                            <a class="menu__open-link" href="/services">Услуги</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Мероприятия</a>
+                            <a class="menu__open-link" href="/events">Мероприятия</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Краеведение</a>
+                            <a class="menu__open-link" href="/kraevedenie">Краеведение</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Коллегам</a>
+                            <a class="menu__open-link" href="/questionAnswer">Вопрос-ответ</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Вопрос-ответ</a>
+                            <a class="menu__open-link" href="/contacts">Контакты</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Независимая оценка качества</a>
-                        </li>
-                        <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Контакты</a>
-                        </li>
-                        <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Для администратора</a>
+                            <a class="menu__open-link" href="/admin">Для администратора</a>
                         </li>
                     </ul>
                 </div>
@@ -83,119 +79,17 @@
     </header>
     <main>
         <section class="about about--questions">
-            <div class="about__list-item about__list-item--for-open">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--questions">
-                    <p class="about__item-text">Как записаться в библиотеку?</p>
+            {% for el in qa %}
+                <div class="about__list-item about__list-item--for-open">
+                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
+                    <div class="about__item-wrapper about__item-wrapper--questions">
+                        <p class="about__item-text">el.question</p>
+                    </div>
                 </div>
-            </div>
-            <div class="about__answer">
-                <p class="answer__text">
-                    При записи в библиотеку необходимо иметь паспорт, а несовершеннолетним в возрасте до 14 лет – документы, удостоверяющие личность их законных представителей.
-                </p>
-            </div>
-            <div class="about__list-item about__list-item--for-open">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--questions">
-                    <p class="about__item-text">Проходят ли на базе вашей библиотеки бесплатные компьютерные
-                        курсы для пенсионеров? </p>
+                <div class="about__answer">
+                    <p class="answer__text">el.answer</p>
                 </div>
-            </div>
-            <div class="about__answer">
-                <p class="answer__text">
-                    В нашей библиотеке нет компьютерных курсов, но вы можете обратиться в центр социального обслуживания граждан пожилого возраста и инвалидов.
-                </p>
-            </div>
-            <div class="about__list-item about__list-item--for-open">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--questions">
-                    <p class="about__item-text">Живу не в Курагино, а мне необходимы некоторые книги из вашей
-                        библиотеки, но нет возможности приехать и читать у вас. Как мне быть?</p>
-                </div>
-            </div>
-            <div class="about__answer">
-                <p class="answer__text">
-                    Вы можете заказать интересующую литературу  из Центральной библиотеки, для этого Вам необходимо обратиться  в сельскую библиотеку по месту проживания.
-                </p>
-            </div>
-            <div class="about__list-item about__list-item--for-open">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--questions">
-                    <p class="about__item-text">Что делать, если утеряна книга?</p>
-                </div>
-            </div>
-            <div class="about__answer">
-                <p class="answer__text">
-                    Согласно Правилам пользования библиотеки Вы имеете право заменить её книгой равноценной по содержанию и стоимости. Для уточнения информации необходимо обратиться в библиотеку.
-                </p>
-            </div>
-            <div class="about__list-item about__list-item--for-open">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--questions">
-                    <p class="about__item-text">Принимаете ли вы в свои фонды старые фотографии: люди, здания, события?</p>
-                </div>
-            </div>
-            <div class="about__answer">
-                <p class="answer__text">
-                    Да, конечно! Мы будем рады принять от вас фотографии.
-                </p>
-            </div>
-            <div class="about__list-item about__list-item--for-open">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--questions">
-                    <p class="about__item-text">С какой библиотекой (с какими библиотеками) края вы
-                        сотрудничаете - заказываете книги во временное пользование? Хотелось бы сначала посмотреть наличие необходимых мне изданий на сайте данной библиотеки, прежде чем заказывать. И еще: какова стоимость данной услуги?</p>
-                </div>
-            </div>
-            <div class="about__answer">
-                <p class="answer__text">
-                    Мы сотрудничаем с краевой научной библиотекой. Сайт: <a class="about__answer-link" href="http://www.kraslib.ru">http://www.kraslib.ru</a>. Стоимость складывается следующим образом: вес книги (издания) + стоимость пересылки. Если Вы будете заказывать ксерокопию статьи, то необходимо указать электронный адрес, куда мы отправим выполненный заказ. Эта услуга бесплатная
-                </p>
-            </div>
-            <div class="about__list-item about__list-item--for-open">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--questions">
-                    <p class="about__item-text">С какого года у вас имеются подшивки местной газеты?</p>
-                </div>
-            </div>
-            <div class="about__answer">
-                <p class="answer__text">
-                    В фонде нашей библиотеки имеются подшивки: газет «Заветы Ильича» с 1963 года, «Тубинские вести», «Твои аргументы».
-                </p>
-            </div>
-            <div class="about__list-item about__list-item--for-open">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--questions">
-                    <p class="about__item-text">По каким критериям вы можете принять в дар книги (я переезжаю, а книги выбросить рука не поднимается)?</p>
-                </div>
-            </div>
-            <div class="about__answer">
-                <p class="answer__text">
-                    Мы рады будем принять от Вас в дар книги. Основное внимание мы обращаем на то, чтобы книги были в хорошем состоянии, спрашиваемые, это может быть, как классика, так современная литература.
-                </p>
-            </div>
-            <div class="about__list-item about__list-item--for-open">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--questions">
-                    <p class="about__item-text">Можно как-то определить читал я эту книгу или нет?</p>
-                </div>
-            </div>
-            <div class="about__answer">
-                <p class="answer__text">
-                    Да, по листку возврата на книге.
-                </p>
-            </div>
-            <div class="about__list-item about__list-item--for-open">
-                <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img2.png' %}" alt="">
-                <div class="about__item-wrapper about__item-wrapper--questions">
-                    <p class="about__item-text">Как узнать есть ли нужная книга в библиотеке?</p>
-                </div>
-            </div>
-            <div class="about__answer">
-                <p class="answer__text">
-                    Можно обратиться в библиотеку или к электронному каталогу на нашем сайте: <a class="about__answer-link" href="http://kurlib.ru">http://kurlib.ru</a>
-                </p>
-            </div>
+            {% endfor %}
         </section>
     </main>
 </div>

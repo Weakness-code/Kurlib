@@ -35,6 +35,8 @@ INSTALLED_APPS = [
     'aboutlibrary',
     'branches',
     'reader',
+    'localhistory',
+    'events',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

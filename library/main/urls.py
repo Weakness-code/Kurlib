@@ -8,5 +8,8 @@ urlpatterns = [
     path('', include('kurlib.urls')),
     path('about/', include('aboutlibrary.urls')),
     path('reader/', include('reader.urls')),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + \
-              static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('kraevedenie', include('localhistory.urls')),
+    path('events/', include('events.urls')),
+]\
+              + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\
+              + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

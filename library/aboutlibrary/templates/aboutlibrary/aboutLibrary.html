@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{% static 'kurlib/css/about.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
     <!--<link rel="stylesheet" href="{% static 'kurlib/css/generalHeader.css' %}"> -->
-
+    <link rel="stylesheet" href="{% static 'kurlib/css/media.css' %}">
 </head>
 <body>
     
@@ -29,11 +29,54 @@
                     <h5 class="title title--left header--left__title">О библиотеке</h5>
                 </div>
                 <img class="logo logo--left" src="{% static 'kurlib/images/logo/logo__img.png' %}" alt="">
-                <button class="menu__button menu__button--left">
+                 <div class="menu__button menu__button--left menu__button--big">
                     <p class="menu__button-txt menu__button-txt--white">Меню</p>
                     <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button--white.png' %}" alt="">
-                    
-                </button>
+                </div>
+                <div class="menu__button menu__button--left menu__button--small">
+                    <p class="menu__button-txt menu__button-txt--white menu__button-txt--small">Меню</p>
+                    <img class="menu__img menu__img--small" src="{% static 'kurlib/images/menu/menu__button--white.png' %}" alt="">
+                </div>
+                <div class="menu__open none">
+                    <img class="close menu__close" src="{% static 'kurlib/images/menu/close.png' %}" alt="">
+                    <ul class="menu__open-list">
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="{% url 'index' %}">Главная</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link"
+                               href="http://92.126.252.74:8087/jirbis2/index.php?option=com_irbis&view=irbis&Itemid=115"
+                               target="_blank">Электронный каталог</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="/about/">О библиотеке</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="/reader/">Читателю</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="http://kids.kurlib.ru/" target="_blank">Детская библиотека</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="/services">Услуги</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="/events">Мероприятия</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="/kraevedenie">Краеведение</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="/questionAnswer">Вопрос-ответ</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="/contacts">Контакты</a>
+                        </li>
+                        <li class="menu__open-item">
+                            <a class="menu__open-link" href="/admin">Для администратора</a>
+                        </li>
+                    </ul>
+                </div>
             
     </header>
     <main>
@@ -70,7 +113,8 @@
             </div>
         </section>
     </main>
-<!-- </div> -->
+    <script src="{% static 'kurlib/js/menuOpen.js' %}"></script>
+    <script src="{% static 'kurlib/js/menuOpenMedia.js' %}"></script>
     
 </body>
 </html>

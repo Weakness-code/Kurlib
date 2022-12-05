@@ -17,7 +17,7 @@
     <!-- <link rel="stylesheet" href="{% static 'kurlib/css/about.css' %}"> -->
     <link rel="stylesheet" href="{% static 'kurlib/css/competitions.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
-    <link rel="stylesheet" href="{% static 'kurlib/css/media.css' %}">
+
 </head>
 <body>
     <header class="header header--about">
@@ -28,28 +28,33 @@
                     <h5 class="title title--left header--left__title competitions__title--left">Конкурсы</h5>
                 </div>
                 <img class="logo logo--left" src="{% static 'kurlib/images/logo/logo__img.png' %}" alt="">
-                <div class="menu__button menu__button--main">
-                    <p class="menu__button-txt">Меню</p>
-                    <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button.png' %}" alt="">
+                <div class="menu__button menu__button--left menu__button--big">
+                    <p class="menu__button-txt menu__button-txt--white">Меню</p>
+                    <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button--white.png' %}" alt="">
                 </div>
-                <!-- ТУТ НОВОЕ! -->
+                <div class="menu__button menu__button--left menu__button--small">
+                    <p class="menu__button-txt menu__button-txt--white menu__button-txt--small">Меню</p>
+                    <img class="menu__img menu__img--small" src="{% static 'kurlib/images/menu/menu__button--white.png' %}" alt="">
+                </div>
                 <div class="menu__open none">
                     <img class="close menu__close" src="{% static 'kurlib/images/menu/close.png' %}" alt="">
                     <ul class="menu__open-list">
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Главная</a>
+                            <a class="menu__open-link" href="{% url 'index' %}">Главная</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="http://92.126.252.74:8087/jirbis2/index.php?option=com_irbis&view=irbis&Itemid=115">Электронный каталог</a>
+                            <a class="menu__open-link"
+                               href="http://92.126.252.74:8087/jirbis2/index.php?option=com_irbis&view=irbis&Itemid=115"
+                               target="_blank">Электронный каталог</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="/about">О библиотеке</a>
+                            <a class="menu__open-link" href="/about/">О библиотеке</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="/reader">Читателю</a>
+                            <a class="menu__open-link" href="/reader/">Читателю</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="http://kids.kurlib.ru/">Детская библиотека</a>
+                            <a class="menu__open-link" href="http://kids.kurlib.ru/" target="_blank">Детская библиотека</a>
                         </li>
                         <li class="menu__open-item">
                             <a class="menu__open-link" href="/services">Услуги</a>
@@ -58,35 +63,26 @@
                             <a class="menu__open-link" href="/events">Мероприятия</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="/localhistory">Краеведение</a>
+                            <a class="menu__open-link" href="/kraevedenie">Краеведение</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Коллегам</a>
+                            <a class="menu__open-link" href="/questionAnswer">Вопрос-ответ</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="/questions">Вопрос-ответ</a>
+                            <a class="menu__open-link" href="/contacts">Контакты</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Независимая оценка качества</a>
-                        </li>
-                        <li class="menu__open-item">
-                            <a class="menu__open-link" href="contacts">Контакты</a>
-                        </li>
-                        <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Для администратора</a>
+                            <a class="menu__open-link" href="/admin">Для администратора</a>
                         </li>
                     </ul>
                 </div>
-            </div>
             
     </header>
     <main>
         <section class="competitions">
             {% for comp in competitions %}
                 <div class="competitions__item">
-                    <div class="competitions__item-wrap-img">
-                        <img class="competitions__item-img" src="{{comp.image.url}}" alt="">
-                    </div>
+                    <img class="competitions__item-img" src="{{comp.image.url}}" alt="">
                     <div class="competitions__item-text">
                         <h5 class="competitions__item-name">{{comp.title.url}}</h5>
                         <p class="competitions__item-time"> {{comp.date_begin}} — {{comp.date_end}}</p>
@@ -95,9 +91,7 @@
                 </div>
             {% endfor %}
             <div class="competitions__item">
-                <div class="competitions__item-wrap-img">
-                    <img class="competitions__item-img" src="{% static 'kurlib/images/competitions/competitions__item-img.png' %}" alt="">
-                </div>
+                <img class="competitions__item-img" src="{% static 'kurlib/images/competitions/competitions__item-img.png' %}" alt="">
                 <div class="competitions__item-text">
                     <h5 class="competitions__item-name">Конкурс зимних сочинений</h5>
                     <p class="competitions__item-time">01.01.2022—01.02.2022</p>
@@ -105,19 +99,7 @@
                 </div>
             </div>
             <div class="competitions__item">
-                <div class="competitions__item-wrap-img">
-                    <img class="competitions__item-img" src="{% static 'kurlib/images/competitions/competitions__item-img.png' %}" alt="">
-                </div>
-                <div class="competitions__item-text">
-                    <h5 class="competitions__item-name">Конкурс зимних сочинений</h5>
-                    <p class="competitions__item-time">01.01.2022—01.02.2022</p>
-                    <p class="competitions__item-descr">Задача организации, в особенности же повышение уровня гражданского сознания позволяет выполнить важные задания по разработке первоочередных требований. Но экономическая повестка сегодняшнего дня говорит о возможностях кластеризации усилий. </p>
-                </div>
-            </div>
-            <div class="competitions__item">
-                <div class="competitions__item-wrap-img">
-                    <img class="competitions__item-img" src="{% static 'kurlib/images/bolotnov/bolotnov1.png' %}" alt="">
-                </div>
+                <img class="competitions__item-img" src="{% static 'kurlib/images/competitions/competitions__item-img.png' %}" alt="">
                 <div class="competitions__item-text">
                     <h5 class="competitions__item-name">Конкурс зимних сочинений</h5>
                     <p class="competitions__item-time">01.01.2022—01.02.2022</p>

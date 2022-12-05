@@ -26,11 +26,11 @@
                 <div class="header__links">
                     <div class="header__link-with-img">
                         <img class="header__link-img" src="{% static 'kurlib/images/header/header__link-img.png' %}" alt="">
-                        <a class="header__link" href="">Назад</a>
+                        <a class="header__link" href=".">Назад</a>
                     </div>
-                    <a class="header__link" href="">На главную</a>
+                    <a class="header__link" href="{% url 'index' %}">На главную</a>
                 </div>
-                <div class="menu__button menu__button--big">
+                <!--<div class="menu__button menu__button--big">
                     <p class="menu__button-txt menu__button-txt--pink">Меню</p>
                     <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button--pink.png' %}" alt="">
                 </div>
@@ -42,46 +42,42 @@
                     <img class="close menu__close" src="{% static 'kurlib/images/menu/close.png' %}" alt="">
                     <ul class="menu__open-list">
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Главная</a>
+                            <a class="menu__open-link" href="{% url 'index' %}">Главная</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Электронный каталог</a>
+                            <a class="menu__open-link"
+                               href="http://92.126.252.74:8087/jirbis2/index.php?option=com_irbis&view=irbis&Itemid=115"
+                               target="_blank">Электронный каталог</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">О библиотеке</a>
+                            <a class="menu__open-link" href="/about/">О библиотеке</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Читателю</a>
+                            <a class="menu__open-link" href="/reader/">Читателю</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Детская библиотека</a>
+                            <a class="menu__open-link" href="http://kids.kurlib.ru/" target="_blank">Детская библиотека</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Услуги</a>
+                            <a class="menu__open-link" href="/services">Услуги</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Мероприятия</a>
+                            <a class="menu__open-link" href="/events">Мероприятия</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Краеведение</a>
+                            <a class="menu__open-link" href="/kraevedenie">Краеведение</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Коллегам</a>
+                            <a class="menu__open-link" href="/questionAnswer">Вопрос-ответ</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Вопрос-ответ</a>
+                            <a class="menu__open-link" href="/contacts">Контакты</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Независимая оценка качества</a>
-                        </li>
-                        <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Контакты</a>
-                        </li>
-                        <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Для администратора</a>
+                            <a class="menu__open-link" href="/admin">Для администратора</a>
                         </li>
                     </ul>
-                </div>
+                </div>-->
             </div>
 
             <div class="header__content associate__content">
@@ -89,8 +85,8 @@
                     <h1 class="main-title header__title header__left-title associate__title">КНИЖНОЕ КРАСНОЯРЬЕ</h1>
                     <div class="img-out header__img-out header__img-out--pink header-img-out--big"></div>
                     <h3 class="subtitle header__subtitle associate__subtitle header__left-subtitle">Газета «Наш Красноярский край» входит в мониторинг крупнейших компаний Красноярского края, а также в ТОП-5 рейтинга цитируемости медиа-ресурсов по данным компании «МЕДИАЛОГИЯ».</h3>
-                    <div class="button button--associate">
-                        <a class="button--associate__link" href="https://www.prokhorovfund.ru/?ysclid=lb5d4k13qr452351242">Сайт фонда</a>
+                    <div class="button button--associate" onclick="window.open('https://www.prokhorovfund.ru/?ysclid=lb5d4k13qr452351242');">
+                        <a class="button--associate__link">Сайт фонда</a>
                         <img class="button--associate__img" src="{% static 'kurlib/images/button/button__arrow.png' %}" alt="">
                     </div>
                 </div>

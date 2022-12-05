@@ -85,7 +85,11 @@
         
         <section class="services events-page__list">
             <div class="services__item">
-                <p class="services__txt services__txt-main services__events">Книжная сибириада</p>
+                {% for event in events %}
+                    <p class="services__txt services__txt-main services__events"
+                       onclick="location.href='{% url 'event_detail' event.id %}'">{{event.title}}</p>
+                {% endfor %}
+                <!--<p class="services__txt services__txt-main services__events">Книжная сибириада</p>
                 <p class="services__txt services__txt-main services__events">Краеведческий диктант-2022</p>
                 <p class="services__txt services__txt-main services__events">Память об Афганской войне</p>
                 <p class="services__txt services__txt-main services__events">Проспект читающих людей</p>
@@ -99,7 +103,7 @@
                 <p class="services__txt services__txt-main services__events">Книжная сибириада</p>
                 <p class="services__txt services__txt-main services__events">Краеведческий диктант-2022</p>
                 <p class="services__txt services__txt-main services__events">Память об Афганской войне</p>
-                <p class="services__txt services__txt-main services__events">Книжная сибириада</p>
+                <p class="services__txt services__txt-main services__events">Книжная сибириада</p>-->
             </div>
         </section>
     </main>
