@@ -27,14 +27,18 @@ body {
 .virtual-card__wrapper {
     padding-left: 9.375rem;
     padding-right: 6.25rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    /*display: flex;*/
     gap: 6.25rem;
 }
 .virtual-card__left {
 
 }
-.virtual-card__img {
 
+.virtual-card__img {
+    max-width: 100%;
+    object-fit: cover;
 }
 .virtual-card__right {
 

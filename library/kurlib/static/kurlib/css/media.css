@@ -60,6 +60,22 @@
         margin-bottom: 3em;
     }
 }
+@media screen and (max-width: 1300px) {
+    .virtual-card__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .virtual-card__left {
+        display: flex;
+        justify-content: center;
+    }
+    .virtual-card__img {
+        max-width: 100%;
+        object-fit: cover;
+        max-height: 500px;
+    }
+}
+
 @media screen and (max-width: 1230px) {
     .header__img-out {
         display: none;
@@ -128,6 +144,9 @@
     .header--left__name {
         display: none;
     }
+    .about {
+        margin-left: 0;
+    }
     .competitions {
         width: 100%;
         display: flex;
@@ -170,6 +189,7 @@
         margin-top: 0;
     }
 
+
 }
 @media screen and (max-width: 1060px) {
     .info-cards {
@@ -185,17 +205,7 @@
         margin-right: 0;
         margin-left: 0;
     }
-    .virtual-card__wrapper {
-        flex-direction: column;
-    }
-    .virtual-card__left {
-        display: flex;
-        justify-content: center;
-    }
-    .virtual-card__img {
-        max-width: 100%;
-        object-fit: cover;
-    }
+
 
 }
 @media screen and (max-width: 1024px) {
@@ -460,9 +470,7 @@
     }
     .catalog__img-book4 {
         width: 177px;
-
     }
-
 }
 @media screen and (max-width: 450px) {
     .menu__button--small {
