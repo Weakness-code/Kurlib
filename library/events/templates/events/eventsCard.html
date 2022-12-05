@@ -47,25 +47,14 @@
             <div class="eventCard__right">
                 <img class="eventCard__img" src="{% static 'kurlib/images/eventsCard/eventCard__img.png' %}" alt="">
                 <div class="eventCard__data">
-                    <p class="eventCard__data-day"><span class="eventCard__data-num">27</span> июня</p>
-                    <p class="eventCard__data-year">2021</p>
+                    <p class="eventCard__data-day"><span class="eventCard__data-num">{{event.date.day}}</span>
+                        {{event.month}}</p>
+                    <p class="eventCard__data-year">{{event.date.year}}</p>
                 </div>
             </div>
             <div class="eventCard__left">
-                <h3 class="subtitle eventCard__subtitle">Проспект читающих людей</h3>
-                <p class="eventCard__text">
-                    Сегодня люди в основном читают легкую литературу. И не потому, что это интересно, а потому что над такими произведениями не надо задумываться.
-                </p>
-                <p class="eventCard__text">
-                    27 июня в России празднуется День Молодёжи. Центральная библиотека в рамках этого праздника провела  уличную  акцию-опрос «Проспект читающих людей», который был призван выявить читательские предпочтения. В ходе опроса молодежь  отвечала на вопросы: читаете ли Вы, что  читаете, что можете посоветовать друзьям и знакомым.
-                </p>
-                <p class="eventCard__text">
-                    Ответы респондентов были неоднозначными: от «совсем не читаю» до «читаю христианскую литературу». Молодые родители читают и детям, и сами.
-                </p>
-                <p class="eventCard__text">
-                    Все опрошенные доброжелательно отнеслись к вопросам и с удовольствием вспоминали свои любимые книги. В число самых читаемых писателей попали А. Пушкин,  Л. Толстой, Ф. Достоевский, Т. Пратчетт  и фантастическая серия «Сталкер», включающая в себя и разных авторов, и разные произведения. Также читатели получили  рекомендацию библиотекаря на интересную литературу  популярных авторов  на  сегодняшний день.
-                </p>
-
+                <h3 class="subtitle eventCard__subtitle">{{event.title}}</h3>
+                <p class="eventCard__text">{{event.main_info}}</p>
             </div>
         </section>
     <!-- <section class="back">
@@ -81,9 +70,9 @@
             <div class="footer2-card__links">
                 <div class="footer2-card__link-with-img">
                     <img class="footer2-card__link-img" src="{% static 'kurlib/images/arrows/arrow__back.png' %}" alt="">
-                    <a class="footer2-card__link footer2-card__link--blue" href="">Назад</a>
+                    <a class="footer2-card__link footer2-card__link--blue" href=".">Назад</a>
                 </div>
-                <a class="footer2-card__link footer2-card__link--blue" href="">На главную</a>
+                <a class="footer2-card__link footer2-card__link--blue" href="{% url 'index' %}">На главную</a>
             </div>
         </div>
     </footer>
