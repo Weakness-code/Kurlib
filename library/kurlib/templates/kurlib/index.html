@@ -168,26 +168,47 @@
                 <h4 class="title events__title">Мероприятия</h4>
                 <div class="events__wrapper">
                     <div class="events__content">
-                        {% for event in events %}
-                        <div class="events__item" onclick="location.href = '{% url 'event_detail' event.id %}'">
+                        <div class="events__item" onclick="location.href = '{% url 'event_detail' event_1.id %}'">
                             <div class="events__item-top">
-                                <p class="events__item-day "><span class="events__item-num">{{event.date.day}}</span>
-                                    {{event.month}}</p>
-                                <p class="events__item-year ">{{event.date.year}}</p>
+                                <p class="events__item-day events__item-day--blue"><span class="events__item-num">{{event_1.date.day}}</span>
+                                    {{event_1.month}}</p>
+                                <p class="events__item-year events__item-year--blue">{{event_1.date.year}}</p>
                             </div>
                             <div class="events__item-img-wrapper">
-                                <img class="events__item-img" src="{{event.image.url}}" alt="">
+                                <img class="events__item-img" src="{{event_1.image.url}}" alt="">
                             </div>
                             <div class="events__item-text">
-                                <h6 class="events__item-name">{{event.title}}</h6>
-<!--                                <p class="events__item-descr">Краеведческая шкатулка «Уголок России – отчий дом».</p>-->
+                                <h6 class="events__item-name">{{event_1.title}}</h6>
                             </div>
                         </div>
-                        {% empty %}
-
-                        {% endfor %}
+                        <div class="events__item" onclick="location.href = '{% url 'event_detail' event_2.id %}'">
+                            <div class="events__item-top">
+                                <p class="events__item-day events__item-day--blue"><span class="events__item-num">{{event_2.date.day}}</span>
+                                    {{event_2.month}}</p>
+                                <p class="events__item-year">{{event_2.date.year}}</p>
+                            </div>
+                            <div class="events__item-img-wrapper">
+                                <img class="events__item-img" src="{{event_2.image.url}}" alt="">
+                            </div>
+                            <div class="events__item-text">
+                                <h6 class="events__item-name">{{event_2.title}}</h6>
+                            </div>
+                        </div>
+                        <div class="events__item" onclick="location.href = '{% url 'event_detail' event_3.id %}'">
+                            <div class="events__item-top">
+                                <p class="events__item-day"><span class="events__item-num">{{event_3.date.day}}</span>
+                                    {{event_3.month}}</p>
+                                <p class="events__item-year">{{event_3.date.year}}</p>
+                            </div>
+                            <div class="events__item-img-wrapper">
+                                <img class="events__item-img" src="{{event_3.image.url}}" alt="">
+                            </div>
+                            <div class="events__item-text">
+                                <h6 class="events__item-name">{{event_3.title}}</h6>
+                            </div>
+                        </div>
                     </div>
-                    <a class="button events__button-more" href="">Все мероприятия
+                    <a class="button events__button-more" href="events">Все мероприятия
                         <img class="events__button-img" src="{% static 'kurlib/images/events/events__button-img.png' %}" alt="">
                     </a>
                 </div>
@@ -215,7 +236,7 @@
                     <div class="partners-slider__wrap swiper-wrapper">
                       <!-- Slides -->
                         {% for partner in partners%}
-                            <div class="partners-slider__slide swiper-slide">
+                            <div class="partners-slider__slide swiper-slide" onclick="window.open('{{ partner.url }}');">
                                 <div class="partners__slider-item partners__slider-item{{ partner.number }}">
                                     <div class="partners__slider-img-wrap">
                                         <img class="partners__slider-img" src="{{partner.icon.url}}" alt="">

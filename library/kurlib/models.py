@@ -2,7 +2,7 @@ from django.db import models
 
 class Billboard(models.Model):
     title = models.CharField("Заголовок", max_length=250)
-    text = models.TextField('Содержание')
+    text = models.TextField('Содержание(Не обязательно)', blank=True)
     image = models.ImageField("Изображение", upload_to='Billboard/')
     hidden = models.BooleanField("Скрыть пост", default=False)
 
@@ -26,6 +26,7 @@ class QuestionAnswer(models.Model):
 class Partners(models.Model):
     icon = models.ImageField("Иконка", upload_to='partners_ico/')
     title = models.CharField("Наименование", max_length=250)
+    url = models.URLField("Страница партнера(Не обязательно)", blank=True)
     number = int()
 
     def __str__(self):

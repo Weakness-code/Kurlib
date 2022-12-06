@@ -20,16 +20,21 @@ def month_determination(month):
 
 def index(request):
     model = apps.get_model('events', 'Event')
-    events = model.objects.order_by('date')[:3]
+    events = model.objects.order_by('-date')[:3]
     for event in events:
         event.month = month_determination(event.date.month)
+    event_1 = events[0]
+    event_2 = events[1]
+    event_3 = events[2]
 
     partners = Partners.objects.all()
     for i in range(len(partners)):
         partners[i].number = i%3
 
     billboard = Billboard.objects.all()
-    return render(request, 'kurlib/index.html', {'events': events,
+    return render(request, 'kurlib/index.html', {'event_1': event_1,
+                                                 'event_2': event_2,
+                                                 'event_3': event_3,
                                                  'partners': partners,
                                                  'billboard': billboard})
 
