@@ -1,7 +1,7 @@
 .text {
     background: #4E68C2;
     position: relative;
-    margin-top: -5.9375em;
+    margin-top: -6.9375em;
     /* margin-top: calc(6em + (-5.9375 - 6) * ((100vw - 430px) / (1440 - 430))); */
     padding-bottom: 11.25em;
 }
