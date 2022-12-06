@@ -111,17 +111,47 @@
             <h4 class="title poster__title">Афиша</h4>
             <div class="slider poster__slider">
                 <div class="container">
-                    <div class="slider__wrapper poster__wrapper">
-                        <img src="{% static 'kurlib/images/partners/partners__arrow-left.png' %}" alt="" class="slider__arrow slider__arrow--left poster__arrow--left">
-                        <div class="slider__line">
-                            <div class="slider__item">
-                                <img src="{% static 'kurlib/images/church/church1.png' %}" alt="" class="slider__item-img poster__item-img">
-                                <p class="slider__item-text poster__item-text">Lorem, ipsum dolor sit amet consectetur</p>
+                    <div class="swiper poster-slider swiper--margin">
+                        <div class="poster-slider__wrap swiper-wrapper">
+                            <div class="poster-slider__slide swiper-slide">
+                                <div class="poster-slider__item">
+                                    <div class="poster-slider__img-wr">
+                                        <img class="poster-slider__img" src="{% static 'kurlib/images/partners/partners__young.png' %}" alt="">
+                                    </div>
+                                    <p class="poster-slider__name partners__slider-name">Молодёжная библиотека</p>
+                                </div>
                             </div>
+                            <div class="poster-slider__slide swiper-slide">
+                                <div class="poster-slider__item">
+                                    <div class="poster-slider__img-wr">
+                                        <img class="poster-slider__img" src="{% static 'kurlib/images/flag/uuu.jpg' %}" alt="">
+                                    </div>
+                                    <p class="poster-slider__name partners__slider-name">Молодёжная библиотека</p>
+                                </div>
+                            </div>
+                            <div class="poster-slider__slide swiper-slide">
+                                <div class="poster-slider__item">
+                                    <div class="poster-slider__img-wr">
+                                        <img class="poster-slider__img" src="{% static 'kurlib/images/flag/hh.jpg' %}" alt="">
+                                    </div>
+                                    <p class="poster-slider__name partners__slider-name">Молодёжная библиотека</p>
+                                </div>
+                            </div>
+                            <div class="poster-slider__slide swiper-slide">
+                                <div class="poster-slider__item">
+                                    <div class="poster-slider__img-wr">
+                                        <img class="poster-slider__img" src="{% static 'kurlib/images/flag/uuu.jpg' %}" alt="">
+                                    </div>
+                                    <p class="poster-slider__name partners__slider-name">Молодёжная библиотека</p>
+                                </div>
+                            </div>
+
                         </div>
-                        <img src="{% static 'kurlib/images/partners/partners__arrow-right.png' %}" alt="" class="slider__arrow slider__arrow--right poster__arrow--right">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
+
             </div>
         </section>
         <!-- ТУТ НОВОЕ! events__wrapper -->
@@ -309,7 +339,7 @@
     <script src="{% static 'kurlib/js/sliderSwiper.js' %}"></script>
     <script src="{% static 'kurlib/js/menuOpen.js' %}"></script>
     <script src="{% static 'kurlib/js/menuOpenMedia.js' %}"></script>
-    <script src="{% static 'kurlib/js/carouselSrcText.js' %}"></script>
-    <script src="{% static 'kurlib/js/carouselSrcTextIndex.js' %}"></script>
+<!--    <script src="{% static 'kurlib/js/carouselSrcText.js' %}"></script>-->
+<!--    <script src="{% static 'kurlib/js/carouselSrcTextIndex.js' %}"></script>-->
 </body>
 </html>

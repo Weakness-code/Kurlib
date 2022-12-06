@@ -63,3 +63,16 @@ new Swiper('.slider__text-page', {
     autoheight: true,
 
 });
+
+
+new Swiper('.poster-slider', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+
+    slidesPerView: 1,
+    spaceBetween: 100,
+    // autoheight: true,
+
+});
