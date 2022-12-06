@@ -45,16 +45,19 @@
     <main>
         <section class="eventCard">
             <div class="eventCard__right">
-                <img class="eventCard__img" src="{% static 'kurlib/images/eventsCard/eventCard__img.png' %}" alt="">
+                <img class="eventCard__img" src="{{event.image.url}}" alt="">
                 <div class="eventCard__data">
                     <p class="eventCard__data-day"><span class="eventCard__data-num">{{event.date.day}}</span>
-                        {{template_name}}</p>
+                        {{event.month}}</p>
                     <p class="eventCard__data-year">{{event.date.year}}</p>
+
                 </div>
             </div>
             <div class="eventCard__left">
                 <h3 class="subtitle eventCard__subtitle">{{event.title}}</h3>
-                <p class="eventCard__text">{{event.main_info}}</p>
+                {% for block in event.edited_info %}
+                    <p class="eventCard__text">{{block}}</p>
+                {% endfor %}
             </div>
         </section>
     <!-- <section class="back">

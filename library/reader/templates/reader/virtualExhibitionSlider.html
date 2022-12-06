@@ -30,36 +30,38 @@
                 <!-- Additional required wrapper -->
                 <div class="virtual__slider-wrap swiper-wrapper">
                   <!-- Slides -->
-                  <div class="virtual__slider-slide swiper-slide">
-                        <div class="slider__item">
-                            <img class="slider__item-img slider__img--virtualExh" src="{% static 'kurlib/images/flag/slider__flag-img.png' %}" alt="">
-                        </div>
-                  </div>
-                  <div class="virtual__slider-slide swiper-slide">
-                        <div class="slider__item">
-                            <img class="slider__item-img slider__img--virtualExh" src="{% static 'kurlib/images/flag/slider__flag-img.png' %}" alt="">
-                        </div>
-                  </div>
-                  <div class="virtual__slider-slide swiper-slide">
-                        <div class="slider__item">
-                            <img class="slider__item-img slider__img--virtualExh" src="{% static 'kurlib/images/flag/slider__flag-img.png' %}" alt="">
-                        </div>
-                  </div>
-                  <div class="virtual__slider-slide swiper-slide">
-                        <div class="slider__item">
-                            <img class="slider__item-img slider__img--virtualExh" src="{% static 'kurlib/images/bolotnov/bolotnov1.png' %}" alt="">
-                        </div>
-                  </div>
+                    {% for card in virtualcards %}
                     <div class="virtual__slider-slide swiper-slide">
-                        <div class="slider__item">
-                            <img class="slider__item-img slider__img--virtualExh" src="{% static 'kurlib/images/virtualExhibitionCard/bbbb.jpg' %}" alt="">
+                        <div class="slider__item" onclick="location.href = '{% url 'virtualcard' card.id %}';">
+                            <img class="slider__item-img slider__img--virtualExh" src="{{card.cover.url}}" alt="">
                         </div>
-                  </div>
-                  <div class="virtual__slider-slide swiper-slide">
-                        <div class="slider__item">
-                            <img class="slider__item-img slider__img--virtualExh" src="{% static 'kurlib/images/virtualExhibitionCard/uuu.jpg' %}" alt="">
-                        </div>
-                  </div>
+                    </div>
+                    {% endfor %}
+<!--                  <div class="virtual__slider-slide swiper-slide">-->
+<!--                        <div class="slider__item">-->
+<!--                            <img class="slider__item-img slider__img&#45;&#45;virtualExh" src="{% static 'kurlib/images/flag/slider__flag-img.png' %}" alt="">-->
+<!--                        </div>-->
+<!--                  </div>-->
+<!--                  <div class="virtual__slider-slide swiper-slide">-->
+<!--                        <div class="slider__item">-->
+<!--                            <img class="slider__item-img slider__img&#45;&#45;virtualExh" src="{% static 'kurlib/images/flag/slider__flag-img.png' %}" alt="">-->
+<!--                        </div>-->
+<!--                  </div>-->
+<!--                  <div class="virtual__slider-slide swiper-slide">-->
+<!--                        <div class="slider__item">-->
+<!--                            <img class="slider__item-img slider__img&#45;&#45;virtualExh" src="{% static 'kurlib/images/bolotnov/bolotnov1.png' %}" alt="">-->
+<!--                        </div>-->
+<!--                  </div>-->
+<!--                    <div class="virtual__slider-slide swiper-slide">-->
+<!--                        <div class="slider__item">-->
+<!--                            <img class="slider__item-img slider__img&#45;&#45;virtualExh" src="{% static 'kurlib/images/virtualExhibitionCard/bbbb.jpg' %}" alt="">-->
+<!--                        </div>-->
+<!--                  </div>-->
+<!--                  <div class="virtual__slider-slide swiper-slide">-->
+<!--                        <div class="slider__item">-->
+<!--                            <img class="slider__item-img slider__img&#45;&#45;virtualExh" src="{% static 'kurlib/images/virtualExhibitionCard/uuu.jpg' %}" alt="">-->
+<!--                        </div>-->
+<!--                  </div>-->
                 </div>
                 <!-- If we need pagination -->
                 <div class="virtual__slider-pag swiper-pagination"></div>
@@ -75,9 +77,9 @@
             <div class="footer2-card__links">
                 <div class="footer2-card__link-with-img">
                     <img class="footer2-card__link-img" src="{% static 'kurlib/images/arrows/arrow__back.png' %}" alt="">
-                    <a class="footer2-card__link" href="">Назад</a>
+                    <a class="footer2-card__link" href=".">Назад</a>
                 </div>
-                <a class="footer2-card__link" href="">На главную</a>
+                <a class="footer2-card__link" href="{% url 'index' %}">На главную</a>
             </div>
         </div>
     </footer>

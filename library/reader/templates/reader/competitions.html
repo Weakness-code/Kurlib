@@ -82,7 +82,9 @@
         <section class="competitions">
             {% for comp in competitions %}
                 <div class="competitions__item">
-                    <img class="competitions__item-img" src="{{comp.image.url}}" alt="">
+                    <div class="competitions__item-wrap-img">
+                        <img class="competitions__item-img" src="{{comp.image.url}}" alt="">
+                    </div>
                     <div class="competitions__item-text">
                         <h5 class="competitions__item-name">{{comp.title.url}}</h5>
                         <p class="competitions__item-time"> {{comp.date_begin}} — {{comp.date_end}}</p>
@@ -91,7 +93,9 @@
                 </div>
             {% endfor %}
             <div class="competitions__item">
-                <img class="competitions__item-img" src="{% static 'kurlib/images/competitions/competitions__item-img.png' %}" alt="">
+                <div class="competitions__item-wrap-img">
+                    <img class="competitions__item-img" src="{% static 'kurlib/images/competitions/competitions__item-img.png' %}" alt="">
+                </div>
                 <div class="competitions__item-text">
                     <h5 class="competitions__item-name">Конкурс зимних сочинений</h5>
                     <p class="competitions__item-time">01.01.2022—01.02.2022</p>
@@ -99,7 +103,19 @@
                 </div>
             </div>
             <div class="competitions__item">
-                <img class="competitions__item-img" src="{% static 'kurlib/images/competitions/competitions__item-img.png' %}" alt="">
+                <div class="competitions__item-wrap-img">
+                    <img class="competitions__item-img" src="{% static 'kurlib/images/competitions/competitions__item-img.png' %}" alt="">
+                </div>
+                <div class="competitions__item-text">
+                    <h5 class="competitions__item-name">Конкурс зимних сочинений</h5>
+                    <p class="competitions__item-time">01.01.2022—01.02.2022</p>
+                    <p class="competitions__item-descr">Задача организации, в особенности же повышение уровня гражданского сознания позволяет выполнить важные задания по разработке первоочередных требований. Но экономическая повестка сегодняшнего дня говорит о возможностях кластеризации усилий. </p>
+                </div>
+            </div>
+            <div class="competitions__item">
+                <div class="competitions__item-wrap-img">
+                    <img class="competitions__item-img" src="{% static 'kurlib/images/bolotnov/bolotnov1.png' %}" alt="">
+                </div>
                 <div class="competitions__item-text">
                     <h5 class="competitions__item-name">Конкурс зимних сочинений</h5>
                     <p class="competitions__item-time">01.01.2022—01.02.2022</p>
@@ -115,24 +131,24 @@
                 <div class="footer__one">
                     <div class="footer__one-item footer__phone">
                         <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-phone.png' %}" alt="">
-                        <a class="footer__text" href="">8 (391) 362-48-56</a>
+                        <a class="footer__text" href="tel:+73913624856">8 (391) 362-48-56</a>
                     </div>
                     <div class="footer__one-item footer__email">
                         <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-mail.png' %}" alt="">
-                        <a class="footer__text" href="">kur-mcb@yandex.ru</a>
+                        <a class="footer__text" href="mailto:kur-mcb@yandex.ru">kur-mcb@yandex.ru</a>
                     </div>
                     <div class="footer__one-item footer__address">
                         <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-address.png' %}" alt="">
-                        <a class="footer__text" href="">662910, Красноярский край, п. Курагино, ул. Партизанская, 150</a>
+                        <p class="footer__text">662910, Красноярский край, п. Курагино, ул. Партизанская, 150</p>
                     </div>
                     <div class="footer__one-item footer__vk">
                         <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
-                        <a class="footer__text" href="">https://vk.com/kurlib</a>
+                        <a class="footer__text" href="https://vk.com/kurlib" target="_blank">https://vk.com/kurlib</a>
                     </div>
                     <h4 class="footer__title">Cайт разработан:</h4>
                     <div class="footer__one-item footer__vk">
                         <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
-                        <a class="footer__text" href="">https://vk.com/id162248876</a>
+                        <a class="footer__text" href="https://vk.com/unkey_digital">https://vk.com/unkey_digital</a>
                     </div>
                 </div>
                 <div class="footer__two">

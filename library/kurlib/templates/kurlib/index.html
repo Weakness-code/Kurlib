@@ -111,17 +111,47 @@
             <h4 class="title poster__title">Афиша</h4>
             <div class="slider poster__slider">
                 <div class="container">
-                    <div class="slider__wrapper poster__wrapper">
-                        <img src="{% static 'kurlib/images/partners/partners__arrow-left.png' %}" alt="" class="slider__arrow slider__arrow--left poster__arrow--left">
-                        <div class="slider__line">
-                            <div class="slider__item">
-                                <img src="{% static 'kurlib/images/church/church1.png' %}" alt="" class="slider__item-img poster__item-img">
-                                <p class="slider__item-text poster__item-text">Lorem, ipsum dolor sit amet consectetur</p>
+                    <div class="swiper poster-slider swiper--margin">
+                        <div class="poster-slider__wrap swiper-wrapper">
+                            <div class="poster-slider__slide swiper-slide">
+                                <div class="poster-slider__item">
+                                    <div class="poster-slider__img-wr">
+                                        <img class="poster-slider__img" src="{% static 'kurlib/images/partners/partners__young.png' %}" alt="">
+                                    </div>
+                                    <p class="poster-slider__name partners__slider-name">Молодёжная библиотека</p>
+                                </div>
                             </div>
+                            <div class="poster-slider__slide swiper-slide">
+                                <div class="poster-slider__item">
+                                    <div class="poster-slider__img-wr">
+                                        <img class="poster-slider__img" src="{% static 'kurlib/images/flag/uuu.jpg' %}" alt="">
+                                    </div>
+                                    <p class="poster-slider__name partners__slider-name">Молодёжная библиотека</p>
+                                </div>
+                            </div>
+                            <div class="poster-slider__slide swiper-slide">
+                                <div class="poster-slider__item">
+                                    <div class="poster-slider__img-wr">
+                                        <img class="poster-slider__img" src="{% static 'kurlib/images/flag/hh.jpg' %}" alt="">
+                                    </div>
+                                    <p class="poster-slider__name partners__slider-name">Молодёжная библиотека</p>
+                                </div>
+                            </div>
+                            <div class="poster-slider__slide swiper-slide">
+                                <div class="poster-slider__item">
+                                    <div class="poster-slider__img-wr">
+                                        <img class="poster-slider__img" src="{% static 'kurlib/images/flag/uuu.jpg' %}" alt="">
+                                    </div>
+                                    <p class="poster-slider__name partners__slider-name">Молодёжная библиотека</p>
+                                </div>
+                            </div>
+
                         </div>
-                        <img src="{% static 'kurlib/images/partners/partners__arrow-right.png' %}" alt="" class="slider__arrow slider__arrow--right poster__arrow--right">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
+
             </div>
         </section>
         <!-- ТУТ НОВОЕ! events__wrapper -->
@@ -131,45 +161,24 @@
                 <h4 class="title events__title">Мероприятия</h4>
                 <div class="events__wrapper">
                     <div class="events__content">
-                        <div class="events__item">
+                        {% for event in events %}
+                        <div class="events__item" onclick="window.open({% url 'event_detail' event.id %})">
                             <div class="events__item-top">
-                                <p class="events__item-day events__item-day--blue"><span class="events__item-num">27</span> июня</p>
-                                <p class="events__item-year events__item-year--blue">2021</p>
+                                <p class="events__item-day"><span class="events__item-num">{{event.date.day}}</span>
+                                    {{event.month}}</p>
+                                <p class="events__item-year">{{event.date.year}}</p>
                             </div>
                             <div class="events__item-img-wrapper">
-                                <img class="events__item-img" src="{% static 'kurlib/images/events/events__img-1.png' %}" alt="">
+                                <img class="events__item-img" src="{{event.image.url}}" alt="">
                             </div>
                             <div class="events__item-text">
-                                <h6 class="events__item-name">Проспект читающих людей</h6>
-                                <p class="events__item-descr">Сегодня люди в основном читают легкую литературу. И не потому, что это интересно, а потому что над такими произведениями не надо задумываться.</p>
+                                <h6 class="events__item-name">{{event.title}}</h6>
+<!--                                <p class="events__item-descr">Краеведческая шкатулка «Уголок России – отчий дом».</p>-->
                             </div>
                         </div>
-                        <div class="events__item">
-                            <div class="events__item-top">
-                                <p class="events__item-day events__item-day--blue"><span class="events__item-num">9</span> июня</p>
-                                <p class="events__item-year">2021</p>
-                            </div>
-                            <div class="events__item-img-wrapper">
-                                <img class="events__item-img" src="{% static 'kurlib/images/events/events__img-2.png' %}" alt="">
-                            </div>
-                            <div class="events__item-text">
-                                <h6 class="events__item-name">«Пушкинский день»</h6>
-                                <p class="events__item-descr">6 июня в Курагинской библиотеке  прошла уличная ассамблея  «Дорос ли я до Пушкина?», посвященная  дню рождения писателя.</p>
-                            </div>
-                        </div>
-                        <div class="events__item">
-                            <div class="events__item-top">
-                                <p class="events__item-day"><span class="events__item-num">6</span> июня</p>
-                                <p class="events__item-year">2021</p>
-                            </div>
-                            <div class="events__item-img-wrapper">
-                                <img class="events__item-img" src="{% static 'kurlib/images/events/events__img-3.png' %}" alt="">
-                            </div>
-                            <div class="events__item-text">
-                                <h6 class="events__item-name">«Уголок России – отчий дом»</h6>
-                                <p class="events__item-descr">Краеведческая шкатулка «Уголок России – отчий дом».</p>
-                            </div>
-                        </div>
+                        {% empty %}
+
+                        {% endfor %}
                     </div>
                     <a class="button events__button-more" href="">Все мероприятия
                         <img class="events__button-img" src="{% static 'kurlib/images/events/events__button-img.png' %}" alt="">
@@ -198,42 +207,44 @@
                     <!-- Additional required wrapper -->
                     <div class="partners-slider__wrap swiper-wrapper">
                       <!-- Slides -->
-                      <div class="partners-slider__slide swiper-slide">
-                            <div class="partners__slider-item partners__slider-item0">
-                                <img class="partners__slider-img" src="{% static 'kurlib/images/partners/partners__young.png' %}" alt="">
-                                <p class="partners__slider-name">Молодёжная библиотека</p>
+                        {% for partner in partners%}
+                            <div class="partners-slider__slide swiper-slide">
+                                <div class="partners__slider-item partners__slider-item{{ partner.number }}">
+                                    <img class="partners__slider-img" src="{{partner.icon.url}}" alt="">
+                                    <p class="partners__slider-name">{{partner.title}}</p>
+                                </div>
                             </div>
-                      </div>
-                      <div class="partners-slider__slide swiper-slide">
-                            <div class="partners__slider-item partners__slider-item1">
-                                <img class="partners__slider-img" src="{% static 'kurlib/images/partners/partners__science.png' %}" alt="">
-                                <p class="partners__slider-name">Государственная универсальная научная библиотека Красноярского края</p>
-                            </div>
-                      </div>
-                      <div class="partners-slider__slide swiper-slide">
-                            <div class="partners__slider-item partners__slider-item2">
-                                <img class="partners__slider-img" src="{% static 'kurlib/images/partners/partners__child.png' %}" alt="">
-                                <p class="partners__slider-name">Красноярская краевая детская библиотека</p>
-                            </div>
-                      </div>
-                      <div class="partners-slider__slide swiper-slide">
-                            <div class="partners__slider-item partners__slider-item0">
-                                <img class="partners__slider-img" src="{% static 'kurlib/images/partners/partners__young.png' %}" alt="">
-                                <p class="partners__slider-name">Молодёжная библиотека</p>
-                            </div>
-                      </div>
-                      <div class="partners-slider__slide swiper-slide">
-                            <div class="partners__slider-item partners__slider-item1">
-                                <img class="partners__slider-img" src="{% static 'kurlib/images/partners/partners__science.png' %}" alt="">
-                                <p class="partners__slider-name">Государственная универсальная научная библиотека Красноярского края</p>
-                            </div>
-                      </div>
-                      <div class="partners-slider__slide swiper-slide">
-                            <div class="partners__slider-item partners__slider-item2">
-                                <img class="partners__slider-img" src="{% static 'kurlib/images/partners/partners__child.png' %}" alt="">
-                                <p class="partners__slider-name">Красноярская краевая детская библиотека</p>
-                            </div>
-                      </div>
+                        {% endfor %}
+<!--                      <div class="partners-slider__slide swiper-slide">-->
+<!--                            <div class="partners__slider-item partners__slider-item1">-->
+<!--                                <img class="partners__slider-img" src="{% static 'kurlib/images/partners/partners__science.png' %}" alt="">-->
+<!--                                <p class="partners__slider-name">Государственная универсальная научная библиотека Красноярского края</p>-->
+<!--                            </div>-->
+<!--                      </div>-->
+<!--                      <div class="partners-slider__slide swiper-slide">-->
+<!--                            <div class="partners__slider-item partners__slider-item2">-->
+<!--                                <img class="partners__slider-img" src="{% static 'kurlib/images/partners/partners__child.png' %}" alt="">-->
+<!--                                <p class="partners__slider-name">Красноярская краевая детская библиотека</p>-->
+<!--                            </div>-->
+<!--                      </div>-->
+<!--                      <div class="partners-slider__slide swiper-slide">-->
+<!--                            <div class="partners__slider-item partners__slider-item0">-->
+<!--                                <img class="partners__slider-img" src="{% static 'kurlib/images/partners/partners__young.png' %}" alt="">-->
+<!--                                <p class="partners__slider-name">Молодёжная библиотека</p>-->
+<!--                            </div>-->
+<!--                      </div>-->
+<!--                      <div class="partners-slider__slide swiper-slide">-->
+<!--                            <div class="partners__slider-item partners__slider-item1">-->
+<!--                                <img class="partners__slider-img" src="{% static 'kurlib/images/partners/partners__science.png' %}" alt="">-->
+<!--                                <p class="partners__slider-name">Государственная универсальная научная библиотека Красноярского края</p>-->
+<!--                            </div>-->
+<!--                      </div>-->
+<!--                      <div class="partners-slider__slide swiper-slide">-->
+<!--                            <div class="partners__slider-item partners__slider-item2">-->
+<!--                                <img class="partners__slider-img" src="{% static 'kurlib/images/partners/partners__child.png' %}" alt="">-->
+<!--                                <p class="partners__slider-name">Красноярская краевая детская библиотека</p>-->
+<!--                            </div>-->
+<!--                      </div>-->
                     </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
@@ -246,24 +257,24 @@
                 <div class="footer__one">
                     <div class="footer__one-item footer__phone">
                         <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-phone.png' %}" alt="">
-                        <a class="footer__text" href="">8 (391) 362-48-56</a>
+                        <a class="footer__text" href="tel:+73913624856">8 (391) 362-48-56</a>
                     </div>
                     <div class="footer__one-item footer__email">
                         <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-mail.png' %}" alt="">
-                        <a class="footer__text" href="">kur-mcb@yandex.ru</a>
+                        <a class="footer__text" href="mailto:kur-mcb@yandex.ru">kur-mcb@yandex.ru</a>
                     </div>
                     <div class="footer__one-item footer__address">
                         <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-address.png' %}" alt="">
-                        <a class="footer__text" href="">662910, Красноярский край, п. Курагино, ул. Партизанская, 150</a>
+                        <p class="footer__text">662910, Красноярский край, п. Курагино, ул. Партизанская, 150</p>
                     </div>
                     <div class="footer__one-item footer__vk">
                         <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
-                        <a class="footer__text" href="">https://vk.com/kurlib</a>
+                        <a class="footer__text" href="https://vk.com/kurlib" target="_blank">https://vk.com/kurlib</a>
                     </div>
                     <h4 class="footer__title">Cайт разработан:</h4>
                     <div class="footer__one-item footer__vk">
                         <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
-                        <a class="footer__text" href="">https://vk.com/id162248876</a>
+                        <a class="footer__text" href="https://vk.com/unkey_digital">https://vk.com/unkey_digital</a>
                     </div>
                 </div>
                 <div class="footer__two">

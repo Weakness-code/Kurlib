@@ -21,21 +21,23 @@ class NewWork(models.Model):
         return self.title
 
     class Meta:
-        verbose_name = "Работа"
-        verbose_name_plural = "Работы"
+        verbose_name = "Новинка"
+        verbose_name_plural = "Книжные новинки"
 
 
 class VirtualCard(models.Model):
     title = models.CharField("Название книги", max_length=250)
     cover = models.ImageField("Обложка", upload_to='books/')
-    anons = models.TextField("Приписка")
+    anons = models.TextField("Вступление")
     description = models.TextField("Описание книги")
+
+    edited_description = ''
     def __str__(self):
         return self.title
 
     class Meta:
-        verbose_name = "Книга"
-        verbose_name_plural = "Книги"
+        verbose_name = "Виртуальная карта"
+        verbose_name_plural = "Виртуальная выставка"
 
 
 class Competition(models.Model):

@@ -67,7 +67,14 @@
     font-weight: bold;
     width: 9.46em;
 }
-
+.contact__form-btn:hover {
+    cursor: pointer;
+    transition: 0.9s;
+    opacity: 0.7;
+}
+.contact__form-btn:visited {
+    background: #428620;
+}
 .all-information {
     margin-left: 15%;
     margin-bottom: 9.3125em;
