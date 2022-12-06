@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import QuestionAnswer, Partners
+from .models import QuestionAnswer, Partners, Billboard
 from django.apps import apps
 
 def month_determination(month):
@@ -20,15 +20,18 @@ def month_determination(month):
 
 def index(request):
     model = apps.get_model('events', 'Event')
-    events = model.objects.order_by('-date')[:3]
+    events = model.objects.order_by('date')[:3]
     for event in events:
         event.month = month_determination(event.date.month)
 
     partners = Partners.objects.all()
     for i in range(len(partners)):
         partners[i].number = i%3
+
+    billboard = Billboard.objects.all()
     return render(request, 'kurlib/index.html', {'events': events,
-                                                 'partners': partners,})
+                                                 'partners': partners,
+                                                 'billboard': billboard})
 
 
 def services(request):

@@ -46,43 +46,39 @@
                     <img class="close menu__close" src="{% static 'kurlib/images/menu/close.png' %}" alt="">
                     <ul class="menu__open-list">
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Главная</a>
+                            <a class="menu__open-link" href="{% url 'index' %}">Главная</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Электронный каталог</a>
+                            <a class="menu__open-link"
+                               href="http://92.126.252.74:8087/jirbis2/index.php?option=com_irbis&view=irbis&Itemid=115"
+                               target="_blank">Электронный каталог</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">О библиотеке</a>
+                            <a class="menu__open-link" href="/about/">О библиотеке</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Читателю</a>
+                            <a class="menu__open-link" href="/reader/">Читателю</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Детская библиотека</a>
+                            <a class="menu__open-link" href="http://kids.kurlib.ru/" target="_blank">Детская библиотека</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Услуги</a>
+                            <a class="menu__open-link" href="/services">Услуги</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Мероприятия</a>
+                            <a class="menu__open-link" href="/events">Мероприятия</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Краеведение</a>
+                            <a class="menu__open-link" href="/kraevedenie">Краеведение</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Коллегам</a>
+                            <a class="menu__open-link" href="/questionAnswer">Вопрос-ответ</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Вопрос-ответ</a>
+                            <a class="menu__open-link" href="/contacts">Контакты</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Независимая оценка качества</a>
-                        </li>
-                        <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Контакты</a>
-                        </li>
-                        <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Для администратора</a>
+                            <a class="menu__open-link" href="/admin">Для администратора</a>
                         </li>
                     </ul>
                 </div>
@@ -91,43 +87,43 @@
     <main>
         <section class="text history text--sloped">
             <div class="container--text">
-                <h4 class="title title--text history__title">Гора Бугуртак. Легенда о крылатом драконе</h4>
+                <h4 class="title title--text history__title">{{localhistory_layout.title}}</h4>
+                {% for block in localhistory_layout.edited_description %}
+                    <p class="text__main">{{block}}</p>
+                {% endfor %}
+<!--                <p class="text__main">В 2007 был построен комплекс «Белая корона». Он расположен на окраине поселка и находится в 200 км от Абакана и в 300 км от Красноярска.</p>-->
 
-                <p class="text__main">Краснокаменск – поселок молодой, исторически-культурных объектов у нас нет. И, тем не менее, у нас есть то, что способно привлечь туристов.</p>
+<!--                <p class="text__main">Главным достоинством «Короны» является горнолыжная трасса с электрическим бугельным подъемником. Трасса несложная, идеальна для семейного отдыха и обучения, а также порадует профессионалов. Протяженность трассы 1200 метров, перепад высоты – 200 метров, есть прокат снаряжения.</p>-->
 
-                <p class="text__main">В 2007 был построен комплекс «Белая корона». Он расположен на окраине поселка и находится в 200 км от Абакана и в 300 км от Красноярска.</p>
+<!--                <p class="text__main">Зима в горах длится долго, снег лежит с октября по апрель и постоянно в пределах базы укатывается ратраком.</p>-->
 
-                <p class="text__main">Главным достоинством «Короны» является горнолыжная трасса с электрическим бугельным подъемником. Трасса несложная, идеальна для семейного отдыха и обучения, а также порадует профессионалов. Протяженность трассы 1200 метров, перепад высоты – 200 метров, есть прокат снаряжения.</p>
+<!--                <p class="text__main">Территория освещается в темное время суток, есть кафе-бар на 100 мест, освещенный каток, прокат коньков, лыж, лошадей. В корпусах базы – центральное отопление.</p>-->
 
-                <p class="text__main">Зима в горах длится долго, снег лежит с октября по апрель и постоянно в пределах базы укатывается ратраком.</p>
+<!--                <p class="text__main">Кристально-чистый воздух, тишина, способствующая комфортному отдыху, являются неотъемлемой частью предлагаемых услуг.</p>-->
 
-                <p class="text__main">Территория освещается в темное время суток, есть кафе-бар на 100 мест, освещенный каток, прокат коньков, лыж, лошадей. В корпусах базы – центральное отопление.</p>
+<!--                <p class="text__main">К услугам гостей всегда:</p>-->
 
-                <p class="text__main">Кристально-чистый воздух, тишина, способствующая комфортному отдыху, являются неотъемлемой частью предлагаемых услуг.</p>
+<!--                <p class="text__main">- гостиничные корпуса;</p>-->
 
-                <p class="text__main">К услугам гостей всегда:</p>
+<!--                <p class="text__main">- автостоянка;</p>-->
 
-                <p class="text__main">- гостиничные корпуса;</p>
+<!--                <p class="text__main">- кафе-бар;</p>-->
 
-                <p class="text__main">- автостоянка;</p>
+<!--                <p class="text__main">- русская баня;</p>-->
 
-                <p class="text__main">- кафе-бар;</p>
+<!--                <p class="text__main">- шашлычные зоны;</p>-->
 
-                <p class="text__main">- русская баня;</p>
+<!--                <p class="text__main">- лыжная трасса;</p>-->
 
-                <p class="text__main">- шашлычные зоны;</p>
+<!--                <p class="text__main">- каток;</p>-->
 
-                <p class="text__main">- лыжная трасса;</p>
+<!--                <p class="text__main">- пункт проката.</p>-->
 
-                <p class="text__main">- каток;</p>
+<!--                <p class="text__main">А летом «Белая корона» принимает для оздоровительного отдыха детей по групповым заявкам. За последние годы у нас отдохнули ребята от 6 до 18 лет из домов-интернатов Эвенкии, Хакасии, Красноярска, юные спортсмены из разных районов Красноярского края.</p>-->
 
-                <p class="text__main">- пункт проката.</p>
+<!--                <p class="text__main">До базы «Белая корона» можно доехать автотранспортом (до Краснокаменска) или по ж/д (до станции Кошурниково).</p>-->
 
-                <p class="text__main">А летом «Белая корона» принимает для оздоровительного отдыха детей по групповым заявкам. За последние годы у нас отдохнули ребята от 6 до 18 лет из домов-интернатов Эвенкии, Хакасии, Красноярска, юные спортсмены из разных районов Красноярского края.</p>
-
-                <p class="text__main">До базы «Белая корона» можно доехать автотранспортом (до Краснокаменска) или по ж/д (до станции Кошурниково).</p>
-
-                <p class="text__main">«Белая корона» - это активный отдых как для гостей, так и для жителей нашего поселка. Надеемся, что комплекс просуществует еще много лет.</p>
+<!--                <p class="text__main">«Белая корона» - это активный отдых как для гостей, так и для жителей нашего поселка. Надеемся, что комплекс просуществует еще много лет.</p>-->
             </div>
         </section>
         <section class="slider">
@@ -135,15 +131,17 @@
                 <div class="slider__wrapper slider__text-page swiper">
 
                     <div class="swiper-wrapper">
-                        <div class="slider__img-container swiper-slide">
-                            <img src="{% static 'kurlib/images/whiteCrown/whiteCrown1.png' %}" alt="" class="slider__item-img swiper-slide">
-                        </div>
-                        <div class="slider__img-container swiper-slide">
-                            <img src="{% static 'kurlib/images/bolotnov/bolotnov1.png' %}" alt="" class="slider__item-img swiper-slide">
-                        </div>
-                        <div class="slider__img-container swiper-slide">
-                            <img src="{% static 'kurlib/images/whiteCrown/whiteCrown1.png' %}" alt="" class="slider__item-img swiper-slide">
-                        </div>
+                        {% for image in localhistory_layout.images %}
+                                <div class="slider__img-container swiper-slide">
+                                    <img src="{{image}}" alt="" class="slider__item-img swiper-slide">
+                                </div>
+                        {% endfor %}
+<!--                        <div class="slider__img-container swiper-slide">-->
+<!--                            <img src="{% static 'kurlib/images/bolotnov/bolotnov1.png' %}" alt="" class="slider__item-img swiper-slide">-->
+<!--                        </div>-->
+<!--                        <div class="slider__img-container swiper-slide">-->
+<!--                            <img src="{% static 'kurlib/images/whiteCrown/whiteCrown1.png' %}" alt="" class="slider__item-img swiper-slide">-->
+<!--                        </div>-->
                     </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>

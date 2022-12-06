@@ -113,38 +113,43 @@
                 <div class="container">
                     <div class="swiper poster-slider swiper--margin">
                         <div class="poster-slider__wrap swiper-wrapper">
+
+                            {% for post in billboard %}
+                            {% if post.hidden != True %}
                             <div class="poster-slider__slide swiper-slide">
                                 <div class="poster-slider__item">
                                     <div class="poster-slider__img-wr">
-                                        <img class="poster-slider__img" src="{% static 'kurlib/images/partners/partners__young.png' %}" alt="">
+                                        <img class="poster-slider__img" src="{{post.image.url}}" alt="">
                                     </div>
-                                    <p class="poster-slider__name partners__slider-name">Молодёжная библиотека</p>
+                                    <p class="poster-slider__name partners__slider-name">{{post.title}}</p>
                                 </div>
                             </div>
-                            <div class="poster-slider__slide swiper-slide">
-                                <div class="poster-slider__item">
-                                    <div class="poster-slider__img-wr">
-                                        <img class="poster-slider__img" src="{% static 'kurlib/images/flag/uuu.jpg' %}" alt="">
-                                    </div>
-                                    <p class="poster-slider__name partners__slider-name">Молодёжная библиотека</p>
-                                </div>
-                            </div>
-                            <div class="poster-slider__slide swiper-slide">
-                                <div class="poster-slider__item">
-                                    <div class="poster-slider__img-wr">
-                                        <img class="poster-slider__img" src="{% static 'kurlib/images/flag/hh.jpg' %}" alt="">
-                                    </div>
-                                    <p class="poster-slider__name partners__slider-name">Молодёжная библиотека</p>
-                                </div>
-                            </div>
-                            <div class="poster-slider__slide swiper-slide">
-                                <div class="poster-slider__item">
-                                    <div class="poster-slider__img-wr">
-                                        <img class="poster-slider__img" src="{% static 'kurlib/images/flag/uuu.jpg' %}" alt="">
-                                    </div>
-                                    <p class="poster-slider__name partners__slider-name">Молодёжная библиотека</p>
-                                </div>
-                            </div>
+                            {%endif %}
+                            {% endfor %}
+<!--                            <div class="poster-slider__slide swiper-slide">-->
+<!--                                <div class="poster-slider__item">-->
+<!--                                    <div class="poster-slider__img-wr">-->
+<!--                                        <img class="poster-slider__img" src="{% static 'kurlib/images/flag/uuu.jpg' %}" alt="">-->
+<!--                                    </div>-->
+<!--                                    <p class="poster-slider__name partners__slider-name">Молодёжная библиотека</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="poster-slider__slide swiper-slide">-->
+<!--                                <div class="poster-slider__item">-->
+<!--                                    <div class="poster-slider__img-wr">-->
+<!--                                        <img class="poster-slider__img" src="{% static 'kurlib/images/flag/hh.jpg' %}" alt="">-->
+<!--                                    </div>-->
+<!--                                    <p class="poster-slider__name partners__slider-name">Молодёжная библиотека</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="poster-slider__slide swiper-slide">-->
+<!--                                <div class="poster-slider__item">-->
+<!--                                    <div class="poster-slider__img-wr">-->
+<!--                                        <img class="poster-slider__img" src="{% static 'kurlib/images/flag/uuu.jpg' %}" alt="">-->
+<!--                                    </div>-->
+<!--                                    <p class="poster-slider__name partners__slider-name">Молодёжная библиотека</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
 
                         </div>
                         <div class="swiper-button-prev"></div>
@@ -162,7 +167,7 @@
                 <div class="events__wrapper">
                     <div class="events__content">
                         {% for event in events %}
-                        <div class="events__item" onclick="window.open({% url 'event_detail' event.id %})">
+                        <div class="events__item" onclick="location.href = '{% url 'event_detail' event.id %}'">
                             <div class="events__item-top">
                                 <p class="events__item-day"><span class="events__item-num">{{event.date.day}}</span>
                                     {{event.month}}</p>

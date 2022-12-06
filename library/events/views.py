@@ -4,7 +4,7 @@ from .models import Event
 
 
 def events(request):
-    events_all = Event.objects.all()
+    events_all = Event.objects.order_by('date')
     return render(request, 'events/events.html', {'events': events_all})
 
 class EventDetailView(DetailView):

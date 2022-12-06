@@ -1,5 +1,18 @@
 from django.db import models
 
+class Billboard(models.Model):
+    title = models.CharField("Заголовок", max_length=250)
+    text = models.TextField('Содержание')
+    image = models.ImageField("Изображение", upload_to='Billboard/')
+    hidden = models.BooleanField("Скрыть пост", default=False)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = "Мини-пост для афиши"
+        verbose_name_plural = "Мини-посты для афиши"
+
 class QuestionAnswer(models.Model):
     question = models.TextField("Часто задаваемый вопрос")
     answer = models.TextField("Ответ")

@@ -30,6 +30,12 @@
 }
 .eventCard__data-year {
 }
+.events__item-year--blue {
+    color: #3A57BB;
+}
+.events__item-day--blue {
+    color: #3A57BB;
+}
 .eventCard__left {
     flex-basis: 69%;
     /* width: 37.22em; */
