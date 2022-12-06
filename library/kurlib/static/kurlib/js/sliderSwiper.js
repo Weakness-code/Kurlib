@@ -9,7 +9,7 @@ new Swiper('.partners-slider', {
     //     dynamicBullets: true
     // },
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 50,
     breakpoints: {
         // 320: {
         //     slidesPerView: 1,

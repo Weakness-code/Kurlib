@@ -57,7 +57,9 @@
     height: 18.75rem;
 }
 .events__item-img {
-    min-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    /*min-width: 100%;*/
     object-fit: cover;
 }
 .events__item-text {

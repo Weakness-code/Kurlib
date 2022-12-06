@@ -346,6 +346,13 @@
     .partners__slider-item {
         margin-right: 0;
     }
+
+}
+@media screen and (max-width: 884px) {
+    .events__content {
+        gap: 4em;
+    }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -360,6 +367,10 @@
     }
     .events__item-img-wrapper {
         height: auto;
+        max-height: 400px;
+    }
+    .events__item-img {
+        max-height: 400px;
     }
     .events__item {
         width: 100%;
@@ -459,6 +470,7 @@
         padding-left: 4.25em;
         padding-right: 4.25em;
     }
+
     .eventCard {
         margin-left: 10%;
         margin-right: 10%;
@@ -540,6 +552,9 @@
     }
     .title--prata {
         font-size: 1.8rem;
+    }
+    .partners__container {
+        padding: 0 10%;
     }
 }
 @media screen and (max-width: 410px) {

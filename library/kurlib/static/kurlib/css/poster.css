@@ -95,8 +95,9 @@
    width: 25.75rem
 }
 .poster-slider {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0 5em;
+    /*padding-left: 5%;*/
+    /*padding-right: 5%;*/
 }
 .poster-slider__wrap{
     display: flex;

@@ -20,13 +20,15 @@
     <link rel="stylesheet" href="{% static 'kurlib/css/gallery.css' %}">
     <!-- ТУТ НОВОЕ! -->
     <link rel="stylesheet" href="{% static 'kurlib/css/header.css' %}">
-    <link rel="stylesheet" href="{% static 'kurlib/css/poster.css' %}">
+
     <!-- ТУТ НОВОЕ! -->
     <link rel="stylesheet" href="{% static 'kurlib/css/events.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/catalog.css' %}">
-    <link rel="stylesheet" href="{% static 'kurlib/css/partners.css' %}">
+
     <!-- НУЖНО ПОДКЛЮЧИТЬ ДЛЯ СЛАЙДЕРА! -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="{% static 'kurlib/css/poster.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/partners.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
     <!-- ТУТ НОВОЕ! -->
     <link rel="stylesheet" href="{% static 'kurlib/css/media.css' %}">
@@ -111,7 +113,7 @@
             <h4 class="title poster__title">Афиша</h4>
             <div class="slider poster__slider">
                 <div class="container">
-                    <div class="swiper poster-slider swiper--margin">
+                    <div class="swiper swiper--margin poster-slider">
                         <div class="poster-slider__wrap swiper-wrapper">
                             <div class="poster-slider__slide swiper-slide">
                                 <div class="poster-slider__item">
@@ -210,7 +212,9 @@
                         {% for partner in partners%}
                             <div class="partners-slider__slide swiper-slide">
                                 <div class="partners__slider-item partners__slider-item{{ partner.number }}">
-                                    <img class="partners__slider-img" src="{{partner.icon.url}}" alt="">
+                                    <div class="partners__slider-img-wrap">
+                                        <img class="partners__slider-img" src="{{partner.icon.url}}" alt="">
+                                    </div>
                                     <p class="partners__slider-name">{{partner.title}}</p>
                                 </div>
                             </div>
@@ -320,7 +324,7 @@
     <script src="{% static 'kurlib/js/sliderSwiper.js' %}"></script>
     <script src="{% static 'kurlib/js/menuOpen.js' %}"></script>
     <script src="{% static 'kurlib/js/menuOpenMedia.js' %}"></script>
-    <script src="{% static 'kurlib/js/carouselSrcText.js' %}"></script>
-    <script src="{% static 'kurlib/js/carouselSrcTextIndex.js' %}"></script>
+<!--    <script src="{% static 'kurlib/js/carouselSrcText.js' %}"></script>-->
+<!--    <script src="{% static 'kurlib/js/carouselSrcTextIndex.js' %}"></script>-->
 </body>
 </html>
