@@ -317,12 +317,18 @@
         max-width: 100%;
         object-fit: cover;
     }
+    .slider__img-container {
+        max-width: 500px;
+    }
+    .poster-slider__img-wr {
+        max-width: 500px;
+    }
 
 }
 @media screen and (max-width: 1024px) {
-    .text {
-        margin-top: 0;
-    }
+    /*.text {*/
+    /*    margin-top: 0;*/
+    /*}*/
     .eventCard {
         margin-left: 5%;
         margin-right: 5%;
@@ -417,6 +423,12 @@
     .header__links {
         flex-direction: column-reverse;
     }
+    .slider__img-container {
+        max-width: 400px;
+    }
+    .poster-slider__img-wr {
+        max-width: 400px;
+    }
 
 }
 
@@ -496,7 +508,12 @@
         margin-left: 10%;
         margin-right: 10%;
     }
-
+    .slider__img-container {
+        max-width: 300px;
+    }
+    .poster-slider__img-wr {
+        max-width: 300px;
+    }
 
 
 }
@@ -581,6 +598,14 @@
          width: auto;
     }
 }
+@media screen and (max-width: 488px) {
+    .slider__img-container {
+        max-width: 250px;
+    }
+    .poster-slider__img-wr {
+        max-width: 250px;
+    }
+}
 @media screen and (max-width: 410px) {
     html {
         font-size: 12px;
@@ -602,6 +627,12 @@
     .catalog__img-book4 {
         width: 177px;
 
+    }
+    .slider__img-container {
+        max-width: 200px;
+    }
+    .partners__slider-img-wrap {
+        max-width: 200px;
     }
 
 }
