@@ -379,6 +379,13 @@
     }
 
 }
+@media screen and (max-width: 919px) {
+    .virtual__slider {
+        padding-left: 23%;
+    }
+
+}
+
 
 @media screen and (max-width: 900px) {
     .footer__content {
@@ -605,6 +612,7 @@
     .poster-slider__img-wr {
         max-width: 250px;
     }
+
 }
 @media screen and (max-width: 410px) {
     html {

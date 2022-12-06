@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="{% static 'kurlib/css/slider.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
-    <link rel="stylesheet" href="{% static 'kurlib/css/sliderTest3.css' %}">
+<!--    <link rel="stylesheet" href="{% static 'kurlib/css/sliderTest3.css' %}">-->
     <link rel="stylesheet" href="{% static 'kurlib/css/partners.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/poster.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/virtualExhibitionSlider.css' %}">
@@ -33,7 +33,9 @@
                     {% for card in virtualcards %}
                     <div class="virtual__slider-slide swiper-slide">
                         <div class="slider__item" onclick="location.href = '{% url 'virtualcard' card.id %}';">
-                            <img class="slider__item-img slider__img--virtualExh" src="{{card.cover.url}}" alt="">
+                            <div class="slider__img-container virtual-slider__img-container">
+                                <img class="slider__item-img slider__img--virtualExh" src="{{card.cover.url}}" alt="">
+                            </div>
                         </div>
                     </div>
                     {% endfor %}

@@ -141,6 +141,7 @@
 .footer2-card__link-with-img {
     display: flex;
     gap: 5px;
+    align-items: center;
 }
 .footer2-card__link-img {
 }
