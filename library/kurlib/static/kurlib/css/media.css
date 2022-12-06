@@ -320,6 +320,9 @@
     .slider__img-container {
         max-width: 500px;
     }
+    .poster-slider__img-wr {
+        max-width: 500px;
+    }
 
 }
 @media screen and (max-width: 1024px) {
@@ -423,6 +426,9 @@
     .slider__img-container {
         max-width: 400px;
     }
+    .poster-slider__img-wr {
+        max-width: 400px;
+    }
 
 }
 
@@ -503,6 +509,9 @@
         margin-right: 10%;
     }
     .slider__img-container {
+        max-width: 300px;
+    }
+    .poster-slider__img-wr {
         max-width: 300px;
     }
 
@@ -593,6 +602,9 @@
     .slider__img-container {
         max-width: 250px;
     }
+    .poster-slider__img-wr {
+        max-width: 250px;
+    }
 }
 @media screen and (max-width: 410px) {
     html {
@@ -617,6 +629,9 @@
 
     }
     .slider__img-container {
+        max-width: 200px;
+    }
+    .partners__slider-img-wrap {
         max-width: 200px;
     }
 

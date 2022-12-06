@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{% static 'kurlib/css/slider.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/text.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/history.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/poster.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/slider.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/media.css' %}">
@@ -132,10 +133,18 @@
 
                     <div class="swiper-wrapper">
                         {% for image in localhistory_layout.images %}
-                        <div class="swiper-slide slider__item-text-page">
-                                <div class="slider__img-container">
-                                    <img src="{{image}}" alt="" class="slider__item-img swiper-slide">
+<!--                        <div class="swiper-slide slider__item-text-page">-->
+<!--                                <div class="slider__img-container">-->
+<!--                                    <img src="{{image}}" alt="" class="slider__item-img swiper-slide">-->
+<!--                                </div>-->
+                        <div class="poster-slider__slide swiper-slide">
+                                <div class="poster-slider__item">
+                                    <div class="poster-slider__img-wr">
+                                        <img class="poster-slider__img" src="{{image}}" alt="">
+                                    </div>
+
                                 </div>
+                            </div>
                         {% endfor %}
 <!--                        <div class="slider__img-container swiper-slide">-->
 <!--                            <img src="{% static 'kurlib/images/bolotnov/bolotnov1.png' %}" alt="" class="slider__item-img swiper-slide">-->
