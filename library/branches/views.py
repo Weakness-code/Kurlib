@@ -12,3 +12,18 @@ class BranchDetailView(DetailView):
     model = Branches
     template_name = 'branches/branch_template.html'
     context_object_name = "branch"
+
+    def get_object(self, queryset=None):
+        obj = super(BranchDetailView, self).get_object(queryset=queryset)
+        obj.edited_description = info_editor(obj.description)
+        obj.images = []
+        for i in range(20):
+            try:
+                eval(f"obj.images.append(obj.image_{i}.url)")
+            except ValueError:
+                break
+        return obj
+
+def info_editor(info: str):
+    text = info.split("\n")
+    return text

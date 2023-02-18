@@ -6,19 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{% static 'kurlib/images/favicon.ico' %}" type="image/x-icon">
-    <title>Филиал</title>
+    <title>{{ branch.title }} - филиал</title>
     <link rel="stylesheet" href="{% static 'kurlib/css/reset.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="{% static 'kurlib/css/container.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/title.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/img-out.css' %}">
-    <link rel="stylesheet" href="{% static 'kurlib/css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/history.css' %}">
 
+    <link rel="stylesheet" href="{% static 'kurlib/css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/slider.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/header.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/info-cards.css' %}">
-
+    <link rel="stylesheet" href="{% static 'kurlib/css/text.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/footer.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/media.css' %}">
-    
+    <link rel="stylesheet" href="{% static 'kurlib/css/poster.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/history.css' %}">
+
 </head>
 <body>
     <header class="header branch__header">
@@ -31,7 +36,7 @@
                         <img class="menu__img" src="{% static 'kurlib/images/menu/menu__button.png' %}" alt="">
                     </div>
                     <div class="menu__button--right">
-                        <a class="menu__button-txt menu__button-txt--white" href="#">назад</a>
+                        <a class="menu__button-txt menu__button-txt--white" href=".">назад</a>
                     </div>
                 </div>
                 <div class="menu__button menu__button--small">
@@ -75,10 +80,10 @@
 <!--                            <a class="menu__open-link" href="">Независимая оценка качества</a>-->
 <!--                        </li>-->
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="contacts">Контакты</a>
+                            <a class="menu__open-link" href="/contacts">Контакты</a>
                         </li>
                         <li class="menu__open-item">
-                            <a class="menu__open-link" href="">Для администратора</a>
+                            <a class="menu__open-link" href="/admin">Для администратора</a>
                         </li>
                     </ul>
                 </div>
@@ -125,9 +130,41 @@
                     </div>
                 </div>
             </div>
+        </section> 
+    </main>
+    <main>
+        {% if branch.images %}
+        <section class="slider">
+            <div class="container container--xs">
+                <div class="slider__wrapper slider__text-page swiper">
+
+                    <div class="swiper-wrapper">
+                        {% for image in branch.images %}
+                        <div class="poster-slider__slide swiper-slide">
+                                <div class="poster-slider__item">
+                                    <div class="poster-slider__img-wr">
+                                        <img class="poster-slider__img" src="{{image}}" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
         </section>
-        
-        
+        {% endif %}
+        {% if branch.description != ''%}
+        <section class="text history text--sloped">
+            <div class="container--text">
+                <h4 class="title title--text history__title">Информация</h4>
+                {% for block in branch.edited_description %}
+                    <p class="text__main">{{block}}</p>
+                {% endfor %}
+            </div>
+        </section>
+        {% endif %}
     </main>
     <footer class="footer">
         <div class="container">
@@ -193,6 +230,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="{% static 'kurlib/js/sliderSwiper.js' %}"></script>
     <script src="{% static 'kurlib/js/menuOpen.js' %}"></script>
     <script src="{% static 'kurlib/js/menuOpenDuo.js' %}"></script>
 </body>

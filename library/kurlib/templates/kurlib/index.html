@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{% static 'kurlib/images/favicon.ico' %}" type="image/x-icon">
-    <title>Библиотека</title>
+    <title>Главная</title>
     <link rel="stylesheet" href="{% static 'kurlib/css/reset.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/container.css' %}">
     <!-- ТУТ НОВОЕ! -->
@@ -169,6 +169,7 @@
                 <h4 class="title events__title">Мероприятия</h4>
                 <div class="events__wrapper">
                     <div class="events__content">
+                      {% if event_1 %}
                         <div class="events__item" onclick="location.href = '{% url 'event_detail' event_1.id %}'">
                             <div class="events__item-top">
                                 <p class="events__item-day events__item-day--blue"><span class="events__item-num">{{event_1.date.day}}</span>
@@ -182,6 +183,8 @@
                                 <h6 class="events__item-name">{{event_1.title}}</h6>
                             </div>
                         </div>
+                      {% endif %}
+                      {% if event_2 %}
                         <div class="events__item" onclick="location.href = '{% url 'event_detail' event_2.id %}'">
                             <div class="events__item-top">
                                 <p class="events__item-day events__item-day--blue"><span class="events__item-num">{{event_2.date.day}}</span>
@@ -195,6 +198,8 @@
                                 <h6 class="events__item-name">{{event_2.title}}</h6>
                             </div>
                         </div>
+                      {% endif %}            
+                      {% if event_3 %}
                         <div class="events__item" onclick="location.href = '{% url 'event_detail' event_3.id %}'">
                             <div class="events__item-top">
                                 <p class="events__item-day"><span class="events__item-num">{{event_3.date.day}}</span>
@@ -208,6 +213,7 @@
                                 <h6 class="events__item-name">{{event_3.title}}</h6>
                             </div>
                         </div>
+                      {% endif %}
                     </div>
                     <a class="button events__button-more" href="events">Все мероприятия
                         <img class="events__button-img" src="{% static 'kurlib/images/events/events__button-img.png' %}" alt="">

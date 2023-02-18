@@ -29,6 +29,16 @@ class LocalHistoryModel(models.Model):
     image_7 = models.ImageField("Изображение", upload_to=f"localhistory/", blank=True)
     image_8 = models.ImageField("Изображение", upload_to=f"localhistory/", blank=True)
     image_9 = models.ImageField("Изображение", upload_to=f"localhistory/", blank=True)
+    image_10 = models.ImageField("Изображение", upload_to=f"localhistory/", blank=True)
+    image_11 = models.ImageField("Изображение", upload_to=f"localhistory/", blank=True)
+    image_12 = models.ImageField("Изображение", upload_to=f"localhistory/", blank=True)
+    image_13 = models.ImageField("Изображение", upload_to=f"localhistory/", blank=True)
+    image_14 = models.ImageField("Изображение", upload_to=f"localhistory/", blank=True)
+    image_15 = models.ImageField("Изображение", upload_to=f"localhistory/", blank=True)
+    image_16 = models.ImageField("Изображение", upload_to=f"localhistory/", blank=True)
+    image_17 = models.ImageField("Изображение", upload_to=f"localhistory/", blank=True)
+    image_18 = models.ImageField("Изображение", upload_to=f"localhistory/", blank=True)
+    image_19 = models.ImageField("Изображение", upload_to=f"localhistory/", blank=True)
 
     images = list()
     def __str__(self):

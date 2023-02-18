@@ -14,23 +14,22 @@ def local_history(request):
     cult_art_lib = list()
     history_names = list()
     for article in articles:
-        match article.chapter:
-            case 1:
-                kuraginsky_district.append(article)
-            case 2:
-                kuragino.append(article)
-            case 3:
-                villages_towns.append(article)
-            case 4:
-                memorial_plaques.append(article)
-            case 5:
-                kuragintsy_ww2.append(article)
-            case 6:
-                literary_map.append(article)
-            case 7:
-                cult_art_lib.append(article)
-            case 8:
-                history_names.append(article)
+        if article.chapter == 1:
+            kuraginsky_district.append(article)
+        elif article.chapter == 2:
+            kuragino.append(article)
+        elif article.chapter == 3:
+            villages_towns.append(article)
+        elif article.chapter == 4:
+            memorial_plaques.append(article)
+        elif article.chapter == 5:
+            kuragintsy_ww2.append(article)
+        elif article.chapter == 6:
+            literary_map.append(article)
+        elif article.chapter == 7:
+            cult_art_lib.append(article)
+        elif article.chapter == 8:
+            history_names.append(article)
     return render(request, 'localhistory/localHistory.html', {'articles': articles,
                                                               'kuraginsky_district': kuraginsky_district,
                                                               'kuragino': kuragino,
@@ -50,7 +49,7 @@ class LocalHistoryDetailView(DetailView):
         obj = super(LocalHistoryDetailView, self).get_object(queryset=queryset)
         obj.edited_description = info_editor(obj.description)
         obj.images = []
-        for i in range(9):
+        for i in range(20):
             try:
                 eval(f"obj.images.append(obj.image_{i}.url)")
             except ValueError:

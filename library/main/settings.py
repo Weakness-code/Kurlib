@@ -1,3 +1,4 @@
+import os
 """
 Django settings for main project.
 
@@ -25,7 +26,7 @@ SECRET_KEY = 'zdfghSDGefeWR353T532t2ty23T3T32T23T3tagdrgata3t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ch12740.tw1.ru', 'kuraginolib.ru']
 
 
 # Application definition
@@ -78,13 +79,17 @@ WSGI_APPLICATION = 'main.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
-DATABASES = {
+DATABASES = {           # Для хостинга
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'ch12740_database',
+        'USER': 'ch12740_database',
+        'PASSWORD': 'Password123456',
+        'HOST': 'localhost',
+        'PORT': '3306'
     }
 }
+
 
 
 # Password validation
@@ -121,13 +126,24 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+
+
+STATIC_ROOT = '/home/c/ch12740/public_html/static/'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / "kurlib/static",
 ]
+
+MEDIA_ROOT = '/home/c/ch12740/public_html/media/'
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+if DEBUG:   
+    DATABASES['default']['HOST'] = 'vh324.timeweb.ru'
+    ALLOWED_HOSTS.append("127.0.0.1")
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
