@@ -37,46 +37,8 @@
                     <p class="menu__button-txt menu__button-txt--white menu__button-txt--small">Меню</p>
                     <img class="menu__img menu__img--small" src="{% static 'kurlib/images/menu/menu__button--white.png' %}" alt="">
                 </div>
-                <div class="menu__open none">
-                    <img class="close menu__close" src="{% static 'kurlib/images/menu/close.png' %}" alt="">
-                    <ul class="menu__open-list">
-                        <li class="menu__open-item">
-                            <a class="menu__open-link" href="{% url 'index' %}">Главная</a>
-                        </li>
-                        <li class="menu__open-item">
-                            <a class="menu__open-link"
-                               href="http://92.126.252.74:8087/jirbis2/index.php?option=com_irbis&view=irbis&Itemid=115"
-                               target="_blank">Электронный каталог</a>
-                        </li>
-                        <li class="menu__open-item">
-                            <a class="menu__open-link" href="/about/">О библиотеке</a>
-                        </li>
-                        <li class="menu__open-item">
-                            <a class="menu__open-link" href="/reader/">Читателю</a>
-                        </li>
-                        <li class="menu__open-item">
-                            <a class="menu__open-link" href="http://kids.kurlib.ru/" target="_blank">Детская библиотека</a>
-                        </li>
-                        <li class="menu__open-item">
-                            <a class="menu__open-link" href="/services">Услуги</a>
-                        </li>
-                        <li class="menu__open-item">
-                            <a class="menu__open-link" href="/events">Мероприятия</a>
-                        </li>
-                        <li class="menu__open-item">
-                            <a class="menu__open-link" href="/kraevedenie">Краеведение</a>
-                        </li>
-                        <li class="menu__open-item">
-                            <a class="menu__open-link" href="/questionAnswer">Вопрос-ответ</a>
-                        </li>
-                        <li class="menu__open-item">
-                            <a class="menu__open-link" href="/contacts">Контакты</a>
-                        </li>
-                        <li class="menu__open-item">
-                            <a class="menu__open-link" href="/admin">Для администратора</a>
-                        </li>
-                    </ul>
-                </div>
+                {% include 'kurlib/menulist.html' %}
+            </div>
             
     </header>
     <main>
@@ -96,70 +58,8 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <div class="footer__one">
-                    <div class="footer__one-item footer__phone">
-                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-phone.png' %}" alt="">
-                        <a class="footer__text" href="tel:+73913624856">8 (391) 362-48-56</a>
-                    </div>
-                    <div class="footer__one-item footer__email">
-                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-mail.png' %}" alt="">
-                        <a class="footer__text" href="mailto:kur-mcb@yandex.ru">kur-mcb@yandex.ru</a>
-                    </div>
-                    <div class="footer__one-item footer__address">
-                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-address.png' %}" alt="">
-                        <p class="footer__text">662910, Красноярский край, п. Курагино, ул. Партизанская, 150</p>
-                    </div>
-                    <div class="footer__one-item footer__vk">
-                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
-                        <a class="footer__text" href="https://vk.com/kurlib" target="_blank">https://vk.com/kurlib</a>
-                    </div>
-                    <h4 class="footer__title">Cайт разработан:</h4>
-                    <div class="footer__one-item footer__vk">
-                        <img class="footer__img" src="{% static 'kurlib/images/footer/footer__img-vk.png' %}" alt="">
-                        <a class="footer__text" href="https://vk.com/unkey_digital">https://vk.com/unkey_digital</a>
-                    </div>
-                </div>
-                <div class="footer__two">
-                    <h4 class="footer__title footer__title-schedule">Расписание</h4>
-                    <div class="footer__schedule">
-                        <div class="footer__weekdays">
-                            <h5 class="footer__subtitle">График работы:</h5>
-                            <div class="footer__time">
-                                <img src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="" class="footer__schedule-img">
-                                <p class="footer__schedule-text">09:00-18:00</p>
-                            </div>
-                        </div>
-                        <div class="footer__weekends">
-                            <h5 class="footer__subtitle">Воскресенье:</h5>
-                            <div class="footer__time">
-                                <img src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="" class="footer__schedule-img">
-                                <p class="footer__schedule-text">09:00-16:00</p>
-                            </div>
-                        </div>
-                    </div>
-                    <h5 class="footer__subtitle">Выходные: суббота</h5>
-                    <p class="footer__text">Последняя пятница месяца санитарный день</p>
-                    <h4 class="footer__title">Летнее расписание</h4>
-                    <h5 class="footer__subtitle">График работы:</h5>
-                    <div class="footer__time">
-                        <img class="footer__schedule-img" src="{% static 'kurlib/images/footer/footer__img-time.png' %}" alt="">
-                        <p class="footer__schedule-text">09:00-18:00</p>
-                    </div>
-                    <h5 class="footer__subtitle">Выходные: суббота, воскресенье</h5>
-                </div>
-                <div class="footer__three">
-                    <h4 class="footer__title footer__title-schedule">Общая информация</h4>
-                    <h5 class="footer__subtitle">Полное наименование:</h5>
-                    <p class="footer__text">Муниципальное бюджетное учреждение культуры «Межпоселенческая центральная библиотека Курагинского района» </p>
-                    <h5 class="footer__subtitle footer__schedule-sub">Сокращенное наименование:</h5>
-                    <p class="footer__text">МБУК МЦБ Курагинского района</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    {% include 'kurlib/footer.html' %}
+
     <script src="{% static 'kurlib/js/menuOpen.js' %}"></script>
     <script src="{% static 'kurlib/js/menuOpenMedia.js' %}"></script>
 </body>

@@ -38,7 +38,7 @@ def index(request):
                'billboard': billboard
                }
     context.update(events_lib)
-    return render(request, 'kurlib/index.html', context=context)
+    return render(request, "kurlib/index.html", context=context )
 
 
 def services(request):
