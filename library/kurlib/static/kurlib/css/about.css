@@ -87,6 +87,10 @@ body {
     -o-border-radius: 50%;
     cursor: pointer;
 }
+.about__item-img--wrap {
+    left: 73%;
+    /* left: calc(73% + (63 - 73) * ((100vw - 340px) / (1920 - 340))); */
+}
 .about__item-text {
     color: #FFFFFF;
     font-size: 1.25rem;

@@ -56,11 +56,14 @@
             <div class="about__answer-wrap">
                 {% for post in kuraginsky_district %}
                 <div class="about__list-item about__item-text-more--second-lvl" data-number="0">
-                    <img class="about__item-img" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt="">
+                    <a class="about__item-text about__item-text--lvl2"
+                           href="{% url 'localhistory_info' post.id %}">
+                    <img class="about__item-img about__item-img--wrap" src="{% static 'kurlib/images/about/about__item-img3.png' %}" alt=""></a>
                     <div class="about__item-wrapper about__item-wrapper--lvl2">
                         <a class="about__item-text about__item-text--lvl2"
                            href="{% url 'localhistory_info' post.id %}">{{post.title}}</a>
                     </div>
+                
                 </div>
                 {% endfor %}
 <!--                <div class="about__list-item about__item-text-more&#45;&#45;second-lvl" data-number="0">-->

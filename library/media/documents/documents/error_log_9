@@ -1,0 +1,360 @@
+ch12740.tw1.ru [Mon Dec 12 10:23:45 2022] [error] [pid 34385] src/server/wsgi_logger.c(147): [client 78.107.28.198:40382] Internal Server Error: /
+ch12740.tw1.ru [Mon Dec 12 10:23:45 2022] [error] [pid 34385] src/server/wsgi_logger.c(147): [client 78.107.28.198:40382] Traceback (most recent call last):
+ch12740.tw1.ru [Mon Dec 12 10:23:45 2022] [error] [pid 34385] src/server/wsgi_logger.c(147): [client 78.107.28.198:40382]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+ch12740.tw1.ru [Mon Dec 12 10:23:45 2022] [error] [pid 34385] src/server/wsgi_logger.c(147): [client 78.107.28.198:40382]     response = get_response(request)
+ch12740.tw1.ru [Mon Dec 12 10:23:45 2022] [error] [pid 34385] src/server/wsgi_logger.c(147): [client 78.107.28.198:40382]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+ch12740.tw1.ru [Mon Dec 12 10:23:45 2022] [error] [pid 34385] src/server/wsgi_logger.c(147): [client 78.107.28.198:40382]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+ch12740.tw1.ru [Mon Dec 12 10:23:45 2022] [error] [pid 34385] src/server/wsgi_logger.c(147): [client 78.107.28.198:40382]   File "/home/c/ch12740/public_html/library/kurlib/views.py", line 26, in index
+ch12740.tw1.ru [Mon Dec 12 10:23:45 2022] [error] [pid 34385] src/server/wsgi_logger.c(147): [client 78.107.28.198:40382]     event_1 = events[0]
+ch12740.tw1.ru [Mon Dec 12 10:23:45 2022] [error] [pid 34385] src/server/wsgi_logger.c(147): [client 78.107.28.198:40382]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/db/models/query.py", line 300, in __getitem__
+ch12740.tw1.ru [Mon Dec 12 10:23:45 2022] [error] [pid 34385] src/server/wsgi_logger.c(147): [client 78.107.28.198:40382]     return self._result_cache[k]
+ch12740.tw1.ru [Mon Dec 12 10:23:45 2022] [error] [pid 34385] src/server/wsgi_logger.c(147): [client 78.107.28.198:40382] IndexError: list index out of range
+ch12740.tw1.ru [Mon Dec 12 10:23:45 2022] [error] [pid 34385] src/server/wsgi_logger.c(147): [client 78.107.28.198:40382]
+ch12740.tw1.ru [Mon Dec 12 10:23:45 2022] [error] [pid 34488] src/server/wsgi_logger.c(147): [client 78.107.28.198:40504] Not Found: /favicon.ico
+ch12740.tw1.ru [Mon Dec 12 10:31:16 2022] [error] [pid 81870] src/server/wsgi_logger.c(147): [client 78.107.28.198:34784] Internal Server Error: /
+ch12740.tw1.ru [Mon Dec 12 10:31:16 2022] [error] [pid 81870] src/server/wsgi_logger.c(147): [client 78.107.28.198:34784] Traceback (most recent call last):
+ch12740.tw1.ru [Mon Dec 12 10:31:16 2022] [error] [pid 81870] src/server/wsgi_logger.c(147): [client 78.107.28.198:34784]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+ch12740.tw1.ru [Mon Dec 12 10:31:16 2022] [error] [pid 81870] src/server/wsgi_logger.c(147): [client 78.107.28.198:34784]     response = get_response(request)
+ch12740.tw1.ru [Mon Dec 12 10:31:16 2022] [error] [pid 81870] src/server/wsgi_logger.c(147): [client 78.107.28.198:34784]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+ch12740.tw1.ru [Mon Dec 12 10:31:16 2022] [error] [pid 81870] src/server/wsgi_logger.c(147): [client 78.107.28.198:34784]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+ch12740.tw1.ru [Mon Dec 12 10:31:16 2022] [error] [pid 81870] src/server/wsgi_logger.c(147): [client 78.107.28.198:34784]   File "/home/c/ch12740/public_html/library/kurlib/views.py", line 26, in index
+ch12740.tw1.ru [Mon Dec 12 10:31:16 2022] [error] [pid 81870] src/server/wsgi_logger.c(147): [client 78.107.28.198:34784]     event_1 = events[0]
+ch12740.tw1.ru [Mon Dec 12 10:31:16 2022] [error] [pid 81870] src/server/wsgi_logger.c(147): [client 78.107.28.198:34784]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/db/models/query.py", line 300, in __getitem__
+ch12740.tw1.ru [Mon Dec 12 10:31:16 2022] [error] [pid 81870] src/server/wsgi_logger.c(147): [client 78.107.28.198:34784]     return self._result_cache[k]
+ch12740.tw1.ru [Mon Dec 12 10:31:16 2022] [error] [pid 81870] src/server/wsgi_logger.c(147): [client 78.107.28.198:34784] IndexError: list index out of range
+ch12740.tw1.ru [Mon Dec 12 10:31:16 2022] [error] [pid 81870] src/server/wsgi_logger.c(147): [client 78.107.28.198:34784]
+ch12740.tw1.ru [Mon Dec 12 10:31:21 2022] [error] [pid 5597] src/server/wsgi_logger.c(147): [client 78.107.28.198:35676] Internal Server Error: /
+ch12740.tw1.ru [Mon Dec 12 10:31:21 2022] [error] [pid 5597] src/server/wsgi_logger.c(147): [client 78.107.28.198:35676] Traceback (most recent call last):
+ch12740.tw1.ru [Mon Dec 12 10:31:21 2022] [error] [pid 5597] src/server/wsgi_logger.c(147): [client 78.107.28.198:35676]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+ch12740.tw1.ru [Mon Dec 12 10:31:21 2022] [error] [pid 5597] src/server/wsgi_logger.c(147): [client 78.107.28.198:35676]     response = get_response(request)
+ch12740.tw1.ru [Mon Dec 12 10:31:21 2022] [error] [pid 5597] src/server/wsgi_logger.c(147): [client 78.107.28.198:35676]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+ch12740.tw1.ru [Mon Dec 12 10:31:21 2022] [error] [pid 5597] src/server/wsgi_logger.c(147): [client 78.107.28.198:35676]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+ch12740.tw1.ru [Mon Dec 12 10:31:21 2022] [error] [pid 5597] src/server/wsgi_logger.c(147): [client 78.107.28.198:35676]   File "/home/c/ch12740/public_html/library/kurlib/views.py", line 26, in index
+ch12740.tw1.ru [Mon Dec 12 10:31:21 2022] [error] [pid 5597] src/server/wsgi_logger.c(147): [client 78.107.28.198:35676]     event_1 = events[0]
+ch12740.tw1.ru [Mon Dec 12 10:31:21 2022] [error] [pid 5597] src/server/wsgi_logger.c(147): [client 78.107.28.198:35676]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/db/models/query.py", line 300, in __getitem__
+ch12740.tw1.ru [Mon Dec 12 10:31:21 2022] [error] [pid 5597] src/server/wsgi_logger.c(147): [client 78.107.28.198:35676]     return self._result_cache[k]
+ch12740.tw1.ru [Mon Dec 12 10:31:21 2022] [error] [pid 5597] src/server/wsgi_logger.c(147): [client 78.107.28.198:35676] IndexError: list index out of range
+ch12740.tw1.ru [Mon Dec 12 10:31:21 2022] [error] [pid 5597] src/server/wsgi_logger.c(147): [client 78.107.28.198:35676]
+ch12740.tw1.ru [Mon Dec 12 10:49:05 2022] [error] [pid 51493] src/server/wsgi_logger.c(147): [client 78.107.28.198:38010] Internal Server Error: /
+ch12740.tw1.ru [Mon Dec 12 10:49:05 2022] [error] [pid 51493] src/server/wsgi_logger.c(147): [client 78.107.28.198:38010] Traceback (most recent call last):
+ch12740.tw1.ru [Mon Dec 12 10:49:05 2022] [error] [pid 51493] src/server/wsgi_logger.c(147): [client 78.107.28.198:38010]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+ch12740.tw1.ru [Mon Dec 12 10:49:05 2022] [error] [pid 51493] src/server/wsgi_logger.c(147): [client 78.107.28.198:38010]     response = get_response(request)
+ch12740.tw1.ru [Mon Dec 12 10:49:05 2022] [error] [pid 51493] src/server/wsgi_logger.c(147): [client 78.107.28.198:38010]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+ch12740.tw1.ru [Mon Dec 12 10:49:05 2022] [error] [pid 51493] src/server/wsgi_logger.c(147): [client 78.107.28.198:38010]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+ch12740.tw1.ru [Mon Dec 12 10:49:05 2022] [error] [pid 51493] src/server/wsgi_logger.c(147): [client 78.107.28.198:38010]   File "/home/c/ch12740/public_html/library/kurlib/views.py", line 32, in index
+ch12740.tw1.ru [Mon Dec 12 10:49:05 2022] [error] [pid 51493] src/server/wsgi_logger.c(147): [client 78.107.28.198:38010]     return render(request, 'kurlib/index.html', {'event_1': events[0],
+ch12740.tw1.ru [Mon Dec 12 10:49:05 2022] [error] [pid 51493] src/server/wsgi_logger.c(147): [client 78.107.28.198:38010]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/db/models/query.py", line 300, in __getitem__
+ch12740.tw1.ru [Mon Dec 12 10:49:05 2022] [error] [pid 51493] src/server/wsgi_logger.c(147): [client 78.107.28.198:38010]     return self._result_cache[k]
+ch12740.tw1.ru [Mon Dec 12 10:49:05 2022] [error] [pid 51493] src/server/wsgi_logger.c(147): [client 78.107.28.198:38010] IndexError: list index out of range
+ch12740.tw1.ru [Mon Dec 12 10:49:05 2022] [error] [pid 51493] src/server/wsgi_logger.c(147): [client 78.107.28.198:38010]
+ch12740.tw1.ru [Mon Dec 12 10:52:23 2022] [error] [pid 13312] src/server/wsgi_logger.c(147): [client 78.107.28.198:48508] Internal Server Error: /
+ch12740.tw1.ru [Mon Dec 12 10:52:23 2022] [error] [pid 13312] src/server/wsgi_logger.c(147): [client 78.107.28.198:48508] Traceback (most recent call last):
+ch12740.tw1.ru [Mon Dec 12 10:52:23 2022] [error] [pid 13312] src/server/wsgi_logger.c(147): [client 78.107.28.198:48508]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+ch12740.tw1.ru [Mon Dec 12 10:52:23 2022] [error] [pid 13312] src/server/wsgi_logger.c(147): [client 78.107.28.198:48508]     response = get_response(request)
+ch12740.tw1.ru [Mon Dec 12 10:52:23 2022] [error] [pid 13312] src/server/wsgi_logger.c(147): [client 78.107.28.198:48508]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+ch12740.tw1.ru [Mon Dec 12 10:52:23 2022] [error] [pid 13312] src/server/wsgi_logger.c(147): [client 78.107.28.198:48508]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+ch12740.tw1.ru [Mon Dec 12 10:52:23 2022] [error] [pid 13312] src/server/wsgi_logger.c(147): [client 78.107.28.198:48508]   File "/home/c/ch12740/public_html/library/kurlib/views.py", line 32, in index
+ch12740.tw1.ru [Mon Dec 12 10:52:23 2022] [error] [pid 13312] src/server/wsgi_logger.c(147): [client 78.107.28.198:48508]     return render(request, 'kurlib/index.html', {'event_1': events[0],
+ch12740.tw1.ru [Mon Dec 12 10:52:23 2022] [error] [pid 13312] src/server/wsgi_logger.c(147): [client 78.107.28.198:48508]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/db/models/query.py", line 300, in __getitem__
+ch12740.tw1.ru [Mon Dec 12 10:52:23 2022] [error] [pid 13312] src/server/wsgi_logger.c(147): [client 78.107.28.198:48508]     return self._result_cache[k]
+ch12740.tw1.ru [Mon Dec 12 10:52:23 2022] [error] [pid 13312] src/server/wsgi_logger.c(147): [client 78.107.28.198:48508] IndexError: list index out of range
+ch12740.tw1.ru [Mon Dec 12 10:52:23 2022] [error] [pid 13312] src/server/wsgi_logger.c(147): [client 78.107.28.198:48508]
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032] Internal Server Error: /
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032] Traceback (most recent call last):
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]     response = get_response(request)
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]     callback, callback_args, callback_kwargs = self.resolve_request(request)
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]     resolver_match = resolver.resolve(request.path_info)
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]     for pattern in self.url_patterns:
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]     res = instance.__dict__[self.name] = self.func(instance)
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]     patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]     res = instance.__dict__[self.name] = self.func(instance)
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]     return import_module(self.urlconf_name)
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]     return _bootstrap._gcd_import(name[level:], package, level)
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "/home/c/ch12740/public_html/library/main/urls.py", line 15, in <module>
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]     + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/conf.py", line 34, in include
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]     urlconf_module = import_module(urlconf_module)
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]     return _bootstrap._gcd_import(name[level:], package, level)
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "/home/c/ch12740/public_html/library/kurlib/urls.py", line 2, in <module>
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]     from . import views
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]   File "/home/c/ch12740/public_html/library/kurlib/views.py", line 26
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]     events_lib[f'event_{j}'] = event
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]                                    ^
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032] TabError: inconsistent use of tabs and spaces in indentation
+ch12740.tw1.ru [Mon Dec 12 10:55:05 2022] [error] [pid 32154] src/server/wsgi_logger.c(147): [client 78.107.28.198:50032]
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030] Internal Server Error: /
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030] Traceback (most recent call last):
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]     response = get_response(request)
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]     callback, callback_args, callback_kwargs = self.resolve_request(request)
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]     resolver_match = resolver.resolve(request.path_info)
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]     for pattern in self.url_patterns:
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]     res = instance.__dict__[self.name] = self.func(instance)
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]     patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]     res = instance.__dict__[self.name] = self.func(instance)
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]     return import_module(self.urlconf_name)
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]     return _bootstrap._gcd_import(name[level:], package, level)
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "/home/c/ch12740/public_html/library/main/urls.py", line 15, in <module>
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]     + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/conf.py", line 34, in include
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]     urlconf_module = import_module(urlconf_module)
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]     return _bootstrap._gcd_import(name[level:], package, level)
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "/home/c/ch12740/public_html/library/kurlib/urls.py", line 2, in <module>
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]     from . import views
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]   File "/home/c/ch12740/public_html/library/kurlib/views.py", line 27
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]     events_lib[f'event_{i}'] = events[i]
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]                                        ^
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030] TabError: inconsistent use of tabs and spaces in indentation
+ch12740.tw1.ru [Mon Dec 12 11:00:58 2022] [error] [pid 30024] src/server/wsgi_logger.c(147): [client 78.107.28.198:34030]
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594] Internal Server Error: /
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594] Traceback (most recent call last):
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]     response = get_response(request)
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]     callback, callback_args, callback_kwargs = self.resolve_request(request)
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]     resolver_match = resolver.resolve(request.path_info)
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]     for pattern in self.url_patterns:
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]     res = instance.__dict__[self.name] = self.func(instance)
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]     patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]     res = instance.__dict__[self.name] = self.func(instance)
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]     return import_module(self.urlconf_name)
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]     return _bootstrap._gcd_import(name[level:], package, level)
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "/home/c/ch12740/public_html/library/main/urls.py", line 15, in <module>
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]     + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/conf.py", line 34, in include
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]     urlconf_module = import_module(urlconf_module)
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]     return _bootstrap._gcd_import(name[level:], package, level)
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "/home/c/ch12740/public_html/library/kurlib/urls.py", line 2, in <module>
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]     from . import views
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]   File "/home/c/ch12740/public_html/library/kurlib/views.py", line 27
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]     events_lib[f'event_{i}'] = events[i]
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]                                        ^
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594] TabError: inconsistent use of tabs and spaces in indentation
+ch12740.tw1.ru [Mon Dec 12 11:02:16 2022] [error] [pid 2149] src/server/wsgi_logger.c(147): [client 78.107.28.198:49594]
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152] Internal Server Error: /
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152] Traceback (most recent call last):
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]     response = get_response(request)
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]     callback, callback_args, callback_kwargs = self.resolve_request(request)
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]     resolver_match = resolver.resolve(request.path_info)
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]     for pattern in self.url_patterns:
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]     res = instance.__dict__[self.name] = self.func(instance)
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]     patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]     res = instance.__dict__[self.name] = self.func(instance)
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]     return import_module(self.urlconf_name)
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]     return _bootstrap._gcd_import(name[level:], package, level)
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "/home/c/ch12740/public_html/library/main/urls.py", line 15, in <module>
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]     + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/conf.py", line 34, in include
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]     urlconf_module = import_module(urlconf_module)
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]     return _bootstrap._gcd_import(name[level:], package, level)
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "/home/c/ch12740/public_html/library/kurlib/urls.py", line 2, in <module>
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]     from . import views
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]   File "/home/c/ch12740/public_html/library/kurlib/views.py", line 27
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]     events_lib[f'event_{i}'] = events[i]
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]                                        ^
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152] TabError: inconsistent use of tabs and spaces in indentation
+ch12740.tw1.ru [Mon Dec 12 11:02:46 2022] [error] [pid 17004] src/server/wsgi_logger.c(147): [client 78.107.28.198:55152]
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880] Internal Server Error: /
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880] Traceback (most recent call last):
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]     response = get_response(request)
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]     callback, callback_args, callback_kwargs = self.resolve_request(request)
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]     resolver_match = resolver.resolve(request.path_info)
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]     for pattern in self.url_patterns:
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]     res = instance.__dict__[self.name] = self.func(instance)
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]     patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]     res = instance.__dict__[self.name] = self.func(instance)
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]     return import_module(self.urlconf_name)
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]     return _bootstrap._gcd_import(name[level:], package, level)
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "/home/c/ch12740/public_html/library/main/urls.py", line 15, in <module>
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]     + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/conf.py", line 34, in include
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]     urlconf_module = import_module(urlconf_module)
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]     return _bootstrap._gcd_import(name[level:], package, level)
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "/home/c/ch12740/public_html/library/kurlib/urls.py", line 2, in <module>
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]     from . import views
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]   File "/home/c/ch12740/public_html/library/kurlib/views.py", line 27
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]     events_lib[f'event_{i}'] = events[i]
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]                                        ^
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880] TabError: inconsistent use of tabs and spaces in indentation
+ch12740.tw1.ru [Mon Dec 12 11:09:52 2022] [error] [pid 24136] src/server/wsgi_logger.c(147): [client 78.107.28.198:51880]
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864] Internal Server Error: /
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864] Traceback (most recent call last):
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]     response = get_response(request)
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 167, in _get_response
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]     callback, callback_args, callback_kwargs = self.resolve_request(request)
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]     resolver_match = resolver.resolve(request.path_info)
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 560, in resolve
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]     for pattern in self.url_patterns:
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]     res = instance.__dict__[self.name] = self.func(instance)
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]     patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]     res = instance.__dict__[self.name] = self.func(instance)
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]     return import_module(self.urlconf_name)
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]     return _bootstrap._gcd_import(name[level:], package, level)
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "/home/c/ch12740/public_html/library/main/urls.py", line 15, in <module>
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]     + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "/home/c/ch12740/public_html/venv/lib/python3.6/site-packages/django/urls/conf.py", line 34, in include
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]     urlconf_module = import_module(urlconf_module)
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]     return _bootstrap._gcd_import(name[level:], package, level)
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "/home/c/ch12740/public_html/library/kurlib/urls.py", line 2, in <module>
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]     from . import views
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]   File "/home/c/ch12740/public_html/library/kurlib/views.py", line 27
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]     events_lib[f'event_{i}'] = events[i]
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]                                        ^
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864] TabError: inconsistent use of tabs and spaces in indentation
+ch12740.tw1.ru [Mon Dec 12 11:14:10 2022] [error] [pid 49211] src/server/wsgi_logger.c(147): [client 78.107.28.198:42864]
+ch12740.tw1.ru [Mon Dec 12 11:15:19 2022] [error] [pid 22168] src/server/wsgi_logger.c(147): [client 78.107.28.198:55066] {}
+ch12740.tw1.ru [Mon Dec 12 11:15:19 2022] [error] [pid 22773] src/server/wsgi_logger.c(147): [client 78.107.28.198:55156] Not Found: /static/kurlib/css/gallery.css
+ch12740.tw1.ru [Mon Dec 12 11:15:58 2022] [error] [pid 41705] src/server/wsgi_logger.c(147): [client 78.107.28.198:34016] {}
+ch12740.tw1.ru [Mon Dec 12 11:15:59 2022] [error] [pid 41788] src/server/wsgi_logger.c(147): [client 78.107.28.198:34130] Not Found: /static/kurlib/css/gallery.css
+ch12740.tw1.ru [Mon Dec 12 11:16:05 2022] [error] [pid 46975] src/server/wsgi_logger.c(147): [client 195.211.23.222:35150] {}
+ch12740.tw1.ru [Mon Dec 12 11:16:05 2022] [error] [pid 47736] src/server/wsgi_logger.c(147): [client 195.211.23.206:35236] Not Found: /apple-touch-icon.png
+ch12740.tw1.ru [Mon Dec 12 11:16:05 2022] [error] [pid 47741] src/server/wsgi_logger.c(147): [client 195.211.23.224:35240] Not Found: /apple-touch-icon-precomposed.png
+ch12740.tw1.ru [Mon Dec 12 11:16:05 2022] [error] [pid 47733] src/server/wsgi_logger.c(147): [client 195.211.23.223:35234] Not Found: /favicon.ico
+ch12740.tw1.ru [Mon Dec 12 11:16:34 2022] [error] [pid 70895] src/server/wsgi_logger.c(147): [client 2a00:1fa2:c437:bb8a:2433:ff09:a82f:fd0a:40544] {}
+ch12740.tw1.ru [Mon Dec 12 11:16:35 2022] [error] [pid 71148] src/server/wsgi_logger.c(147): [client 2a00:1fa2:c437:bb8a:2433:ff09:a82f:fd0a:40744] Not Found: /static/kurlib/css/gallery.css
+ch12740.tw1.ru [Mon Dec 12 11:17:19 2022] [error] [pid 17544] src/server/wsgi_logger.c(147): [client 78.107.28.198:49862] {}
+ch12740.tw1.ru [Mon Dec 12 11:32:57 2022] [error] [pid 79542] src/server/wsgi_logger.c(147): [client 78.107.28.198:42544] {}
+ch12740.tw1.ru [Mon Dec 12 11:33:27 2022] [error] [pid 28879] src/server/wsgi_logger.c(147): [client 78.107.28.198:48728] {}
+ch12740.tw1.ru [Mon Dec 12 11:54:41 2022] [error] [pid 55244] src/server/wsgi_logger.c(147): [client 78.107.28.198:59496] {}
+ch12740.tw1.ru [Mon Dec 12 11:54:49 2022] [error] [pid 57394] src/server/wsgi_logger.c(147): [client 78.107.28.198:32924] {}
+ch12740.tw1.ru [Mon Dec 12 12:09:08 2022] [error] [pid 67928] src/server/wsgi_logger.c(147): [client 213.87.120.191:59918] {}
+ch12740.tw1.ru [Mon Dec 12 12:09:32 2022] [error] [pid 13754] src/server/wsgi_logger.c(147): [client 5.255.231.110:36194] {}
+ch12740.tw1.ru [Mon Dec 12 12:13:25 2022] [error] [pid 67981] src/server/wsgi_logger.c(147): [client 213.87.120.191:47264] {}
+ch12740.tw1.ru [Mon Dec 12 12:15:04 2022] [error] [pid 72017] src/server/wsgi_logger.c(147): [client 213.87.120.191:37482] {}
+ch12740.tw1.ru [Mon Dec 12 12:20:25 2022] [error] [pid 12917] src/server/wsgi_logger.c(147): [client 78.107.28.198:38448] {}
+ch12740.tw1.ru [Mon Dec 12 12:20:57 2022] [error] [pid 27336] src/server/wsgi_logger.c(147): [client 78.107.28.198:44680] {}
+ch12740.tw1.ru [Mon Dec 12 12:23:14 2022] [error] [pid 42550] src/server/wsgi_logger.c(147): [client 95.108.213.184:44534] {}
+ch12740.tw1.ru [Mon Dec 12 12:24:48 2022] [error] [pid 21987] src/server/wsgi_logger.c(147): [client 95.108.213.99:37332] {}
+ch12740.tw1.ru [Mon Dec 12 12:33:21 2022] [error] [pid 48948] src/server/wsgi_logger.c(147): [client 5.45.207.119:40098] {}
+ch12740.tw1.ru [Mon Dec 12 13:08:43 2022] [error] [pid 72924] src/server/wsgi_logger.c(147): [client 78.107.28.198:50940] {}
+ch12740.tw1.ru [Mon Dec 12 15:13:00 2022] [error] [pid 58031] src/server/wsgi_logger.c(147): [client 45.135.16.158:46028] {}
+ch12740.tw1.ru [Mon Dec 12 16:57:45 2022] [error] [pid 59535] src/server/wsgi_logger.c(147): [client 78.107.28.198:55022] {}
+ch12740.tw1.ru [Mon Dec 12 16:59:42 2022] [error] [pid 64140] src/server/wsgi_logger.c(147): [client 213.87.120.191:46404] {}
+ch12740.tw1.ru [Mon Dec 12 17:00:16 2022] [error] [pid 6825] src/server/wsgi_logger.c(147): [client 95.108.213.55:52662] {}

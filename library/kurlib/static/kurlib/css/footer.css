@@ -30,6 +30,7 @@
 .footer__text {
     font-size: 0.875rem;
     color: #FFFFFF;
+    margin-bottom: 0.5rem;
 }
 .footer__img {
     margin-right: 0.625em;
@@ -129,6 +130,8 @@
 .footer2 {
     position: relative;
     bottom: 0;
+    margin-left: 22%;
+    margin-right: 5.5em;
 }
 .footer2-card__links {
     display: flex;

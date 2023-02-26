@@ -84,7 +84,11 @@
     }
 }
 
-
+@media screen and (max-width: 1600px) {
+    .about__item-img--wrap {
+        left: 69%;
+    }
+}
 
 @media screen and (max-width: 1439px) {
     .events__bg {
@@ -125,6 +129,9 @@
 
 }
 @media screen and (max-width: 1330px) {
+    .about__item-img--wrap {
+        left: 64%;
+    }
     .virtual-card__wrapper {
         padding-left: 0;
         padding-right: 0;
@@ -286,6 +293,9 @@
     .eventCard {
         margin-left: 15%;
     }
+    .footer2 {
+        margin-left: 15%;
+    }
     .events-page__list {
         padding-left: 0;
         margin-top: 0;
@@ -293,6 +303,12 @@
 
 }
 @media screen and (max-width: 1060px) {
+    .about__item-img--wrap {
+        left: 58%;
+    }
+    .about__item-img--wrap {
+        left: 56%;
+    }
     .info-cards {
         padding-top: 90px;
         padding-bottom: 90px;
@@ -333,6 +349,10 @@
         margin-left: 5%;
         margin-right: 5%;
         flex-direction: column;
+    }
+    .footer2 {
+        margin-left: 5%;
+        margin-right: 5%;
     }
     .eventCard__left {
         margin-left: 0;
@@ -512,6 +532,10 @@
     }
 
     .eventCard {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .footer2 {
         margin-left: 10%;
         margin-right: 10%;
     }
