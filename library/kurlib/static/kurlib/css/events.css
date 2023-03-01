@@ -28,6 +28,7 @@
 .events__item {
     color: #FFFFFF;
     width: 18.75rem;
+    /* width: 23.75rem; */
 }
 .events__item-top {
     font-size: 1.25rem;
@@ -53,8 +54,8 @@
     color: #3A57BB;
 }
 .events__item-img-wrapper {
-
-    height: 18.75rem;
+    /* height: 18.75rem; */
+    height: 12.75rem;
 }
 .events__item-img {
     width: 100%;

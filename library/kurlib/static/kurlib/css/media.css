@@ -12,10 +12,14 @@
     .events__bg {
         top: -2%;
     }
+    
 }
 @media screen and (min-width: 1571px) {
     .catalog__bg {
         top: 8%;
+    }
+    .partners {
+        padding-top: 11.25em;
     }
 }
 @media screen and (min-width: 1605px) {
@@ -70,8 +74,9 @@
         top: 17%;
     }
     .partners {
-        padding-top: 10.25em;
+        padding-top: 15.25em;
     }
+    
 }
 @media screen and (min-width: 1885px) {
     .catalog__bg {
@@ -96,7 +101,7 @@
     }
     /* ТУТ НОВОЕ! */
     .events__content {
-        gap: 10em;
+        gap: 7em;
     }
     .events {
         background: #3A57BB;
@@ -145,6 +150,7 @@
     .all-information__point {
         margin-bottom: 3em;
     }
+    
 }
 @media screen and (max-width: 1300px) {
     .virtual-card__wrapper {
@@ -627,6 +633,10 @@
     }
     .header__left-subtitle {
          width: auto;
+    }
+    .container--xxs {
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 @media screen and (max-width: 488px) {
