@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import DetailView
 
-from .models import Rules, Competition, NewWork, VirtualCard
+from .models import Rules, Competition, NewWork
 
 def reader(request):
     rules = Rules.objects.all()
@@ -21,11 +21,11 @@ def gnnk(request):
     return render(request, 'reader/partnersNKK.html')
 
 def virtual_performance(request):
-    virtualcards = VirtualCard.objects.all()
+    virtualcards = NewWork.objects.all()
     return render(request, 'reader/virtualExhibitionSlider.html',{'virtualcards':virtualcards})
 
 class VirtualCardDetailView(DetailView):
-    model = VirtualCard
+    model = NewWork
     template_name = 'reader/virtualExhibitionCard.html'
     context_object_name = "virtualcard"
     def get_object(self, queryset=None):

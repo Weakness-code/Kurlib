@@ -15,8 +15,10 @@ class NewWork(models.Model):
     title = models.CharField("Название работы", max_length=250)
     cover = models.ImageField("Обложка работы", upload_to="works/")
     description = models.TextField("Описание работы")
+    anons = models.TextField("Вступление")
     author = models.CharField("Автор работы", max_length=250)
 
+    edited_description = ''
     def __str__(self):
         return self.title
 
@@ -25,7 +27,7 @@ class NewWork(models.Model):
         verbose_name_plural = "Книжные новинки"
 
 
-class VirtualCard(models.Model):
+'''class VirtualCard(models.Model):
     title = models.CharField("Название книги", max_length=250)
     cover = models.ImageField("Обложка", upload_to='books/')
     anons = models.TextField("Вступление")
@@ -37,7 +39,7 @@ class VirtualCard(models.Model):
 
     class Meta:
         verbose_name = "Виртуальная карта"
-        verbose_name_plural = "Виртуальная выставка"
+        verbose_name_plural = "Виртуальная выставка"'''
 
 
 class Competition(models.Model):
