@@ -144,6 +144,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 if DEBUG:   
     DATABASES['default']['HOST'] = 'vh324.timeweb.ru'
-    ALLOWED_HOSTS.append("127.0.0.1")
+    ALLOWED_HOSTS = ["127.0.0.1"]
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

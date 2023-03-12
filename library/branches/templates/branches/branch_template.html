@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="{% static 'kurlib/css/media.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/poster.css' %}">
     <link rel="stylesheet" href="{% static 'kurlib/css/history.css' %}">
+    <link rel="stylesheet" href="{% static 'kurlib/css/competitions.css' %}">
 
 </head>
 <body>
@@ -90,37 +91,21 @@
         </section> 
     </main>
     <main>
-        {% if branch.images %}
-        <section class="slider">
-            <div class="container container--xs">
-                <div class="slider__wrapper slider__text-page swiper">
-
-                    <div class="swiper-wrapper">
-                        {% for image in branch.images %}
-                        <div class="poster-slider__slide swiper-slide">
-                                <div class="poster-slider__item">
-                                    <div class="poster-slider__img-wr">
-                                        <img class="poster-slider__img" src="{{image}}" alt="">
-                                    </div>
-
-                                </div>
-                            </div>
-                        {% endfor %}
+        {%if news%}
+            <section class="competitions">
+                {% for new in news %}
+                    <div class="competitions__item">
+                        <div class="competitions__item-wrap-img">
+                            <img class="competitions__item-img" src="{{comp.image.url}}" alt="">
+                        </div>
+                        <div class="competitions__item-text">
+                            <h5 class="competitions__item-name">{{new.title}}</h5>
+                            <p class="competitions__item-time"> {{new.date_begin}} — {{new.date_end}}</p>
+                            <p class="competitions__item-descr">{{new.description}}</p>
+                        </div>
                     </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-        </section>
-        {% endif %}
-        {% if branch.description != ''%}
-        <section class="text history text--sloped">
-            <div class="container--text">
-                <h4 class="title title--text history__title">Информация</h4>
-                {% for block in branch.edited_description %}
-                    <p class="text__main">{{block}}</p>
                 {% endfor %}
-            </div>
-        </section>
+            </section>
         {% endif %}
     </main>
     {% include 'kurlib/footer.html' %}

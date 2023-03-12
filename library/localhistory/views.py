@@ -30,8 +30,7 @@ def local_history(request):
             cult_art_lib.append(article)
         elif article.chapter == 8:
             history_names.append(article)
-    return render(request, 'localhistory/localHistory.html', {'articles': articles,
-                                                              'kuraginsky_district': kuraginsky_district,
+    return render(request, 'localhistory/localHistory.html', {'kuraginsky_district': kuraginsky_district,
                                                               'kuragino': kuragino,
                                                               'villages_towns': villages_towns,
                                                               'memorial_plaques': memorial_plaques,

@@ -54,66 +54,21 @@
                 {% for block in localhistory_layout.edited_description %}
                     <p class="text__main">{{block}}</p>
                 {% endfor %}
-<!--                <p class="text__main">В 2007 был построен комплекс «Белая корона». Он расположен на окраине поселка и находится в 200 км от Абакана и в 300 км от Красноярска.</p>-->
-
-<!--                <p class="text__main">Главным достоинством «Короны» является горнолыжная трасса с электрическим бугельным подъемником. Трасса несложная, идеальна для семейного отдыха и обучения, а также порадует профессионалов. Протяженность трассы 1200 метров, перепад высоты – 200 метров, есть прокат снаряжения.</p>-->
-
-<!--                <p class="text__main">Зима в горах длится долго, снег лежит с октября по апрель и постоянно в пределах базы укатывается ратраком.</p>-->
-
-<!--                <p class="text__main">Территория освещается в темное время суток, есть кафе-бар на 100 мест, освещенный каток, прокат коньков, лыж, лошадей. В корпусах базы – центральное отопление.</p>-->
-
-<!--                <p class="text__main">Кристально-чистый воздух, тишина, способствующая комфортному отдыху, являются неотъемлемой частью предлагаемых услуг.</p>-->
-
-<!--                <p class="text__main">К услугам гостей всегда:</p>-->
-
-<!--                <p class="text__main">- гостиничные корпуса;</p>-->
-
-<!--                <p class="text__main">- автостоянка;</p>-->
-
-<!--                <p class="text__main">- кафе-бар;</p>-->
-
-<!--                <p class="text__main">- русская баня;</p>-->
-
-<!--                <p class="text__main">- шашлычные зоны;</p>-->
-
-<!--                <p class="text__main">- лыжная трасса;</p>-->
-
-<!--                <p class="text__main">- каток;</p>-->
-
-<!--                <p class="text__main">- пункт проката.</p>-->
-
-<!--                <p class="text__main">А летом «Белая корона» принимает для оздоровительного отдыха детей по групповым заявкам. За последние годы у нас отдохнули ребята от 6 до 18 лет из домов-интернатов Эвенкии, Хакасии, Красноярска, юные спортсмены из разных районов Красноярского края.</p>-->
-
-<!--                <p class="text__main">До базы «Белая корона» можно доехать автотранспортом (до Краснокаменска) или по ж/д (до станции Кошурниково).</p>-->
-
-<!--                <p class="text__main">«Белая корона» - это активный отдых как для гостей, так и для жителей нашего поселка. Надеемся, что комплекс просуществует еще много лет.</p>-->
             </div>
         </section>
         <section class="slider">
             <div class="container container--xs">
                 <div class="slider__wrapper slider__text-page swiper">
-
                     <div class="swiper-wrapper">
                         {% for image in localhistory_layout.images %}
-<!--                        <div class="swiper-slide slider__item-text-page">-->
-<!--                                <div class="slider__img-container">-->
-<!--                                    <img src="{{image}}" alt="" class="slider__item-img swiper-slide">-->
-<!--                                </div>-->
                         <div class="poster-slider__slide swiper-slide">
-                                <div class="poster-slider__item">
-                                    <div class="poster-slider__img-wr">
-                                        <img class="poster-slider__img" src="{{image}}" alt="">
-                                    </div>
-
+                            <div class="poster-slider__item">
+                                <div class="poster-slider__img-wr">
+                                    <img class="poster-slider__img" src="{{image}}" alt="">
                                 </div>
                             </div>
+                        </div>
                         {% endfor %}
-<!--                        <div class="slider__img-container swiper-slide">-->
-<!--                            <img src="{% static 'kurlib/images/bolotnov/bolotnov1.png' %}" alt="" class="slider__item-img swiper-slide">-->
-<!--                        </div>-->
-<!--                        <div class="slider__img-container swiper-slide">-->
-<!--                            <img src="{% static 'kurlib/images/whiteCrown/whiteCrown1.png' %}" alt="" class="slider__item-img swiper-slide">-->
-<!--                        </div>-->
                     </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
@@ -128,8 +83,5 @@
     <script src="{% static 'kurlib/js/sliderSwiper.js' %}"></script>
     <script src="{% static 'kurlib/js/menuOpen.js' %}"></script>
     <script src="{% static 'kurlib/js/menuOpenMedia.js' %}"></script>
-
-<!--    <script src="{% static 'kurlib/js/carouselSrc.js' %}"></script>-->
-<!--    <script src="{% static 'kurlib/js/sliderTest.js' %}"></script>-->
 </body>
 </html>
