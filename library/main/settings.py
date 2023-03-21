@@ -11,7 +11,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+from dotenv import load_dotenv
 from pathlib import Path
+
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'zdfghSDGefeWR353T532t2ty23T3T32T23T3tagdrgata3t'
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -84,7 +88,7 @@ DATABASES = {           # Для хостинга
         'ENGINE': 'django.db.backends.mysql', 
         'NAME': 'ch12740_database',
         'USER': 'ch12740_database',
-        'PASSWORD': 'Password123456',
+        'PASSWORD': os.getenv("database_password"),
         'HOST': 'localhost',
         'PORT': '3306'
     }
